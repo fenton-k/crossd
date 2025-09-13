@@ -1,0 +1,147 @@
+const puzzle = [
+  ["A", "N", "_", "I", "M"],
+  ["N", "A", "M", "E", "I"],
+  ["A", "M", "I", "L", "C"],
+  ["M", "E", "C", "Z", "E"],
+  ["E", "D", "E", "_", "_"],
+];
+
+const clues = {
+  1: "A silly dog",
+};
+
+const horizontal = 0;
+const vertical = 1;
+
+var activeCell;
+var direction = horizontal;
+
+window.onload = function () {
+  const puzzleDiv = document.getElementById("puzzle");
+
+  for (const row of puzzle) {
+    for (const letter of row) {
+      puzzleDiv.appendChild(createCell(letter));
+    }
+  }
+
+  const hiddenInput = document.getElementById("hiddenInput");
+
+  hiddenInput.addEventListener("input", (e) => {
+    if (!/^[a-zA-Z]$/.test(e.target.value)) return;
+    // if (!activeCell) return;
+    activeCell.textContent = e.target.value;
+    hiddenInput.value = "";
+  });
+
+  hiddenInput.addEventListener("keydown", (e) => {
+    // if (!activeCell) return;
+    if (e.key === "Backspace") {
+      activeCell.textContent = " ";
+      e.preventDefault();
+    }
+  });
+
+  setCellsActive(0, 0);
+};
+
+function createCell(letter) {
+  const newCell = document.createElement("p");
+  newCell.textContent = letter;
+  newCell.className = "cell";
+  newCell.contentEditable = true;
+
+  if (letter === "_") {
+    newCell.classList.add("block");
+  }
+
+  newCell.addEventListener("click", (event) => handleClick(event.target));
+
+  return newCell;
+}
+
+function handleClick(newCell) {
+  activeCell = newCell;
+
+  // there can only be one lord of the rings
+  document
+    .querySelectorAll(".cell")
+    .forEach((cell) =>
+      cell.classList.remove("active-primary", "active-secondary")
+    );
+
+  // set the new cell to active
+  if (!newCell.classList.contains("block")) {
+    newCell.classList.add("active-primary");
+  }
+
+  // set the other cells in the column active
+  const [activeCol, activeRow] = getCellPosition(newCell);
+  document.querySelectorAll(".cell").forEach((cell) => {
+    if (cell.classList.contains("block")) {
+      return;
+    }
+
+    const [col, row] = getCellPosition(cell);
+    if (col == activeCol && row != activeRow) {
+      cell.classList.add("active-secondary");
+    }
+  });
+
+  //   just makes it nice for iOS
+  const hiddenInput = document.getElementById("hiddenInput");
+  hiddenInput.focus();
+  hiddenInput.value = ""; // clear for next character
+}
+
+function handleKeyDown(key) {
+  if (/^[a-zA-Z]$/.test(key)) {
+    document
+      .querySelectorAll(".cell.active-primary")
+      //   .forEach((cell) => (cell.textContent = String(key)[0].toUpperCase()));
+      .forEach((cell) => (cell.textContent = ""));
+  }
+
+  document.querySelectorAll(".cell.active-primary").forEach((cell) => {
+    cell.textContent = cell.textContent[0];
+  });
+}
+
+function getCellIndex(cell) {
+  const cells = Array.from(document.getElementById("puzzle").children);
+  return cells.indexOf(cell);
+}
+
+function getCellPosition(cell) {
+  index = getCellIndex(cell);
+
+  const col = index % puzzle[0].length;
+  const row = Math.floor(index / puzzle[0].length);
+  return [col, row];
+}
+
+// index is which row/col to set i.e. 1 for row 1
+// rowOrCol is whether to set rows or cols. 0 is rows, 1 is cols
+function setCellsActive(index, rowOrCol) {
+  console.log("firing setting cells active");
+
+  var blockSeen = false;
+
+  document.querySelectorAll(".cell").forEach((cell) => {
+    if (cell.classList.contains("block")) {
+      blockSeen = true;
+    }
+
+    if (blockSeen) return;
+
+    const [col, row] = getCellPosition(cell);
+
+    if (!rowOrCol && row == index) {
+      cell.classList.add("active-secondary");
+    }
+
+    if (rowOrCol && col == index) {
+      cell.classList.add("active-secondary");
+    }
+  });
+}

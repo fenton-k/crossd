@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="styles.css" />
+<div id="puzzle"></div>
+<input id="hiddenInput" />
+
+<script>
+  const puzzle = [
+    ["A", "N", "_", "I", "M"],
+    ["N", "A", "M", "E", "I"],
+    ["A", "M", "I", "L", "C"],
+    ["M", "E", "C", "Z", "E"],
+    ["E", "D", "E", "L", "_"],
+  ];
+
+  let activeCell = null;
+
+  window.onload = function () {
+    const puzzleDiv = document.getElementById("puzzle");
+
+    for (const row of puzzle) {
+      for (const letter of row) {
+        puzzleDiv.appendChild(createCell(letter));
+      }
+    }
+
+    const hiddenInput = document.getElementById("hiddenInput");
+
+    hiddenInput.addEventListener("input", (e) => {
+      if (!activeCell) return;
+      activeCell.textContent = e.target.value;
+      hiddenInput.value = "";
+    });
+
+    hiddenInput.addEventListener("keydown", (e) => {
+      if (!activeCell) return;
+      if (e.key === "Backspace") {
+        activeCell.textContent = activeCell.textContent.slice(0, -1);
+        e.preventDefault();
+      }
+    });
+  };
+
+  function createCell(letter) {
+    const newCell = document.createElement("p");
+    newCell.textContent = letter;
+    newCell.className = "cell";
+
+    if (letter === "_") {
+      newCell.classList.add("block");
+    }
+
+    newCell.addEventListener("click", (event) => handleClick(event.target));
+
+    return newCell;
+  }
+
+  function handleClick(newCell) {
+    activeCell = newCell;
+
+    // Highlight active-primary and active-secondary
+    document
+      .querySelectorAll(".cell")
+      .forEach((cell) =>
+        cell.classList.remove("active-primary", "active-secondary")
+      );
+
+    if (!newCell.classList.contains("block")) {
+      newCell.classList.add("active-primary");
+    }
+
+    const [activeCol, activeRow] = getCellPosition(newCell);
+    document.querySelectorAll(".cell").forEach((cell) => {
+      if (cell.classList.contains("block")) return;
+      const [col, row] = getCellPosition(cell);
+      if (col == activeCol && row != activeRow)
+        cell.classList.add("active-secondary");
+    });
+
+    // Focus the hidden input (keyboard opens, no jump)
+    const hiddenInput = document.getElementById("hiddenInput");
+    hiddenInput.focus();
+    hiddenInput.value = ""; // clear for next character
+  }
+
+  function getCellIndex(cell) {
+    const cells = Array.from(document.getElementById("puzzle").children);
+    return cells.indexOf(cell);
+  }
+
+  function getCellPosition(cell) {
+    const index = getCellIndex(cell);
+    const col = index % puzzle[0].length;
+    const row = Math.floor(index / puzzle[0].length);
+    return [col, row];
+  }
+</script>

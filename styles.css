@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Figtree", sans-serif;
+  user-select: none;
+  -webkit-overflow-scrolling: touch !important;
+  overflow: auto !important;
+}
+
+#hiddenInput {
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.headline {
+  height: 60vh;
+}
+
+.cell {
+  border: red solid 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 7vw;
+  font-weight: 700;
+  aspect-ratio: 1 / 1;
+  caret-color: transparent;
+  text-transform: uppercase;
+}
+
+.cell.active-primary {
+  background-color: green;
+}
+
+.cell.active-secondary {
+  background-color: palegoldenrod;
+}
+
+#puzzle {
+  /* margin: 10vh auto 0 auto; */
+  margin: auto;
+  max-width: min(60%, 800px);
+  border: purple solid 3px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  /* height: 100vh; */
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.block {
+  background-color: black;
+}
