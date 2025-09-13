@@ -1,2 +1,2 @@
 # crossd
-A simple crossword appp
+A simple crossword app
