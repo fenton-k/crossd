@@ -29,7 +29,7 @@ const clues = {
   },
 };
 
-const cluesArr = [];
+let cluesArr = [];
 
 var activeCell;
 var activeClue = clues["across"][2];
@@ -54,15 +54,8 @@ function getPriorClue(clue) {
 }
 
 function buildCluesArr() {
-  const acrossLength = Object.keys(clues["across"]).length;
-  const downLength = Object.keys(clues["down"]).length;
-
-  for (var index = 1; index <= acrossLength; index++) {
-    cluesArr.push(clues["across"][index]);
-  }
-  for (var index = 1; index <= downLength; index++) {
-    cluesArr.push(clues["down"][index]);
-  }
+  Object.values(clues["across"]).forEach((clue) => cluesArr.push(clue));
+  Object.values(clues["down"]).forEach((clue) => cluesArr.push(clue));
 }
 
 window.onload = function () {
@@ -128,6 +121,10 @@ window.onload = function () {
 function updateClue() {
   const clue = document.getElementById("clue");
   clue.textContent = activeClue.number + ". " + activeClue.text;
+
+  // keep the keyboard pulled up
+  const hiddenInput = document.getElementById("hiddenInput");
+  hiddenInput.focus();
 }
 
 function createCell(letter) {
