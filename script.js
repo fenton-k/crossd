@@ -32,7 +32,7 @@ function getPriorClue(clue) {
   const downLength = Object.keys(clues["down"]).length;
 
   // check if clue is in across?
-  for (var index = 1; index < acrossLength; index++) {
+  for (var index = 1; index <= acrossLength; index++) {
     if (clue.text == clues.across[index].text) {
       if (index == 1) {
         return clues.down[downLength];
@@ -43,6 +43,15 @@ function getPriorClue(clue) {
   }
 
   // othewise, check if it is in down
+  for (var index = 1; index <= downLength; index++) {
+    if (clue.text == clues.down[index].text) {
+      if (index == 1) {
+        return clues.across[acrossLength];
+      } else {
+        return clues.down[index - 1];
+      }
+    }
+  }
 
   return priorClue;
 }
@@ -91,7 +100,11 @@ window.onload = function () {
   // add event handlers to the buttons
   const backButton = this.document.getElementById("back-button");
   backButton.addEventListener("click", (event) => {
-    console.log(getPriorClue(activeClue));
+    activeClue = getPriorClue(activeClue);
+    // update the active clue in the text
+    const clue = document.getElementById("clue");
+    console.log(activeClue.text);
+    clue.textContent = activeClue.text;
   });
 
   setCellsActive(0, 0);
@@ -144,9 +157,6 @@ function handleClick(newCell) {
   const hiddenInput = document.getElementById("hiddenInput");
   hiddenInput.focus();
   hiddenInput.value = ""; // clear for next character
-
-  // update the clue
-  const clue = document.getElementById("clue");
 }
 
 // not called - work this logic in elsewhere
