@@ -63,20 +63,26 @@
 }
 
 #clue {
-  margin-top: 20px;
   padding: 20px;
   text-align: center;
   background-color: yellow;
   font-size: 5vw;
 }
 
-.clue-number {
+.cell-number {
   position: absolute;
   top: 3px;
   left: 3px;
   font-size: 1.1rem;
 }
 
-.clue-div {
+.cell-div {
   position: relative;
+}
+
+#clue-div {
+  margin-top: 20px;
+  display: grid;
+  /* justify-content: center; */
+  grid-template-columns: 1fr 3fr 1fr;
 }

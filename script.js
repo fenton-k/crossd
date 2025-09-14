@@ -13,27 +13,53 @@ function makeClue(text, answer, start) {
 const clues = {
   across: {
     1: makeClue("A silly dog", "BO", [0, 0]),
+    2: makeClue("Reindeer in spanish", "TIGER", [1, 0]),
+    3: makeClue("Reindeer in french", "TIGER", [2, 0]),
+  },
+  down: {
+    1: makeClue("A hilarious monkey", "BAB", [0, 0]),
+    2: makeClue("A chunkey monkey", "DA", [0, 0]),
   },
 };
 
-const horizontal = 0;
-const vertical = 1;
-
 var activeCell;
-var direction = horizontal;
+var activeClue = clues["across"][2];
+
+function getPriorClue(clue) {
+  priorClue = 0;
+
+  const acrossLength = Object.keys(clues["across"]).length;
+  const downLength = Object.keys(clues["down"]).length;
+
+  // check if clue is in across?
+  for (var index = 1; index < acrossLength; index++) {
+    if (clue.text == clues.across[index].text) {
+      if (index == 1) {
+        return clues.down[downLength];
+      } else {
+        return clues.across[index - 1];
+      }
+    }
+  }
+
+  // othewise, check if it is in down
+
+  return priorClue;
+}
 
 window.onload = function () {
   const puzzleDiv = document.getElementById("puzzle");
 
+  // set up the puzzle (we only need for testing, tbh)
   for (const row of puzzle) {
     for (const letter of row) {
       const clueDiv = document.createElement("div");
-      clueDiv.classList.add("clue-div");
+      clueDiv.classList.add("cell-div");
 
       newCell = createCell(letter);
 
       const clueNumber = document.createElement("span");
-      clueNumber.classList.add("clue-number");
+      clueNumber.classList.add("cell-number");
       clueNumber.textContent = 1; // really should be added based on clues
 
       clueDiv.appendChild(newCell);
@@ -41,6 +67,8 @@ window.onload = function () {
       puzzleDiv.appendChild(clueDiv);
     }
   }
+
+  console.log(activeClue.text);
 
   // this is all just to make iOS/safari happy.
   const hiddenInput = document.getElementById("hiddenInput");
@@ -58,6 +86,12 @@ window.onload = function () {
       activeCell.textContent = " ";
       // e.preventDefault();
     }
+  });
+
+  // add event handlers to the buttons
+  const backButton = this.document.getElementById("back-button");
+  backButton.addEventListener("click", (event) => {
+    console.log(getPriorClue(activeClue));
   });
 
   setCellsActive(0, 0);
