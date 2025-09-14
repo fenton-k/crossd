@@ -25,11 +25,12 @@
 }
 
 .cell {
+  position: relative;
   border: red solid 2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 7vw;
+  font-size: 7.25vw;
   font-weight: 700;
   aspect-ratio: 1 / 1;
   caret-color: transparent;
@@ -47,7 +48,7 @@
 #puzzle {
   /* margin: 10vh auto 0 auto; */
   margin: auto;
-  max-width: min(60%, 800px);
+  max-width: min(65%, 800px);
   border: purple solid 3px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -67,4 +68,15 @@
   text-align: center;
   background-color: yellow;
   font-size: 5vw;
+}
+
+.clue-number {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  font-size: 1.1rem;
+}
+
+.clue-div {
+  position: relative;
 }

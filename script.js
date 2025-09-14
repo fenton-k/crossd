@@ -27,10 +27,22 @@ window.onload = function () {
 
   for (const row of puzzle) {
     for (const letter of row) {
-      puzzleDiv.appendChild(createCell(letter));
+      const clueDiv = document.createElement("div");
+      clueDiv.classList.add("clue-div");
+
+      newCell = createCell(letter);
+
+      const clueNumber = document.createElement("span");
+      clueNumber.classList.add("clue-number");
+      clueNumber.textContent = 1; // really should be added based on clues
+
+      clueDiv.appendChild(newCell);
+      clueDiv.appendChild(clueNumber);
+      puzzleDiv.appendChild(clueDiv);
     }
   }
 
+  // this is all just to make iOS/safari happy.
   const hiddenInput = document.getElementById("hiddenInput");
 
   hiddenInput.addEventListener("input", (e) => {
