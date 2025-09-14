@@ -1,39 +1,41 @@
 const puzzle = [
-  ["A", "N", "_", "I", "M"],
+  ["B", "O", "_", "I", "M"],
   ["N", "A", "M", "E", "I"],
   ["A", "M", "I", "L", "C"],
   ["M", "E", "C", "Z", "E"],
   ["E", "D", "E", "_", "_"],
 ];
 
-function makeClue(text, answer, start, direction, number) {
+function makeClue(text, answer, start, number, direction) {
+  // console.log("length of clue " + text + " is " + answer.length);
+
   return {
     text: text,
     answer: answer,
     start: start,
     length: answer.length,
-    direction: direction,
     number: number,
+    direction: direction,
   };
 }
 
 const clues = {
   across: {
-    1: makeClue("A silly dog", "BO", [0, 0], "across", 1),
-    2: makeClue("Reindeer in spanish", "TIGER", [1, 0], "across", 2),
-    3: makeClue("Reindeer in french", "TIGER", [2, 0], "across", 3),
+    1: makeClue("A silly dog", "BO", 0, 1, "across"),
+    2: makeClue("A word for me", "IM", 3, 2, "across"),
+    3: makeClue("Reindeer in french", "TIGER", 5, 3, "across"),
   },
   down: {
-    1: makeClue("A hilarious monkey", "BAB", [0, 0], "down", 1),
-    2: makeClue("A chunkey monkey", "DA", [0, 0], "down", 2),
+    1: makeClue("A hilarious monkey", "BABER", 0, 1, "down"),
+    2: makeClue("A chunkey monkey", "DADDY", 1, 2, "down"),
   },
 };
 
 let cluesArr = [];
 
-var activeCell;
-var activeClue = clues["across"][2];
-var activeClueIndex = 0;
+let activeCell;
+let activeClueIndex = 0;
+let activeClue;
 
 function getClue(direction) {
   const step = direction === "prior" ? -1 : 1;
@@ -43,24 +45,16 @@ function getClue(direction) {
   return cluesArr[activeClueIndex];
 }
 
-function getPriorClue(clue) {
-  if (activeClueIndex == 0) {
-    activeClueIndex = cluesArr.length - 1;
-  } else {
-    activeClueIndex -= 1;
-  }
-
-  return cluesArr[activeClueIndex];
-}
-
 function buildCluesArr() {
   Object.values(clues["across"]).forEach((clue) => cluesArr.push(clue));
   Object.values(clues["down"]).forEach((clue) => cluesArr.push(clue));
+
+  activeClue = cluesArr[activeClueIndex];
 }
 
 window.onload = function () {
   buildCluesArr();
-  console.log(cluesArr);
+  // console.log(cluesArr);
 
   const puzzleDiv = document.getElementById("puzzle");
 
@@ -82,7 +76,7 @@ window.onload = function () {
     }
   }
 
-  console.log(activeClue.text);
+  // console.log(activeClue.text);
 
   // this is all just to make iOS/safari happy.
   const hiddenInput = document.getElementById("hiddenInput");
@@ -103,13 +97,13 @@ window.onload = function () {
   });
 
   // add event handlers to the buttons
-  const backButton = this.document.getElementById("back-button");
+  const backButton = document.getElementById("back-button");
   backButton.addEventListener("click", () => {
     activeClue = getClue("prior");
     updateClue();
   });
 
-  const forwardButton = this.document.getElementById("forward-button");
+  const forwardButton = document.getElementById("forward-button");
   forwardButton.addEventListener("click", () => {
     activeClue = getClue("next");
     updateClue();
@@ -122,9 +116,40 @@ function updateClue() {
   const clue = document.getElementById("clue");
   clue.textContent = activeClue.number + ". " + activeClue.text;
 
+  highlightClueCells();
+
   // keep the keyboard pulled up
   const hiddenInput = document.getElementById("hiddenInput");
   hiddenInput.focus();
+}
+
+function highlightClueCells() {
+  document
+    .querySelectorAll("div")
+    .forEach((div) => div.classList.remove("active-secondary"));
+
+  let direction = activeClue.direction === "across" ? "across" : "down";
+  let clueLength = activeClue.length;
+  let clueStart = activeClue.start;
+
+  let step = 0;
+
+  if (direction == "down") {
+    step = puzzle[0].length;
+  }
+
+  for (let i = 0; i < clueLength; i++) {
+    if (direction == "across") {
+      highlightCell(clueStart + i);
+    }
+  }
+  // console.log(puzzleDiv[1]);
+}
+
+function highlightCell(cellIndex) {
+  let puzzleDiv = document.getElementById("puzzle").children;
+  let div = puzzleDiv[cellIndex];
+  div.classList.add("active-secondary");
 }
 
 function createCell(letter) {
@@ -157,19 +182,6 @@ function handleClick(newCell) {
     newCell.classList.add("active-primary");
   }
 
-  // set the other cells in the column active
-  const [activeCol, activeRow] = getCellPosition(newCell);
-  document.querySelectorAll(".cell").forEach((cell) => {
-    if (cell.classList.contains("block")) {
-      return;
-    }
-
-    const [col, row] = getCellPosition(cell);
-    if (col == activeCol && row != activeRow) {
-      cell.classList.add("active-secondary");
-    }
-  });
-
   //   just makes it nice for iOS
   const hiddenInput = document.getElementById("hiddenInput");
   hiddenInput.focus();
@@ -200,7 +212,7 @@ function getCellPosition(cell) {
 // index is which row/col to set i.e. 1 for row 1
 // rowOrCol is whether to set rows or cols. 0 is rows, 1 is cols
 function setCellsActive(index, rowOrCol) {
-  console.log("firing setting cells active");
+  // console.log("firing setting cells active");
 
   var blockSeen = false;
 
