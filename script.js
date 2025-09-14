@@ -76,8 +76,6 @@ window.onload = function () {
     }
   }
 
-  // console.log(activeClue.text);
-
   // this is all just to make iOS/safari happy.
   const hiddenInput = document.getElementById("hiddenInput");
 
@@ -109,7 +107,7 @@ window.onload = function () {
     updateClue();
   });
 
-  setCellsActive(0, 0);
+  highlightClueCells();
 };
 
 function updateClue() {

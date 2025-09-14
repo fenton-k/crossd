@@ -87,9 +87,8 @@
   grid-template-columns: 1fr 3fr 1fr;
 }
 
-#back-button {
-  margin: auto;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
