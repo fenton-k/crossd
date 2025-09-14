@@ -6,57 +6,69 @@ const puzzle = [
   ["E", "D", "E", "_", "_"],
 ];
 
-function makeClue(text, answer, start) {
-  return { text: text, answer: answer, start: start, length: answer.length };
+function makeClue(text, answer, start, direction, number) {
+  return {
+    text: text,
+    answer: answer,
+    start: start,
+    length: answer.length,
+    direction: direction,
+    number: number,
+  };
 }
 
 const clues = {
   across: {
-    1: makeClue("A silly dog", "BO", [0, 0]),
-    2: makeClue("Reindeer in spanish", "TIGER", [1, 0]),
-    3: makeClue("Reindeer in french", "TIGER", [2, 0]),
+    1: makeClue("A silly dog", "BO", [0, 0], "across", 1),
+    2: makeClue("Reindeer in spanish", "TIGER", [1, 0], "across", 2),
+    3: makeClue("Reindeer in french", "TIGER", [2, 0], "across", 3),
   },
   down: {
-    1: makeClue("A hilarious monkey", "BAB", [0, 0]),
-    2: makeClue("A chunkey monkey", "DA", [0, 0]),
+    1: makeClue("A hilarious monkey", "BAB", [0, 0], "down", 1),
+    2: makeClue("A chunkey monkey", "DA", [0, 0], "down", 2),
   },
 };
 
+const cluesArr = [];
+
 var activeCell;
 var activeClue = clues["across"][2];
+var activeClueIndex = 0;
+
+function getClue(direction) {
+  const step = direction === "prior" ? -1 : 1;
+  activeClueIndex =
+    (activeClueIndex + step + cluesArr.length) % cluesArr.length;
+
+  return cluesArr[activeClueIndex];
+}
 
 function getPriorClue(clue) {
-  priorClue = 0;
+  if (activeClueIndex == 0) {
+    activeClueIndex = cluesArr.length - 1;
+  } else {
+    activeClueIndex -= 1;
+  }
 
+  return cluesArr[activeClueIndex];
+}
+
+function buildCluesArr() {
   const acrossLength = Object.keys(clues["across"]).length;
   const downLength = Object.keys(clues["down"]).length;
 
-  // check if clue is in across?
   for (var index = 1; index <= acrossLength; index++) {
-    if (clue.text == clues.across[index].text) {
-      if (index == 1) {
-        return clues.down[downLength];
-      } else {
-        return clues.across[index - 1];
-      }
-    }
+    cluesArr.push(clues["across"][index]);
   }
-
-  // othewise, check if it is in down
   for (var index = 1; index <= downLength; index++) {
-    if (clue.text == clues.down[index].text) {
-      if (index == 1) {
-        return clues.across[acrossLength];
-      } else {
-        return clues.down[index - 1];
-      }
-    }
+    cluesArr.push(clues["down"][index]);
   }
-
-  return priorClue;
 }
 
 window.onload = function () {
+  buildCluesArr();
+  console.log(cluesArr);
+
   const puzzleDiv = document.getElementById("puzzle");
 
   // set up the puzzle (we only need for testing, tbh)
@@ -99,16 +111,24 @@ window.onload = function () {
 
   // add event handlers to the buttons
   const backButton = this.document.getElementById("back-button");
-  backButton.addEventListener("click", (event) => {
-    activeClue = getPriorClue(activeClue);
-    // update the active clue in the text
-    const clue = document.getElementById("clue");
-    console.log(activeClue.text);
-    clue.textContent = activeClue.text;
+  backButton.addEventListener("click", () => {
+    activeClue = getClue("prior");
+    updateClue();
+  });
+
+  const forwardButton = this.document.getElementById("forward-button");
+  forwardButton.addEventListener("click", () => {
+    activeClue = getClue("next");
+    updateClue();
   });
 
   setCellsActive(0, 0);
 };
+
+function updateClue() {
+  const clue = document.getElementById("clue");
+  clue.textContent = activeClue.number + ". " + activeClue.text;
+}
 
 function createCell(letter) {
   const newCell = document.createElement("p");
