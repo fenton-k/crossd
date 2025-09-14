@@ -124,6 +124,7 @@ function updateClue() {
 }
 
 function highlightClueCells() {
+  // unhighlight any cells that may already be highlighted
   document
     .querySelectorAll("div")
     .forEach((div) => div.classList.remove("active-secondary"));
@@ -141,9 +142,10 @@ function highlightClueCells() {
   for (let i = 0; i < clueLength; i++) {
     if (direction == "across") {
       highlightCell(clueStart + i);
+    } else {
+      highlightCell(clueStart + step * i);
     }
   }
-  // console.log(puzzleDiv[1]);
 }
 
 function highlightCell(cellIndex) {
