@@ -60,3 +60,11 @@
 .block {
   background-color: black;
 }
+
+#clue {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: yellow;
+  font-size: 5vw;
+}

@@ -6,8 +6,14 @@ const puzzle = [
   ["E", "D", "E", "_", "_"],
 ];
 
+function makeClue(text, answer, start) {
+  return { text: text, answer: answer, start: start, length: answer.length };
+}
+
 const clues = {
-  1: "A silly dog",
+  across: {
+    1: makeClue("A silly dog", "BO", [0, 0]),
+  },
 };
 
 const horizontal = 0;
@@ -29,16 +35,16 @@ window.onload = function () {
 
   hiddenInput.addEventListener("input", (e) => {
     if (!/^[a-zA-Z]$/.test(e.target.value)) return;
-    // if (!activeCell) return;
+    if (!activeCell) return;
     activeCell.textContent = e.target.value;
     hiddenInput.value = "";
   });
 
   hiddenInput.addEventListener("keydown", (e) => {
-    // if (!activeCell) return;
+    if (!activeCell) return;
     if (e.key === "Backspace") {
       activeCell.textContent = " ";
-      e.preventDefault();
+      // e.preventDefault();
     }
   });
 
@@ -92,16 +98,14 @@ function handleClick(newCell) {
   const hiddenInput = document.getElementById("hiddenInput");
   hiddenInput.focus();
   hiddenInput.value = ""; // clear for next character
+
+  // update the clue
+  const clue = document.getElementById("clue");
 }
 
+// not called - work this logic in elsewhere
 function handleKeyDown(key) {
-  if (/^[a-zA-Z]$/.test(key)) {
-    document
-      .querySelectorAll(".cell.active-primary")
-      //   .forEach((cell) => (cell.textContent = String(key)[0].toUpperCase()));
-      .forEach((cell) => (cell.textContent = ""));
-  }
-
+  // there can only be one character in the cell
   document.querySelectorAll(".cell.active-primary").forEach((cell) => {
     cell.textContent = cell.textContent[0];
   });

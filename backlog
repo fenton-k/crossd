@@ -1,0 +1,8 @@
+add clues
+highlight row based on horizontal or vertical clue
+win notification
+error checking
+
+bugs
+--
+when you have selected a box and click space then click another letter, the letter does not get typed in
