@@ -123,6 +123,9 @@ window.onload = function () {
     updateClue();
   });
 
+  const checkButton = this.document.getElementById("check-button");
+  checkButton.addEventListener("click", () => checkPuzzle());
+
   highlightClueCells();
 };
 
@@ -257,4 +260,23 @@ function removePrimaryStyle() {
   document
     .querySelectorAll(".cell")
     .forEach((cell) => cell.classList.remove("active-primary"));
+}
+
+function checkPuzzle() {
+  let i = 0;
+
+  const flatPuzzle = puzzle.flat();
+
+  let cells = Array.from(document.querySelectorAll(".cell"));
+  for (const cell of cells) {
+    console.log("value at index " + i + " is " + cell.textContent);
+    if (flatPuzzle[i] !== cell.textContent.toUpperCase()) {
+      console.log();
+      alert("oops, you have a mistake");
+      return false;
+    }
+    i++;
+  }
+  alert("congrats, you win!");
+  return true;
 }
