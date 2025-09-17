@@ -169,7 +169,8 @@ function highlightCell(cellIndex) {
 
 function createCell(letter) {
   const newCell = document.createElement("p");
-  newCell.textContent = letter;
+  newCell.textContent = "";
+  if (letter == "_") newCell.textContent = "_";
   newCell.className = "cell";
   newCell.contentEditable = true;
 
