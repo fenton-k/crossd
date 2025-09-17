@@ -64,6 +64,7 @@ window.onload = function () {
   // console.log(cluesArr);
 
   const puzzleDiv = document.getElementById("puzzle");
+  let index = 0;
 
   // set up the puzzle (we only need for testing, tbh)
   for (const row of puzzle) {
@@ -73,13 +74,18 @@ window.onload = function () {
 
       newCell = createCell(letter);
 
-      const clueNumber = document.createElement("span");
-      clueNumber.classList.add("cell-number");
-      clueNumber.textContent = 1; // really should be added based on clues
+      for (const clue of cluesArr) {
+        if (clue.start == index) {
+          const clueNumber = document.createElement("span");
+          clueNumber.classList.add("cell-number");
+          clueNumber.textContent = clue.number; // really should be added based on clues
+          clueDiv.appendChild(clueNumber);
+        }
+      }
 
       clueDiv.appendChild(newCell);
-      clueDiv.appendChild(clueNumber);
       puzzleDiv.appendChild(clueDiv);
+      index++;
     }
   }
 
@@ -105,12 +111,15 @@ window.onload = function () {
   const backButton = document.getElementById("back-button");
   backButton.addEventListener("click", () => {
     activeClue = getClue("prior");
+    console.log("active clue is now " + activeClue.text);
+    removePrimaryStyle();
     updateClue();
   });
 
   const forwardButton = document.getElementById("forward-button");
   forwardButton.addEventListener("click", () => {
     activeClue = getClue("next");
+    removePrimaryStyle();
     updateClue();
   });
 
@@ -175,15 +184,10 @@ function handleClick(newCell) {
   if (newCell.classList.contains("block")) return;
 
   const originalCell = activeCell;
-  const originalCellIndex = Array.from(
-    document.querySelectorAll(".cell")
-  ).indexOf(originalCell);
   activeCell = newCell;
 
   // there can only be one lord of the rings
-  document
-    .querySelectorAll(".cell")
-    .forEach((cell) => cell.classList.remove("active-primary"));
+  removePrimaryStyle();
 
   // set the new cell to active
   if (!newCell.classList.contains("block")) {
@@ -191,11 +195,7 @@ function handleClick(newCell) {
   }
 
   // update the clue based on where we clicked
-  newCellIndex = Array.from(document.querySelectorAll(".cell")).indexOf(
-    newCell
-  );
-  console.log(newCellIndex);
-  getCluesByIndex(newCellIndex, originalCellIndex);
+  getCluesByCell(newCell, originalCell);
 
   //   just makes it nice for iOS
   const hiddenInput = document.getElementById("hiddenInput");
@@ -203,7 +203,9 @@ function handleClick(newCell) {
   hiddenInput.value = ""; // clear for next character
 }
 
-function getCluesByIndex(cellIndex, originalCellIndex) {
+function getCluesByCell(cell, originalCell) {
+  let cellIndex = getIndexByCell(cell);
+  let originalCellIndex = getIndexByCell(originalCell);
   let foundClue = null;
 
   let cluesInCellArr = [];
@@ -218,7 +220,9 @@ function getCluesByIndex(cellIndex, originalCellIndex) {
     activeClue = cluesInCellArr.find((clue) => clue !== activeClue);
   else activeClue = cluesInCellArr[0];
 
-  // console.log(cluesInCellArr);
+  activeClueIndex = getIndexByCell(cell);
+
+  console.log("active clue is now " + activeClue.text);
 
   updateClue();
 }
@@ -243,4 +247,14 @@ function clueInCell(clue, cellIndex) {
     );
   }
   return false;
+}
+
+function getIndexByCell(cell) {
+  return Array.from(document.querySelectorAll(".cell")).indexOf(cell);
+}
+
+function removePrimaryStyle() {
+  document
+    .querySelectorAll(".cell")
+    .forEach((cell) => cell.classList.remove("active-primary"));
 }
