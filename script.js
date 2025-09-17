@@ -1,9 +1,9 @@
 const puzzle = [
-  ["B", "O", "_", "I", "M"],
-  ["N", "A", "M", "E", "I"],
-  ["A", "M", "I", "L", "C"],
-  ["M", "E", "C", "Z", "E"],
-  ["E", "D", "E", "_", "_"],
+  ["_", "S", "O", "S", "O"],
+  ["_", "H", "U", "N", "K"],
+  ["D", "A", "T", "E", "S"],
+  ["I", "K", "E", "A", "_"],
+  ["P", "E", "R", "K", "_"],
 ];
 
 function makeClue(text, answer, start, number, direction) {
@@ -21,13 +21,18 @@ function makeClue(text, answer, start, number, direction) {
 
 const clues = {
   across: {
-    1: makeClue("A silly dog", "BO", 0, 1, "across"),
-    2: makeClue("A word for me", "IM", 3, 2, "across"),
-    3: makeClue("Reindeer in french", "TIGER", 5, 3, "across"),
+    1: makeClue("Could be better", "SOSO", 1, 1, "across"),
+    5: makeClue("Attractive, muscular guy", "HUNK", 6, 5, "across"),
+    6: makeClue("1/23/45 and 6/7/89", "DATES", 10, 6, "across"),
+    7: makeClue("Famous flat rack furniture maker", "IKEA", 15, 7, "across"),
+    8: makeClue("Job plus one", "PERK", 20, 8, "across"),
   },
   down: {
-    1: makeClue("A hilarious monkey", "BABER", 0, 1, "down"),
-    2: makeClue("A chunkey monkey", "DADDY", 1, 2, "down"),
+    1: makeClue("Ice cream drink", "SHAKE", 1, 1, "down"),
+    2: makeClue("Word with space or Banks", "OUTER", 2, 2, "down"),
+    3: makeClue("Quarterback running play", "SNEAK", 3, 3, "down"),
+    4: makeClue("Signs off on", "OKS", 4, 4, "down"),
+    6: makeClue("Buy the ___ (investing strategy)", "DIP", 10, 6, "down"),
   },
 };
 
@@ -36,6 +41,8 @@ let cluesArr = [];
 let activeCell;
 let activeClueIndex = 0;
 let activeClue;
+
+let preferredClueDirection = "across";
 
 function getClue(direction) {
   const step = direction === "prior" ? -1 : 1;
@@ -131,11 +138,7 @@ function highlightClueCells() {
   let clueLength = activeClue.length;
   let clueStart = activeClue.start;
 
-  let step = 0;
-
-  if (direction == "down") {
-    step = puzzle[0].length;
-  }
+  let step = puzzle[0].length;
 
   for (let i = 0; i < clueLength; i++) {
     if (direction == "across") {
@@ -168,19 +171,31 @@ function createCell(letter) {
 }
 
 function handleClick(newCell) {
+  // if it's a block, simply don't do ANYTHING!
+  if (newCell.classList.contains("block")) return;
+
+  const originalCell = activeCell;
+  const originalCellIndex = Array.from(
+    document.querySelectorAll(".cell")
+  ).indexOf(originalCell);
   activeCell = newCell;
 
   // there can only be one lord of the rings
   document
     .querySelectorAll(".cell")
-    .forEach((cell) =>
-      cell.classList.remove("active-primary", "active-secondary")
-    );
+    .forEach((cell) => cell.classList.remove("active-primary"));
 
   // set the new cell to active
   if (!newCell.classList.contains("block")) {
     newCell.classList.add("active-primary");
   }
+
+  // update the clue based on where we clicked
+  newCellIndex = Array.from(document.querySelectorAll(".cell")).indexOf(
+    newCell
+  );
+  console.log(newCellIndex);
+  getCluesByIndex(newCellIndex, originalCellIndex);
 
   //   just makes it nice for iOS
   const hiddenInput = document.getElementById("hiddenInput");
@@ -188,49 +203,44 @@ function handleClick(newCell) {
   hiddenInput.value = ""; // clear for next character
 }
 
-// not called - work this logic in elsewhere
-function handleKeyDown(key) {
-  // there can only be one character in the cell
-  document.querySelectorAll(".cell.active-primary").forEach((cell) => {
-    cell.textContent = cell.textContent[0];
+function getCluesByIndex(cellIndex, originalCellIndex) {
+  let foundClue = null;
+
+  let cluesInCellArr = [];
+
+  cluesArr.forEach((clue) => {
+    if (clueInCell(clue, cellIndex)) cluesInCellArr.push(clue);
   });
+
+  console.log(cluesInCellArr);
+
+  if (cellIndex == originalCellIndex)
+    activeClue = cluesInCellArr.find((clue) => clue !== activeClue);
+  else activeClue = cluesInCellArr[0];
+
+  // console.log(cluesInCellArr);
+
+  updateClue();
 }
 
-function getCellIndex(cell) {
-  const cells = Array.from(document.getElementById("puzzle").children);
-  return cells.indexOf(cell);
-}
+function clueInCell(clue, cellIndex) {
+  const gridWidth = 5;
+  const start = clue.start;
+  const length = clue.answer.length;
+  const direction = clue.direction;
 
-function getCellPosition(cell) {
-  index = getCellIndex(cell);
-
-  const col = index % puzzle[0].length;
-  const row = Math.floor(index / puzzle[0].length);
-  return [col, row];
-}
-
-// index is which row/col to set i.e. 1 for row 1
-// rowOrCol is whether to set rows or cols. 0 is rows, 1 is cols
-function setCellsActive(index, rowOrCol) {
-  // console.log("firing setting cells active");
-
-  var blockSeen = false;
-
-  document.querySelectorAll(".cell").forEach((cell) => {
-    if (cell.classList.contains("block")) {
-      blockSeen = true;
-    }
-
-    if (blockSeen) return;
-
-    const [col, row] = getCellPosition(cell);
-
-    if (!rowOrCol && row == index) {
-      cell.classList.add("active-secondary");
-    }
-
-    if (rowOrCol && col == index) {
-      cell.classList.add("active-secondary");
-    }
-  });
+  if (direction == "across") {
+    return (
+      Math.floor(cellIndex / gridWidth) === Math.floor(start / gridWidth) &&
+      cellIndex >= start &&
+      cellIndex < start + length
+    );
+  } else if (direction == "down") {
+    return (
+      cellIndex >= start &&
+      (cellIndex - start) % gridWidth === 0 &&
+      (cellIndex - start) / gridWidth < length
+    );
+  }
+  return false;
 }
