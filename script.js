@@ -36,27 +36,28 @@ const clues = {
   },
 };
 
+let state = {
+  activeCell: null,
+  activeClue: null,
+  activeClueIndex: 0,
+  preferredClueDirection: "across",
+};
+
 let cluesArr = [];
-
-let activeCell;
-let activeClueIndex = 0;
-let activeClue;
-
-let preferredClueDirection = "across";
 
 function getClue(direction) {
   const step = direction === "prior" ? -1 : 1;
-  activeClueIndex =
-    (activeClueIndex + step + cluesArr.length) % cluesArr.length;
+  state.activeClueIndex =
+    (state.activeClueIndex + step + cluesArr.length) % cluesArr.length;
 
-  return cluesArr[activeClueIndex];
+  return cluesArr[state.activeClueIndex];
 }
 
 function buildCluesArr() {
   Object.values(clues["across"]).forEach((clue) => cluesArr.push(clue));
   Object.values(clues["down"]).forEach((clue) => cluesArr.push(clue));
 
-  activeClue = cluesArr[activeClueIndex];
+  state.activeClue = cluesArr[state.activeClueIndex];
 }
 
 window.onload = function () {
@@ -94,15 +95,15 @@ window.onload = function () {
 
   hiddenInput.addEventListener("input", (e) => {
     if (!/^[a-zA-Z]$/.test(e.target.value)) return;
-    if (!activeCell) return;
-    activeCell.textContent = e.target.value;
+    if (!state.activeCell) return;
+    state.activeCell.textContent = e.target.value;
     hiddenInput.value = "";
   });
 
   hiddenInput.addEventListener("keydown", (e) => {
-    if (!activeCell) return;
+    if (!state.activeCell) return;
     if (e.key === "Backspace") {
-      activeCell.textContent = " ";
+      state.activeCell.textContent = " ";
       // e.preventDefault();
     }
   });
@@ -110,15 +111,14 @@ window.onload = function () {
   // add event handlers to the buttons
   const backButton = document.getElementById("back-button");
   backButton.addEventListener("click", () => {
-    activeClue = getClue("prior");
-    console.log("active clue is now " + activeClue.text);
+    state.activeClue = getClue("prior");
     removePrimaryStyle();
     updateClue();
   });
 
   const forwardButton = document.getElementById("forward-button");
   forwardButton.addEventListener("click", () => {
-    activeClue = getClue("next");
+    state.activeClue = getClue("next");
     removePrimaryStyle();
     updateClue();
   });
@@ -131,7 +131,7 @@ window.onload = function () {
 
 function updateClue() {
   const clue = document.getElementById("clue");
-  clue.textContent = activeClue.number + ". " + activeClue.text;
+  clue.textContent = state.activeClue.number + ". " + state.activeClue.text;
 
   highlightClueCells();
 
@@ -146,9 +146,9 @@ function highlightClueCells() {
     .querySelectorAll("div")
     .forEach((div) => div.classList.remove("active-secondary"));
 
-  let direction = activeClue.direction === "across" ? "across" : "down";
-  let clueLength = activeClue.length;
-  let clueStart = activeClue.start;
+  let direction = state.activeClue.direction === "across" ? "across" : "down";
+  let clueLength = state.activeClue.length;
+  let clueStart = state.activeClue.start;
 
   let step = puzzle[0].length;
 
@@ -172,7 +172,6 @@ function createCell(letter) {
   newCell.textContent = "";
   if (letter == "_") newCell.textContent = "_";
   newCell.className = "cell";
-  newCell.contentEditable = true;
 
   if (letter === "_") {
     newCell.classList.add("block");
@@ -187,19 +186,33 @@ function handleClick(newCell) {
   // if it's a block, simply don't do ANYTHING!
   if (newCell.classList.contains("block")) return;
 
-  const originalCell = activeCell;
-  activeCell = newCell;
-
   // there can only be one lord of the rings
   removePrimaryStyle();
 
-  // set the new cell to active
-  if (!newCell.classList.contains("block")) {
-    newCell.classList.add("active-primary");
+  newCell.classList.add("active-primary");
+
+  const cluesInCell = cluesArr.filter((clue) => clueInCell(clue, newCell));
+
+  if (cluesInCell.length == 0) return; // there are no clues in this cell (should not be possible, but okay)
+
+  let newActiveClue;
+
+  if (state.activeCell === newCell) {
+    newActiveClue = cluesInCell.find(
+      (clue) => clue.direction !== state.activeClue.direction
+    );
+  } else {
+    newActiveClue = cluesInCell.find(
+      (clue) =>
+        clue.direction === state.preferredClueDirection || cluesInCell[0]
+    );
   }
 
-  // update the clue based on where we clicked
-  getCluesByCell(newCell, originalCell);
+  state.activeCell = newCell;
+  state.activeClue = newActiveClue;
+  state.activeClueIndex = cluesArr.indexOf(newActiveClue);
+
+  updateClue();
 
   //   just makes it nice for iOS
   const hiddenInput = document.getElementById("hiddenInput");
@@ -231,7 +244,9 @@ function getCluesByCell(cell, originalCell) {
   updateClue();
 }
 
-function clueInCell(clue, cellIndex) {
+function clueInCell(clue, cell) {
+  cellIndex = getIndexByCell(cell);
+
   const gridWidth = 5;
   const start = clue.start;
   const length = clue.answer.length;
