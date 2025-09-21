@@ -34,6 +34,8 @@ async function fetchPuzzle() {
     }
 
     const puzzle = response.body[0];
+    delete puzzle.board;
+    delete puzzle.SVG;
     const { dimensions } = puzzle;
 
     if (!dimensions || !dimensions.width || !dimensions.height) {

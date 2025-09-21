@@ -1,10 +1,5 @@
-const puzzle = [
-  ["_", "S", "O", "S", "O"],
-  ["_", "H", "U", "N", "K"],
-  ["D", "A", "T", "E", "S"],
-  ["I", "K", "E", "A", "_"],
-  ["P", "E", "R", "K", "_"],
-];
+//
+let puzzle = [];
 
 function makeClue(text, answer, start, number, direction) {
   return {
@@ -17,22 +12,39 @@ function makeClue(text, answer, start, number, direction) {
   };
 }
 
-const clues = {
-  across: {
-    1: makeClue("Could be better", "SOSO", 1, 1, "across"),
-    5: makeClue("Attractive, muscular guy", "HUNK", 6, 5, "across"),
-    6: makeClue("1/23/45 and 6/7/89", "DATES", 10, 6, "across"),
-    7: makeClue("Famous flat rack furniture maker", "IKEA", 15, 7, "across"),
-    8: makeClue("Job plus one", "PERK", 20, 8, "across"),
-  },
-  down: {
-    1: makeClue("Ice cream drink", "SHAKE", 1, 1, "down"),
-    2: makeClue("Word with space or Banks", "OUTER", 2, 2, "down"),
-    3: makeClue("Quarterback running play", "SNEAK", 3, 3, "down"),
-    4: makeClue("Signs off on", "OKS", 4, 4, "down"),
-    6: makeClue("Buy the ___ (investing strategy)", "DIP", 10, 6, "down"),
-  },
-};
+let clues = { across: {}, down: {} };
+
+async function loadPuzzle() {
+  const today = new Date().toISOString().slice(0, 10);
+  const response = await fetch(`data/puzzles/${today}.json`);
+  const data = await response.json();
+
+  // Build puzzle grid
+  const { cells, dimensions, clues: clueArr } = data;
+  puzzle = [];
+  for (let r = 0; r < dimensions.height; r++) {
+    const row = [];
+    for (let c = 0; c < dimensions.width; c++) {
+      const cell = cells[r * dimensions.width + c];
+      row.push(cell.answer || "_");
+    }
+    puzzle.push(row);
+  }
+
+  // Build clues object
+  clues = { across: {}, down: {} };
+  clueArr.forEach((clue) => {
+    const dir = clue.direction.toLowerCase();
+    const answer = clue.cells.map((i) => cells[i].answer || "_").join("");
+    clues[dir][clue.label] = makeClue(
+      clue.text[0].plain,
+      answer,
+      clue.cells[0],
+      clue.label,
+      dir
+    );
+  });
+}
 
 let state = {
   activeCell: null,
@@ -58,7 +70,8 @@ function buildCluesArr() {
   state.activeClue = cluesArr[state.activeClueIndex];
 }
 
-window.onload = function () {
+window.onload = async function () {
+  await loadPuzzle();
   buildCluesArr();
 
   const puzzleDiv = document.getElementById("puzzle");
