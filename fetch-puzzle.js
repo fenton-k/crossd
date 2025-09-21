@@ -21,7 +21,7 @@ function fetchJson(url) {
 
 async function fetchPuzzle() {
   try {
-    const url = "https://api.example.com/todays-puzzle";
+    const url = "https://www.nytimes.com/svc/crosswords/v6/puzzle/mini.json";
     console.log(`Fetching puzzle from ${url}...`);
     const response = await fetchJson(url);
 
