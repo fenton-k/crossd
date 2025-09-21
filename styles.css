@@ -26,7 +26,7 @@
 
 .cell {
   position: relative;
-  border: red solid 2px;
+  border: #030303 solid 1px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,7 +49,7 @@
   /* margin: 10vh auto 0 auto; */
   margin: auto;
   max-width: min(65%, 800px);
-  border: purple solid 3px;
+  border: #030303 solid 3px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -71,6 +71,8 @@
 
 .cell-number {
   position: absolute;
+  z-index: 2;
+
   top: 3px;
   left: 3px;
   font-size: 1.1rem;

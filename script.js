@@ -7,8 +7,6 @@ const puzzle = [
 ];
 
 function makeClue(text, answer, start, number, direction) {
-  // console.log("length of clue " + text + " is " + answer.length);
-
   return {
     text: text,
     answer: answer,
@@ -62,24 +60,23 @@ function buildCluesArr() {
 
 window.onload = function () {
   buildCluesArr();
-  // console.log(cluesArr);
 
   const puzzleDiv = document.getElementById("puzzle");
   let index = 0;
 
-  // set up the puzzle (we only need for testing, tbh)
+  // build grid
   for (const row of puzzle) {
     for (const letter of row) {
       const clueDiv = document.createElement("div");
       clueDiv.classList.add("cell-div");
 
-      newCell = createCell(letter);
+      const newCell = createCell(letter);
 
       for (const clue of cluesArr) {
         if (clue.start == index) {
           const clueNumber = document.createElement("span");
           clueNumber.classList.add("cell-number");
-          clueNumber.textContent = clue.number; // really should be added based on clues
+          clueNumber.textContent = clue.number;
           clueDiv.appendChild(clueNumber);
         }
       }
@@ -90,25 +87,51 @@ window.onload = function () {
     }
   }
 
-  // this is all just to make iOS/safari happy.
+  // Set initial active cell to first cell of first clue
+  const puzzleDivs = document.getElementById("puzzle").children;
+  const firstClueStart = state.activeClue.start;
+  const firstCellDiv = puzzleDivs[firstClueStart];
+  const firstCell = firstCellDiv.querySelector(".cell");
+
+  if (firstCell && !firstCell.classList.contains("block")) {
+    state.activeCell = firstCell;
+    firstCell.classList.add("active-primary");
+  }
+
+  // iOS/safari hidden input
   const hiddenInput = document.getElementById("hiddenInput");
 
   hiddenInput.addEventListener("input", (e) => {
-    if (!/^[a-zA-Z]$/.test(e.target.value)) return;
+    const val = e.target.value.toUpperCase();
+
+    if (!/^[A-Z]$/.test(val)) {
+      e.target.value = "";
+      return;
+    }
+
     if (!state.activeCell) return;
-    state.activeCell.textContent = e.target.value;
+    state.activeCell.textContent = val;
     hiddenInput.value = "";
+    moveInClue("forward");
   });
 
   hiddenInput.addEventListener("keydown", (e) => {
     if (!state.activeCell) return;
+
     if (e.key === "Backspace") {
-      state.activeCell.textContent = " ";
-      // e.preventDefault();
+      const currentText = state.activeCell.textContent.trim();
+
+      if (currentText === "" || currentText === "_") {
+        moveInClue("backward");
+      } else {
+        state.activeCell.textContent = " ";
+      }
+
+      e.preventDefault(); // avoid double backspace on iOS
     }
   });
 
-  // add event handlers to the buttons
+  // button handlers
   const backButton = document.getElementById("back-button");
   backButton.addEventListener("click", () => {
     state.activeClue = getClue("prior");
@@ -135,13 +158,12 @@ function updateClue() {
 
   highlightClueCells();
 
-  // keep the keyboard pulled up
+  // keep keyboard open
   const hiddenInput = document.getElementById("hiddenInput");
   hiddenInput.focus();
 }
 
 function highlightClueCells() {
-  // unhighlight any cells that may already be highlighted
   document
     .querySelectorAll("div")
     .forEach((div) => div.classList.remove("active-secondary"));
@@ -183,17 +205,15 @@ function createCell(letter) {
 }
 
 function handleClick(newCell) {
-  // if it's a block, simply don't do ANYTHING!
   if (newCell.classList.contains("block")) return;
 
-  // there can only be one lord of the rings
   removePrimaryStyle();
 
   newCell.classList.add("active-primary");
 
   const cluesInCell = cluesArr.filter((clue) => clueInCell(clue, newCell));
 
-  if (cluesInCell.length == 0) return; // there are no clues in this cell (should not be possible, but okay)
+  if (cluesInCell.length == 0) return;
 
   let newActiveClue;
 
@@ -214,39 +234,14 @@ function handleClick(newCell) {
 
   updateClue();
 
-  //   just makes it nice for iOS
+  // For iOS keyboard behavior
   const hiddenInput = document.getElementById("hiddenInput");
   hiddenInput.focus();
-  hiddenInput.value = ""; // clear for next character
-}
-
-function getCluesByCell(cell, originalCell) {
-  let cellIndex = getIndexByCell(cell);
-  let originalCellIndex = getIndexByCell(originalCell);
-  let foundClue = null;
-
-  let cluesInCellArr = [];
-
-  cluesArr.forEach((clue) => {
-    if (clueInCell(clue, cellIndex)) cluesInCellArr.push(clue);
-  });
-
-  console.log(cluesInCellArr);
-
-  if (cellIndex == originalCellIndex)
-    activeClue = cluesInCellArr.find((clue) => clue !== activeClue);
-  else activeClue = cluesInCellArr[0];
-
-  activeClueIndex = getIndexByCell(cell);
-
-  console.log("active clue is now " + activeClue.text);
-
-  updateClue();
+  hiddenInput.value = "";
 }
 
 function clueInCell(clue, cell) {
-  cellIndex = getIndexByCell(cell);
-
+  const cellIndex = getIndexByCell(cell);
   const gridWidth = 5;
   const start = clue.start;
   const length = clue.answer.length;
@@ -278,21 +273,81 @@ function removePrimaryStyle() {
     .forEach((cell) => cell.classList.remove("active-primary"));
 }
 
-function checkPuzzle() {
-  let i = 0;
+function moveInClue(direction = "forward") {
+  const clue = state.activeClue;
+  const clueCells = [];
 
+  const step = clue.direction === "across" ? 1 : puzzle[0].length;
+
+  for (let i = 0; i < clue.length; i++) {
+    clueCells.push(clue.start + i * step);
+  }
+
+  const currentCellIndex = getIndexByCell(state.activeCell);
+  const currentIndexInClue = clueCells.indexOf(currentCellIndex);
+
+  const puzzleDivs = document.getElementById("puzzle").children;
+
+  if (direction === "forward") {
+    if (currentIndexInClue < clueCells.length - 1) {
+      const nextIndex = clueCells[currentIndexInClue + 1];
+      const nextDiv = puzzleDivs[nextIndex];
+      const nextCell = nextDiv.querySelector(".cell");
+      if (nextCell && !nextCell.classList.contains("block")) {
+        handleClick(nextCell);
+      }
+    } else {
+      state.activeClue = getClue("next");
+      state.activeClueIndex = cluesArr.indexOf(state.activeClue);
+
+      const nextIndex = state.activeClue.start;
+      const nextDiv = puzzleDivs[nextIndex];
+      const nextCell = nextDiv.querySelector(".cell");
+
+      if (nextCell && !nextCell.classList.contains("block")) {
+        handleClick(nextCell);
+      }
+    }
+  } else if (direction === "backward") {
+    if (currentIndexInClue > 0) {
+      const prevIndex = clueCells[currentIndexInClue - 1];
+      const prevDiv = puzzleDivs[prevIndex];
+      const prevCell = prevDiv.querySelector(".cell");
+
+      if (prevCell && !prevCell.classList.contains("block")) {
+        handleClick(prevCell);
+      }
+    } else {
+      const currentText = state.activeCell.textContent.trim();
+      if (currentText === "" || currentText === "_") {
+        state.activeClue = getClue("prior");
+        state.activeClueIndex = cluesArr.indexOf(state.activeClue);
+
+        const prevClue = state.activeClue;
+        const prevStep = prevClue.direction === "across" ? 1 : puzzle[0].length;
+        const lastCellIndex = prevClue.start + (prevClue.length - 1) * prevStep;
+
+        const lastDiv = puzzleDivs[lastCellIndex];
+        const lastCell = lastDiv.querySelector(".cell");
+
+        if (lastCell && !lastCell.classList.contains("block")) {
+          handleClick(lastCell);
+        }
+      }
+    }
+  }
+}
+
+function checkPuzzle() {
   const flatPuzzle = puzzle.flat();
 
   let cells = Array.from(document.querySelectorAll(".cell"));
-  for (const cell of cells) {
-    console.log("value at index " + i + " is " + cell.textContent);
-    if (flatPuzzle[i] !== cell.textContent.toUpperCase()) {
-      console.log();
-      alert("oops, you have a mistake");
+  for (let i = 0; i < cells.length; i++) {
+    if (flatPuzzle[i] !== cells[i].textContent.toUpperCase()) {
+      alert("Oops, you have a mistake!");
       return false;
     }
-    i++;
   }
-  alert("congrats, you win!");
+  alert("Congrats, you win!");
   return true;
 }
