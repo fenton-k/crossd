@@ -1,110 +1,71 @@
-const fs = require("fs");
-const https = require("https");
-const path = require("path");
+import fs from "fs/promises";
+import https from "https";
 
-// Get today's date in YYYY-MM-DD
-const today = new Date();
-const yyyy = today.getFullYear();
-const mm = String(today.getMonth() + 1).padStart(2, "0");
-const dd = String(today.getDate()).padStart(2, "0");
-const dateString = `${yyyy}-${mm}-${dd}`;
+// Utility to fetch JSON from URL (Promise wrapper for https.get)
+function fetchJson(url) {
+  return new Promise((resolve, reject) => {
+    https
+      .get(url, (res) => {
+        let data = "";
 
-const outputPath = `data/puzzles/${dateString}.js`;
-const url = "https://www.nytimes.com/svc/crosswords/v6/puzzle/mini.json";
+        res.on("data", (chunk) => {
+          data += chunk;
+        });
 
-https
-  .get(url, (res) => {
-    let data = "";
-    res.on("data", (chunk) => (data += chunk));
-    res.on("end", () => {
-      const json = JSON.parse(data);
-      const body = json.body;
-
-      const { dimensions, cells, clues, clueLists, answers } = body;
-      const width = dimensions.cols;
-      const height = dimensions.rows;
-
-      // Build puzzle grid
-      const puzzle = [];
-      for (let r = 0; r < height; r++) {
-        const row = [];
-        for (let c = 0; c < width; c++) {
-          const i = r * width + c;
-          const cell = cells[i];
-          row.push(cell.answer || "_");
-        }
-        puzzle.push(row);
-      }
-
-      // Build clue objects
-      const makeClue = (text, answer, start, number, direction) => {
-        return {
-          text,
-          answer,
-          start,
-          length: answer.length,
-          number,
-          direction,
-        };
-      };
-
-      const clueData = { across: {}, down: {} };
-
-      for (const dir of ["across", "down"]) {
-        for (const clue of clueLists[dir]) {
-          const clueText = clues[clue];
-          const [num, direction] = clue.split(/-/);
-          const answerInfo = answers[clue];
-
-          if (!clueText || !answerInfo) continue;
-
-          const answer = answerInfo.answer;
-          const start = answerInfo.position;
-
-          clueData[dir][parseInt(num)] = makeClue(
-            clueText,
-            answer,
-            start,
-            parseInt(num),
-            dir
-          );
-        }
-      }
-
-      const fileContent = `
-// NYT Mini Puzzle for ${dateString}
-export const puzzle = ${JSON.stringify(puzzle, null, 2)};
-
-export function makeClue(text, answer, start, number, direction) {
-  return {
-    text,
-    answer,
-    start,
-    length: answer.length,
-    number,
-    direction,
-  };
+        res.on("end", () => {
+          try {
+            const json = JSON.parse(data);
+            resolve(json);
+          } catch (e) {
+            reject(new Error("Invalid JSON response"));
+          }
+        });
+      })
+      .on("error", (err) => {
+        reject(err);
+      });
+  });
 }
 
-export const clues = ${JSON.stringify(clueData, null, 2)};
-`;
+async function fetchPuzzle() {
+  try {
+    // Replace this URL with your actual puzzle API endpoint
+    const url = "https://api.example.com/todays-puzzle";
 
-      // Ensure the output directory exists
-      const dir = path.dirname(outputPath);
-      if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir, { recursive: true });
-      }
+    console.log(`Fetching puzzle from ${url}...`);
+    const response = await fetchJson(url);
 
-      // Skip if file already exists
-      if (fs.existsSync(outputPath)) {
-        console.log(`🟡 Puzzle for ${dateString} already exists.`);
-        return;
-      }
+    if (
+      !response.body ||
+      !Array.isArray(response.body) ||
+      response.body.length === 0
+    ) {
+      throw new Error("API response missing puzzle body");
+    }
 
-      fs.writeFileSync(outputPath, fileContent.trim());
-      console.log(`✅ Puzzle saved to ${outputPath}`);
-    });
-  })
-  .on("error", (err) => {
-    console.error("Error fetching puzzle:", err.message);
-  });
+    const puzzle = response.body[0]; // first item in the array
+    const { dimensions, board, cells, clues, clueLists } = puzzle;
+
+    if (!dimensions || !dimensions.width || !dimensions.height) {
+      throw new Error("Puzzle dimensions missing");
+    }
+
+    // Create a folder for storing puzzles if it doesn't exist
+    await fs.mkdir("./data/puzzles", { recursive: true });
+
+    // Format filename with today's date: e.g. 2025-09-21.json
+    const today = new Date().toISOString().slice(0, 10);
+    const filename = `./data/puzzles/${today}.json`;
+
+    // Save the entire puzzle object to file
+    await fs.writeFile(filename, JSON.stringify(puzzle, null, 2), "utf8");
+
+    console.log(`Puzzle saved to ${filename}`);
+    console.log(`Dimensions: ${dimensions.width} x ${dimensions.height}`);
+  } catch (error) {
+    console.error("Error fetching puzzle:", error.message);
+  }
+}
+
+// Run the fetch
+fetchPuzzle();
