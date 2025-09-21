@@ -1,0 +1,32 @@
+name: Fetch NYT Mini Puzzle Daily
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs at 00:00 UTC every day
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  fetch-and-save:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18" # You can pick your preferred version
+
+      - name: Fetch puzzle and save file
+        run: |
+          mkdir -p data/puzzles
+          node fetch-puzzle.js
+
+      - name: Commit new puzzle file
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add data/puzzles/*.js
+          git diff --cached --quiet || git commit -m "Add NYT Mini Puzzle for $(date +'%Y-%m-%d')"
+          git push
