@@ -191,6 +191,29 @@ window.onload = async function () {
 
   state.activeClue = cluesArr[0];
   updateClue();
+
+  const clueDiv = document.getElementById("clue");
+  clueDiv.addEventListener("click", () => {
+    if (!state.activeCell) return;
+
+    const cluesInCell = cluesArr.filter((clue) =>
+      clueInCell(clue, state.activeCell)
+    );
+
+    if (cluesInCell.length < 2) return; // No alternate clue to switch to
+
+    const currentDirection = state.activeClue.direction;
+    const alternateClue = cluesInCell.find(
+      (clue) => clue.direction !== currentDirection
+    );
+
+    if (alternateClue) {
+      state.activeClue = alternateClue;
+      state.activeClueIndex = cluesArr.indexOf(alternateClue);
+      updateClue();
+      highlightClueCells();
+    }
+  });
 };
 
 function updateClue() {
