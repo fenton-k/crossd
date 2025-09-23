@@ -1,4 +1,5 @@
 let puzzle = [];
+let puzzleCompleted = false;
 
 function makeClue(text, answer, start, number, direction) {
   return {
@@ -393,17 +394,29 @@ function moveInClue(direction = "forward") {
 }
 
 function checkPuzzle() {
-  const flatPuzzle = puzzle.flat();
-  console.log("running check puzzle");
+  if (puzzleCompleted) return true; // prevent duplicate alerts / logic
 
-  let cells = Array.from(document.querySelectorAll(".cell"));
+  const flatPuzzle = puzzle.flat();
+  const cells = Array.from(document.querySelectorAll(".cell"));
+
   for (let i = 0; i < cells.length; i++) {
-    if (flatPuzzle[i] !== cells[i].textContent.toUpperCase()) {
+    const userLetter = cells[i].textContent.trim().toUpperCase();
+    if (flatPuzzle[i] !== userLetter) {
       alert("Oops, you have a mistake!");
       return false;
     }
   }
+
+  // ✅ Success!
+  puzzleCompleted = true;
+  clearInterval(timerInterval); // ⏱️ stop the timer
+
+  // Show success message (or redirect/share/etc)
   alert("Congrats, you win!");
+
+  // ✅ Optional: trigger share prompt
+  showShareLink();
+
   return true;
 }
 
@@ -432,4 +445,20 @@ function isPuzzleFilled() {
   return cells.every((cell) => {
     return cell.textContent.trim() !== "";
   });
+}
+
+function showShareLink() {
+  const timerText = document.getElementById("timer").textContent.trim();
+  const link = window.location.href; // current page URL
+
+  const message = `I finished today's puzzle in ${timerText}! Try it yourself: ${link}`;
+
+  // Encode for SMS
+  const encodedMessage = encodeURIComponent(message);
+
+  // iOS SMS share link
+  const smsUrl = `sms:&body=${encodedMessage}`;
+
+  // Open in new tab or prompt user
+  window.open(smsUrl, "_blank");
 }
