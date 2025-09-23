@@ -144,6 +144,10 @@ window.onload = async function () {
       const letter = e.target.getAttribute("data-key");
       state.activeCell.textContent = letter;
       moveInClue("forward");
+
+      if (isPuzzleFilled()) {
+        checkPuzzle();
+      }
     });
   });
 
@@ -390,6 +394,7 @@ function moveInClue(direction = "forward") {
 
 function checkPuzzle() {
   const flatPuzzle = puzzle.flat();
+  console.log("running check puzzle");
 
   let cells = Array.from(document.querySelectorAll(".cell"));
   for (let i = 0; i < cells.length; i++) {
@@ -420,4 +425,11 @@ function updateTimerDisplay() {
   timerDisplay.textContent = `${minutes}:${seconds
     .toString()
     .padStart(2, "0")}`;
+}
+
+function isPuzzleFilled() {
+  const cells = Array.from(document.querySelectorAll(".cell"));
+  return cells.every((cell) => {
+    return cell.textContent.trim() !== "";
+  });
 }

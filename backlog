@@ -1,11 +1,12 @@
-change clue when you click cell
-win notification
-error checking
+automatic check when puzzle is full
 
 features
 --
 clues
 highlight row based on horizontal or vertical clue
+change clue when you click cell
+error checking
+
 
 
 bugs
