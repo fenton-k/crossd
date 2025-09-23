@@ -61,6 +61,13 @@ body {
   border-radius: 5px;
   background-color: #f4f4f4;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  /* Fix width based on maximum expected time (e.g., 99:59) */
+  width: 60px;
+  text-align: center;
+
+  /* Use a monospaced font to avoid digit width variation */
+  /* font-family: "Courier New", Courier, monospace; */
 }
 
 /* Puzzle + Clue Container */

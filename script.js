@@ -214,6 +214,8 @@ window.onload = async function () {
       highlightClueCells();
     }
   });
+
+  startTimer();
 };
 
 function updateClue() {
@@ -398,4 +400,24 @@ function checkPuzzle() {
   }
   alert("Congrats, you win!");
   return true;
+}
+
+let timerInterval;
+let secondsElapsed = 0;
+
+function startTimer() {
+  timerInterval = setInterval(() => {
+    secondsElapsed++;
+    updateTimerDisplay();
+  }, 1000);
+}
+
+function updateTimerDisplay() {
+  const timerDisplay = document.getElementById("timer");
+  const minutes = Math.floor(secondsElapsed / 60);
+  const seconds = secondsElapsed % 60;
+
+  timerDisplay.textContent = `${minutes}:${seconds
+    .toString()
+    .padStart(2, "0")}`;
 }
