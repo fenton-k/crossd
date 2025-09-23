@@ -73,9 +73,9 @@ body {
 
 /* Puzzle Grid */
 #puzzle {
+  margin: auto;
   width: 90%;
   aspect-ratio: 1 / 1;
-  justify-self: center;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
@@ -208,4 +208,5 @@ body {
 .app-wrapper {
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
 }
