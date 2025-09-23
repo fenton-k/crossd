@@ -1,4 +1,3 @@
-//
 let puzzle = [];
 
 function makeClue(text, answer, start, number, direction) {
@@ -70,6 +69,36 @@ function buildCluesArr() {
   state.activeClue = cluesArr[state.activeClueIndex];
 }
 
+function setActiveCell(cell) {
+  if (!cell || cell.classList.contains("block")) return;
+
+  removePrimaryStyle();
+  cell.classList.add("active-primary");
+  state.activeCell = cell;
+}
+
+function findFirstBlankCellInClue(clue) {
+  const puzzleDivs = document.getElementById("puzzle").children;
+  const step = clue.direction === "across" ? 1 : puzzle[0].length;
+
+  for (let i = 0; i < clue.length; i++) {
+    const cellIndex = clue.start + i * step;
+    const cellDiv = puzzleDivs[cellIndex];
+    const cell = cellDiv.querySelector(".cell");
+
+    if (cell && !cell.classList.contains("block")) {
+      const currentText = cell.textContent.trim();
+      if (currentText === "" || currentText === "_") {
+        return cell;
+      }
+    }
+  }
+
+  // If no blank cell found, return the first cell of the clue
+  const firstCellDiv = puzzleDivs[clue.start];
+  return firstCellDiv.querySelector(".cell");
+}
+
 window.onload = async function () {
   await loadPuzzle();
   buildCluesArr();
@@ -100,47 +129,33 @@ window.onload = async function () {
     }
   }
 
-  // Set initial active cell to first cell of first clue
-  const puzzleDivs = document.getElementById("puzzle").children;
-  const firstClueStart = state.activeClue.start;
-  const firstCellDiv = puzzleDivs[firstClueStart];
-  const firstCell = firstCellDiv.querySelector(".cell");
-
-  if (firstCell && !firstCell.classList.contains("block")) {
-    state.activeCell = firstCell;
-    firstCell.classList.add("active-primary");
+  // Set initial active cell to first blank cell of first clue
+  const firstBlankCell = findFirstBlankCellInClue(state.activeClue);
+  if (firstBlankCell) {
+    setActiveCell(firstBlankCell);
   }
 
-  // iOS/safari hidden input
-  const hiddenInput = document.getElementById("hiddenInput");
+  // Custom keyboard event listeners
+  const keys = document.querySelectorAll(".key:not(.backspace)");
+  keys.forEach((key) => {
+    key.addEventListener("click", (e) => {
+      if (!state.activeCell) return;
 
-  hiddenInput.addEventListener("input", (e) => {
-    const val = e.target.value.toUpperCase();
-
-    if (!/^[A-Z]$/.test(val)) {
-      e.target.value = "";
-      return;
-    }
-
-    if (!state.activeCell) return;
-    state.activeCell.textContent = val;
-    hiddenInput.value = "";
-    moveInClue("forward");
+      const letter = e.target.getAttribute("data-key");
+      state.activeCell.textContent = letter;
+      moveInClue("forward");
+    });
   });
 
-  hiddenInput.addEventListener("keydown", (e) => {
+  const backspaceKey = document.getElementById("backspace-key");
+  backspaceKey.addEventListener("click", () => {
     if (!state.activeCell) return;
 
-    if (e.key === "Backspace") {
-      const currentText = state.activeCell.textContent.trim();
-
-      if (currentText === "" || currentText === "_") {
-        moveInClue("backward");
-      } else {
-        state.activeCell.textContent = " ";
-      }
-
-      e.preventDefault(); // avoid double backspace on iOS
+    const currentText = state.activeCell.textContent.trim();
+    if (currentText === "" || currentText === "_") {
+      moveInClue("backward");
+    } else {
+      state.activeCell.textContent = " ";
     }
   });
 
@@ -148,18 +163,28 @@ window.onload = async function () {
   const backButton = document.getElementById("back-button");
   backButton.addEventListener("click", () => {
     state.activeClue = getClue("prior");
-    removePrimaryStyle();
     updateClue();
+
+    // Set active cell to first blank cell in the new clue
+    const firstBlankCell = findFirstBlankCellInClue(state.activeClue);
+    if (firstBlankCell) {
+      setActiveCell(firstBlankCell);
+    }
   });
 
   const forwardButton = document.getElementById("forward-button");
   forwardButton.addEventListener("click", () => {
     state.activeClue = getClue("next");
-    removePrimaryStyle();
     updateClue();
+
+    // Set active cell to first blank cell in the new clue
+    const firstBlankCell = findFirstBlankCellInClue(state.activeClue);
+    if (firstBlankCell) {
+      setActiveCell(firstBlankCell);
+    }
   });
 
-  const checkButton = this.document.getElementById("check-button");
+  const checkButton = document.getElementById("check-button");
   checkButton.addEventListener("click", () => checkPuzzle());
 
   highlightClueCells();
@@ -168,12 +193,7 @@ window.onload = async function () {
 function updateClue() {
   const clue = document.getElementById("clue");
   clue.textContent = state.activeClue.number + ". " + state.activeClue.text;
-
   highlightClueCells();
-
-  // keep keyboard open
-  const hiddenInput = document.getElementById("hiddenInput");
-  hiddenInput.focus();
 }
 
 function highlightClueCells() {
@@ -204,8 +224,7 @@ function highlightCell(cellIndex) {
 
 function createCell(letter) {
   const newCell = document.createElement("p");
-  newCell.textContent = "";
-  if (letter == "_") newCell.textContent = "_";
+  newCell.textContent = letter === "_" ? "_" : "";
   newCell.className = "cell";
 
   if (letter === "_") {
@@ -219,10 +238,6 @@ function createCell(letter) {
 
 function handleClick(newCell) {
   if (newCell.classList.contains("block")) return;
-
-  removePrimaryStyle();
-
-  newCell.classList.add("active-primary");
 
   const cluesInCell = cluesArr.filter((clue) => clueInCell(clue, newCell));
 
@@ -241,21 +256,16 @@ function handleClick(newCell) {
     );
   }
 
-  state.activeCell = newCell;
+  setActiveCell(newCell);
   state.activeClue = newActiveClue;
   state.activeClueIndex = cluesArr.indexOf(newActiveClue);
 
   updateClue();
-
-  // For iOS keyboard behavior
-  const hiddenInput = document.getElementById("hiddenInput");
-  hiddenInput.focus();
-  hiddenInput.value = "";
 }
 
 function clueInCell(clue, cell) {
   const cellIndex = getIndexByCell(cell);
-  const gridWidth = 5;
+  const gridWidth = puzzle[0].length;
   const start = clue.start;
   const length = clue.answer.length;
   const direction = clue.direction;
@@ -307,18 +317,19 @@ function moveInClue(direction = "forward") {
       const nextDiv = puzzleDivs[nextIndex];
       const nextCell = nextDiv.querySelector(".cell");
       if (nextCell && !nextCell.classList.contains("block")) {
-        handleClick(nextCell);
+        setActiveCell(nextCell);
       }
     } else {
       state.activeClue = getClue("next");
       state.activeClueIndex = cluesArr.indexOf(state.activeClue);
+      updateClue();
 
       const nextIndex = state.activeClue.start;
       const nextDiv = puzzleDivs[nextIndex];
       const nextCell = nextDiv.querySelector(".cell");
 
       if (nextCell && !nextCell.classList.contains("block")) {
-        handleClick(nextCell);
+        setActiveCell(nextCell);
       }
     }
   } else if (direction === "backward") {
@@ -328,24 +339,22 @@ function moveInClue(direction = "forward") {
       const prevCell = prevDiv.querySelector(".cell");
 
       if (prevCell && !prevCell.classList.contains("block")) {
-        handleClick(prevCell);
+        setActiveCell(prevCell);
       }
     } else {
-      const currentText = state.activeCell.textContent.trim();
-      if (currentText === "" || currentText === "_") {
-        state.activeClue = getClue("prior");
-        state.activeClueIndex = cluesArr.indexOf(state.activeClue);
+      state.activeClue = getClue("prior");
+      state.activeClueIndex = cluesArr.indexOf(state.activeClue);
+      updateClue();
 
-        const prevClue = state.activeClue;
-        const prevStep = prevClue.direction === "across" ? 1 : puzzle[0].length;
-        const lastCellIndex = prevClue.start + (prevClue.length - 1) * prevStep;
+      const prevClue = state.activeClue;
+      const prevStep = prevClue.direction === "across" ? 1 : puzzle[0].length;
+      const lastCellIndex = prevClue.start + (prevClue.length - 1) * prevStep;
 
-        const lastDiv = puzzleDivs[lastCellIndex];
-        const lastCell = lastDiv.querySelector(".cell");
+      const lastDiv = puzzleDivs[lastCellIndex];
+      const lastCell = lastDiv.querySelector(".cell");
 
-        if (lastCell && !lastCell.classList.contains("block")) {
-          handleClick(lastCell);
-        }
+      if (lastCell && !lastCell.classList.contains("block")) {
+        setActiveCell(lastCell);
       }
     }
   }

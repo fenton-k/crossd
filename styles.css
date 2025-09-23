@@ -94,3 +94,48 @@
   align-items: center;
   justify-content: center;
 }
+
+/* Add this to your CSS */
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.key {
+  padding: 12px 8px;
+  min-width: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.key:hover {
+  background-color: #e0e0e0;
+}
+
+.key:active {
+  background-color: #d0d0d0;
+}
+
+.backspace {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.backspace:hover {
+  background-color: #ff5252;
+}
