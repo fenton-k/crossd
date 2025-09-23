@@ -17,7 +17,7 @@ body {
   text-align: center;
   font-family: "UnifrakturMaguntia", serif;
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 /* Top Bar */
@@ -78,7 +78,7 @@ body {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   border: #030303 solid 3px;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
 }
 
 /* Puzzle Cells */
@@ -129,6 +129,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 6fr 1fr;
   width: 100%;
+  height: 65px;
   margin-bottom: 10px;
 }
 
@@ -150,6 +151,7 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background-color: yellow;
 }
 
 /* Keyboard */
@@ -157,11 +159,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  padding: 8px;
+  padding: 6px;
   background-color: #f0f0f0;
   border-radius: 8px;
   margin: 0 auto;
-  max-width: 480px;
+  /* max-width: 480px; */
 }
 
 .keyboard-row {
@@ -173,7 +175,7 @@ body {
 .key {
   text-align: center;
   padding: 10px 1px;
-  min-width: 25px;
+  min-width: 30px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: white;
@@ -199,21 +201,11 @@ body {
   background-color: #ff5252;
 }
 
-/* Hidden Input */
-#hiddenInput {
-  position: absolute;
-  top: -100px;
-  left: -100px;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-}
-
 /* Short Screen Optimizations (iPhone SE height ~568px) */
 @media (max-height: 600px) {
   #custom-keyboard {
-    transform: scale(0.85);
-    transform-origin: top center;
+    /* transform: scale(0.85); */
+    /* transform-origin: top center; */
   }
 
   #clue {
@@ -223,10 +215,10 @@ body {
   }
 
   .top-bar {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.2rem;
   }
 
   #puzzle {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 }
