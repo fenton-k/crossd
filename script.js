@@ -13,6 +13,13 @@ function makeClue(text, answer, start, number, direction) {
 
 let clues = { across: {}, down: {} };
 
+let state = {
+  activeCell: null,
+  activeClue: null,
+  activeClueIndex: 0,
+  preferredClueDirection: "across",
+};
+
 async function loadPuzzle() {
   const today = new Date().toISOString().slice(0, 10);
   const response = await fetch(`data/puzzles/${today}.json`);
@@ -44,13 +51,6 @@ async function loadPuzzle() {
     );
   });
 }
-
-let state = {
-  activeCell: null,
-  activeClue: null,
-  activeClueIndex: 0,
-  preferredClueDirection: "across",
-};
 
 let cluesArr = [];
 
@@ -188,6 +188,9 @@ window.onload = async function () {
   checkButton.addEventListener("click", () => checkPuzzle());
 
   highlightClueCells();
+
+  state.activeClue = cluesArr[0];
+  updateClue();
 };
 
 function updateClue() {
