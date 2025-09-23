@@ -15,19 +15,30 @@
       rel="stylesheet"
     />
     <script src="script.js"></script>
+    <!-- yummy icons -->
+    <script
+      src="https://kit.fontawesome.com/984aa12d3f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <p class="title">just a simple crossword app</p>
 
+    <button id="check-button">Check puzzle</button>
+
     <div class="headline">
       <div id="puzzle"></div>
-      <input type="text" id="hiddenInput" />
+
+      <!-- <input type="text" id="hiddenInput" /> -->
       <div id="clue-div">
-        <div id="back-button" class="nav-button">back</div>
+        <div id="back-button" class="nav-button">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
         <p id="clue"></p>
-        <div id="forward-button" class="nav-button">forward</div>
+        <div id="forward-button" class="nav-button">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
       </div>
-      <button id="check-button">Check puzzle</button>
     </div>
     <div id="custom-keyboard" class="keyboard">
       <div class="keyboard-row">

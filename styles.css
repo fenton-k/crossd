@@ -48,7 +48,8 @@
 #puzzle {
   /* margin: 10vh auto 0 auto; */
   margin: auto;
-  max-width: min(65%, 800px);
+  max-width: min(70%, 800px);
+  /* max-height: 65%; */
   border: #030303 solid 3px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -63,7 +64,7 @@
 }
 
 #clue {
-  padding: 20px;
+  padding: 5px;
   text-align: center;
   background-color: yellow;
   font-size: 5vw;
@@ -86,7 +87,7 @@
   /* margin-top: 20px; */
   display: grid;
   /* justify-content: center; */
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 6fr 1fr;
 }
 
 .nav-button {
@@ -113,13 +114,13 @@
 
 .key {
   text-align: center;
-  padding: 12px 4px;
-  min-width: 30px;
+  padding: 12px 1px;
+  min-width: 25px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: white;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
 }
 
