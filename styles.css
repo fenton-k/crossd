@@ -95,7 +95,6 @@
   justify-content: center;
 }
 
-/* Add this to your CSS */
 .keyboard {
   display: flex;
   flex-direction: column;
@@ -113,13 +112,14 @@
 }
 
 .key {
-  padding: 12px 8px;
+  text-align: center;
+  padding: 12px 4px;
   min-width: 30px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: white;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
