@@ -8,6 +8,11 @@
   -webkit-overflow-scrolling: touch;
 }
 
+:root {
+  --violet: #dbe4ff;
+  --dark-blue: #1c7ed6;
+}
+
 body {
   background: white;
 }
@@ -22,20 +27,20 @@ body {
 
 /* Top Bar */
 .top-bar {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 480px;
-  margin: 1rem auto 0.5rem auto;
-  padding: 0 16px;
+  margin: 0.25rem auto 0.5rem auto;
+  /* padding: 0 16px; */
 }
 
 /* Check Button */
 #check-button {
-  background-color: #4caf50;
+  background-color: var(--violet);
   border: none;
-  color: white;
+  color: #030303;
   width: 40px;
   height: 40px;
   border-radius: 6px;
@@ -49,7 +54,7 @@ body {
 }
 
 #check-button:hover {
-  background-color: #45a049;
+  background-color: var(--violet);
 }
 
 /* Timer */
@@ -127,29 +132,30 @@ body {
 }
 
 .cell.active-primary {
-  background-color: green;
+  background-color: var(--dark-blue);
 }
 
 .active-secondary {
-  background-color: palegoldenrod;
+  background-color: var(--violet);
 }
 
 /* Clue Box */
 #clue-div {
   display: grid;
-  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-columns: 1fr 8fr 1fr;
   /* width: 100%; */
   /* height: 65px; */
   /* margin-bottom: 10px; */
+  padding: 5px 0;
+  background-color: var(--violet);
 }
 
 #clue {
   /* width: 100%; */
-  /* padding: 6px; */
+  /* padding: 20px 0; */
   text-align: center;
-  background-color: yellow;
-  font-size: clamp(13px, 3.8vw, 16px);
-  height: 80px;
+  font-size: 14px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,7 +169,6 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: yellow;
 }
 
 /* Keyboard */
@@ -187,7 +192,7 @@ body {
 .key {
   text-align: center;
   padding: 10px 1px;
-  min-width: 30px;
+  min-width: min(8vw, 30px);
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: white;

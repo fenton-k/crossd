@@ -225,6 +225,8 @@ window.onload = async function () {
 
 function updateClue() {
   const clue = document.getElementById("clue");
+  clue.style.fontSize = "18px";
+  if (state.activeClue.text.length > 75) clue.style.fontSize = "0.9em";
   clue.textContent = state.activeClue.number + ". " + state.activeClue.text;
   highlightClueCells();
 }
@@ -274,26 +276,38 @@ function handleClick(newCell) {
 
   const cluesInCell = cluesArr.filter((clue) => clueInCell(clue, newCell));
 
-  if (cluesInCell.length == 0) return;
+  if (cluesInCell.length === 0) return;
 
-  let newActiveClue;
+  const isSameCell = state.activeCell === newCell;
+  const currentClue = state.activeClue;
 
-  if (state.activeCell === newCell) {
-    newActiveClue = cluesInCell.find(
-      (clue) => clue.direction !== state.activeClue.direction
+  // Determine if the clicked cell is part of the current clue
+  const isInActiveClue = clueInCell(currentClue, newCell);
+
+  if (isSameCell && cluesInCell.length > 1) {
+    // Toggle direction (only when clicking same cell again)
+    const alternateClue = cluesInCell.find(
+      (clue) => clue.direction !== currentClue.direction
     );
-  } else {
-    newActiveClue = cluesInCell.find(
-      (clue) =>
-        clue.direction === state.preferredClueDirection || cluesInCell[0]
-    );
+    if (alternateClue) {
+      state.activeClue = alternateClue;
+      state.activeClueIndex = cluesArr.indexOf(alternateClue);
+      updateClue();
+    }
+  } else if (!isInActiveClue) {
+    // Only switch clues if the new cell is not in the active clue
+    const newClue =
+      cluesInCell.find(
+        (clue) => clue.direction === state.preferredClueDirection
+      ) || cluesInCell[0];
+
+    state.activeClue = newClue;
+    state.activeClueIndex = cluesArr.indexOf(newClue);
+    updateClue();
   }
 
   setActiveCell(newCell);
-  state.activeClue = newActiveClue;
-  state.activeClueIndex = cluesArr.indexOf(newActiveClue);
-
-  updateClue();
+  highlightClueCells();
 }
 
 function clueInCell(clue, cell) {
@@ -345,25 +359,31 @@ function moveInClue(direction = "forward") {
   const puzzleDivs = document.getElementById("puzzle").children;
 
   if (direction === "forward") {
-    if (currentIndexInClue < clueCells.length - 1) {
-      const nextIndex = clueCells[currentIndexInClue + 1];
+    // Look for the next blank cell in the current clue
+    for (let i = currentIndexInClue + 1; i < clueCells.length; i++) {
+      const nextIndex = clueCells[i];
       const nextDiv = puzzleDivs[nextIndex];
       const nextCell = nextDiv.querySelector(".cell");
-      if (nextCell && !nextCell.classList.contains("block")) {
+      if (
+        nextCell &&
+        !nextCell.classList.contains("block") &&
+        (nextCell.textContent.trim() === "" ||
+          nextCell.textContent.trim() === "_")
+      ) {
         setActiveCell(nextCell);
+        return;
       }
-    } else {
-      state.activeClue = getClue("next");
-      state.activeClueIndex = cluesArr.indexOf(state.activeClue);
-      updateClue();
+    }
 
-      const nextIndex = state.activeClue.start;
-      const nextDiv = puzzleDivs[nextIndex];
-      const nextCell = nextDiv.querySelector(".cell");
+    // If no blank cell found, stay at the current one (or optionally switch to next clue)
+    // Optional: Automatically move to the first blank cell in the next clue
+    state.activeClue = getClue("next");
+    state.activeClueIndex = cluesArr.indexOf(state.activeClue);
+    updateClue();
 
-      if (nextCell && !nextCell.classList.contains("block")) {
-        setActiveCell(nextCell);
-      }
+    const firstBlankCell = findFirstBlankCellInClue(state.activeClue);
+    if (firstBlankCell) {
+      setActiveCell(firstBlankCell);
     }
   } else if (direction === "backward") {
     if (currentIndexInClue > 0) {
