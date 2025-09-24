@@ -1,6 +1,5 @@
 {
   "cells": [
-    {},
     {
       "answer": "S",
       "clues": [
@@ -11,7 +10,7 @@
       "type": 1
     },
     {
-      "answer": "P",
+      "answer": "C",
       "clues": [
         0,
         6
@@ -20,7 +19,7 @@
       "type": 1
     },
     {
-      "answer": "E",
+      "answer": "U",
       "clues": [
         0,
         7
@@ -29,7 +28,7 @@
       "type": 1
     },
     {
-      "answer": "D",
+      "answer": "M",
       "clues": [
         0,
         8
@@ -38,8 +37,9 @@
       "type": 1
     },
     {},
+    {},
     {
-      "answer": "H",
+      "answer": "A",
       "clues": [
         1,
         5
@@ -48,7 +48,7 @@
       "type": 1
     },
     {
-      "answer": "A",
+      "answer": "L",
       "clues": [
         1,
         6
@@ -56,7 +56,7 @@
       "type": 1
     },
     {
-      "answer": "I",
+      "answer": "L",
       "clues": [
         1,
         7
@@ -64,7 +64,7 @@
       "type": 1
     },
     {
-      "answer": "R",
+      "answer": "Y",
       "clues": [
         1,
         8
@@ -72,19 +72,37 @@
       "type": 1
     },
     {
-      "answer": "T",
+      "answer": "O",
       "clues": [
-        2,
+        1,
         9
       ],
       "label": "6",
       "type": 1
     },
     {
-      "answer": "O",
+      "answer": "U",
+      "clues": [
+        1,
+        10
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "C",
       "clues": [
         2,
         5
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        6
       ],
       "type": 1
     },
@@ -92,20 +110,12 @@
       "answer": "N",
       "clues": [
         2,
-        6
-      ],
-      "type": 1
-    },
-    {
-      "answer": "G",
-      "clues": [
-        2,
         7
       ],
       "type": 1
     },
     {
-      "answer": "S",
+      "answer": "E",
       "clues": [
         2,
         8
@@ -113,19 +123,51 @@
       "type": 1
     },
     {
-      "answer": "S",
+      "answer": "A",
       "clues": [
-        3,
+        2,
         9
       ],
-      "label": "7",
       "type": 1
     },
     {
-      "answer": "E",
+      "answer": "T",
+      "clues": [
+        2,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
       "clues": [
         3,
         5
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        3,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        3,
+        8
       ],
       "type": 1
     },
@@ -133,53 +175,46 @@
       "answer": "T",
       "clues": [
         3,
-        6
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        10
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        4,
+        8
+      ],
+      "label": "10",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        4,
+        9
       ],
       "type": 1
     },
     {
       "answer": "H",
       "clues": [
-        3,
-        7
-      ],
-      "type": 1
-    },
-    {},
-    {
-      "answer": "P",
-      "clues": [
         4,
-        9
-      ],
-      "label": "8",
-      "type": 1
-    },
-    {
-      "answer": "S",
-      "clues": [
-        4,
-        5
+        10
       ],
       "type": 1
-    },
-    {
-      "answer": "S",
-      "clues": [
-        4,
-        6
-      ],
-      "type": 1
-    },
-    {
-      "answer": "T",
-      "clues": [
-        4,
-        7
-      ],
-      "type": 1
-    },
-    {}
+    }
   ],
   "clueLists": [
     {
@@ -198,7 +233,8 @@
         6,
         7,
         8,
-        9
+        9,
+        10
       ],
       "name": "Down"
     }
@@ -206,16 +242,16 @@
   "clues": [
     {
       "cells": [
+        0,
         1,
         2,
-        3,
-        4
+        3
       ],
       "direction": "Across",
       "label": "1",
       "text": [
         {
-          "plain": "Went illegally fast"
+          "plain": "Pond gunk"
         }
       ]
     },
@@ -224,148 +260,172 @@
         6,
         7,
         8,
-        9
+        9,
+        10,
+        11
       ],
       "direction": "Across",
       "label": "5",
+      "relatives": [
+        2
+      ],
       "text": [
         {
-          "plain": "It might have some highlights"
+          "plain": "With 8-Across, like an unlimited buffet"
         }
       ]
     },
     {
       "cells": [
-        10,
-        11,
         12,
         13,
-        14
-      ],
-      "direction": "Across",
-      "label": "6",
-      "text": [
-        {
-          "plain": "Pair for a griller"
-        }
-      ]
-    },
-    {
-      "cells": [
+        14,
         15,
         16,
-        17,
-        18
+        17
       ],
       "direction": "Across",
-      "label": "7",
+      "label": "8",
+      "relatives": [
+        1
+      ],
       "text": [
         {
-          "plain": "Meyers of late-night comedy"
+          "plain": "See 5-Across"
         }
       ]
     },
     {
       "cells": [
+        18,
+        19,
         20,
         21,
         22,
         23
       ],
       "direction": "Across",
-      "label": "8",
+      "label": "9",
       "text": [
         {
-          "formatted": "&#34;Hey you! Over here!&#34;",
-          "plain": "\"Hey you! Over here!\""
+          "plain": "Opponent of Athens in the Peloponnesian War"
         }
       ]
     },
     {
       "cells": [
-        1,
+        27,
+        28,
+        29
+      ],
+      "direction": "Across",
+      "label": "10",
+      "text": [
+        {
+          "plain": "\"Keep it down!\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
         6,
-        11,
-        16,
-        21
+        12,
+        18
       ],
       "direction": "Down",
       "label": "1",
       "list": 1,
       "text": [
         {
-          "plain": "Pair of ___"
+          "plain": "Outs that advance the runner, in baseball lingo"
         }
       ]
     },
     {
       "cells": [
-        2,
+        1,
         7,
-        12,
-        17,
-        22
+        13,
+        19
       ],
       "direction": "Down",
       "label": "2",
       "list": 1,
       "text": [
         {
-          "plain": "Pair of ___"
+          "plain": "Put your hands together"
         }
       ]
     },
     {
       "cells": [
-        3,
+        2,
         8,
-        13,
-        18,
-        23
+        14,
+        20
       ],
       "direction": "Down",
       "label": "3",
       "list": 1,
       "text": [
         {
-          "plain": "Number of stories in the Leaning Tower of Pisa"
+          "plain": "Bone on the same side of the arm as the pinky"
         }
       ]
     },
     {
       "cells": [
-        4,
+        3,
         9,
-        14
+        15,
+        21,
+        27
       ],
       "direction": "Down",
       "label": "4",
       "list": 1,
       "text": [
         {
-          "formatted": "Many characters on &#34;The Pitt&#34;: Abbr.",
-          "plain": "Many characters on \"The Pitt\": Abbr."
+          "plain": "Mike who voiced Shrek"
         }
       ]
     },
     {
       "cells": [
         10,
-        15,
-        20
+        16,
+        22,
+        28
       ],
       "direction": "Down",
       "label": "6",
       "list": 1,
       "text": [
         {
-          "plain": "Recipe amt."
+          "plain": "Hippocratic ___ (doctor's pledge)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        11,
+        17,
+        23,
+        29
+      ],
+      "direction": "Down",
+      "label": "7",
+      "list": 1,
+      "text": [
+        {
+          "plain": "State with license plates that read \"Greatest Snow on Earth\""
         }
       ]
     }
   ],
   "dimensions": {
     "height": 5,
-    "width": 5
+    "width": 6
   }
 }
