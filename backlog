@@ -1,5 +1,7 @@
 add browser support
-remove automatic social sharing, make it a button
+displays on tall phone
+remove automatic social sharing, make it a button (also, fix it for android phone)
+blank squares in check puzzle?
 make it all fit on one page, no scrolling (100vh)
 automatic check when puzzle is full
 

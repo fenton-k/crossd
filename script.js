@@ -21,8 +21,27 @@ let state = {
   preferredClueDirection: "across",
 };
 
+function getTodayInEST() {
+  const now = new Date();
+
+  // Convert current date/time to America/New_York time zone
+  const estString = now.toLocaleString("en-US", {
+    timeZone: "America/New_York",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  });
+
+  // estString will look like "09/23/2025"
+  const [month, day, year] = estString.split("/");
+
+  // Return as YYYY-MM-DD
+  return `${year}-${month}-${day}`;
+}
+
 async function loadPuzzle() {
-  const today = new Date().toISOString().slice(0, 10);
+  const today = getTodayInEST();
+  // console.log(today);
   const response = await fetch(`data/puzzles/${today}.json`);
   const data = await response.json();
 
