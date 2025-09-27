@@ -1,7 +1,11 @@
 let puzzle = [];
 let puzzleCompleted = false;
 
-function makeClue(text, answer, start, number, direction) {
+let gridWidth = 0;
+let gridHeight = 0;
+
+// MODIFICATION: Added 'indices' to store the array of cell indices for the clue.
+function makeClue(text, answer, start, number, direction, indices) {
   return {
     text: text,
     answer: answer,
@@ -9,6 +13,7 @@ function makeClue(text, answer, start, number, direction) {
     length: answer.length,
     number: number,
     direction: direction,
+    indices: indices, // <--- ADDED
   };
 }
 
@@ -23,51 +28,47 @@ let state = {
 
 function getTodayInEST() {
   const now = new Date();
-
-  // Convert current date/time to America/New_York time zone
   const estString = now.toLocaleString("en-US", {
     timeZone: "America/New_York",
     year: "numeric",
     month: "2-digit",
     day: "2-digit",
   });
-
-  // estString will look like "09/23/2025"
   const [month, day, year] = estString.split("/");
-
-  // Return as YYYY-MM-DD
   return `${year}-${month}-${day}`;
 }
 
 async function loadPuzzle() {
   const today = getTodayInEST();
-  // console.log(today);
   const response = await fetch(`data/puzzles/${today}.json`);
   const data = await response.json();
 
-  // Build puzzle grid
   const { cells, dimensions, clues: clueArr } = data;
+  gridWidth = dimensions.width;
+  gridHeight = dimensions.height;
+
   puzzle = [];
-  for (let r = 0; r < dimensions.height; r++) {
+  for (let r = 0; r < gridHeight; r++) {
     const row = [];
-    for (let c = 0; c < dimensions.width; c++) {
-      const cell = cells[r * dimensions.width + c];
-      row.push(cell.answer || "_");
+    for (let c = 0; c < gridWidth; c++) {
+      // Corrected logic: Use 'type' property to correctly identify block cells
+      const cell = cells[r * gridWidth + c];
+      row.push(cell.type === 1 ? cell.answer || "" : "_");
     }
     puzzle.push(row);
   }
 
-  // Build clues object
   clues = { across: {}, down: {} };
   clueArr.forEach((clue) => {
     const dir = clue.direction.toLowerCase();
-    const answer = clue.cells.map((i) => cells[i].answer || "_").join("");
+    const answer = clue.cells.map((i) => cells[i].answer || "").join("");
     clues[dir][clue.label] = makeClue(
       clue.text[0].plain,
       answer,
       clue.cells[0],
       clue.label,
-      dir
+      dir,
+      clue.cells // <--- PASSING INDICES
     );
   });
 }
@@ -78,34 +79,31 @@ function getClue(direction) {
   const step = direction === "prior" ? -1 : 1;
   state.activeClueIndex =
     (state.activeClueIndex + step + cluesArr.length) % cluesArr.length;
-
   return cluesArr[state.activeClueIndex];
 }
 
 function buildCluesArr() {
+  // Clearing cluesArr before building is a good practice if loadPuzzle could run multiple times
+  cluesArr = [];
   Object.values(clues["across"]).forEach((clue) => cluesArr.push(clue));
   Object.values(clues["down"]).forEach((clue) => cluesArr.push(clue));
-
   state.activeClue = cluesArr[state.activeClueIndex];
 }
 
 function setActiveCell(cell) {
   if (!cell || cell.classList.contains("block")) return;
-
   removePrimaryStyle();
   cell.classList.add("active-primary");
   state.activeCell = cell;
 }
 
+// MODIFICATION: Uses the stored clue.indices instead of calculating cell position.
 function findFirstBlankCellInClue(clue) {
   const puzzleDivs = document.getElementById("puzzle").children;
-  const step = clue.direction === "across" ? 1 : puzzle[0].length;
 
-  for (let i = 0; i < clue.length; i++) {
-    const cellIndex = clue.start + i * step;
+  for (const cellIndex of clue.indices) {
     const cellDiv = puzzleDivs[cellIndex];
     const cell = cellDiv.querySelector(".cell");
-
     if (cell && !cell.classList.contains("block")) {
       const currentText = cell.textContent.trim();
       if (currentText === "" || currentText === "_") {
@@ -114,7 +112,7 @@ function findFirstBlankCellInClue(clue) {
     }
   }
 
-  // If no blank cell found, return the first cell of the clue
+  // If no blank cells, return the first cell of the clue
   const firstCellDiv = puzzleDivs[clue.start];
   return firstCellDiv.querySelector(".cell");
 }
@@ -124,16 +122,20 @@ window.onload = async function () {
   buildCluesArr();
 
   const puzzleDiv = document.getElementById("puzzle");
+  // Set the CSS Grid columns property based on gridWidth
+  puzzleDiv.style.gridTemplateColumns = `repeat(${gridWidth}, 1fr)`;
+
   let index = 0;
 
-  // build grid
   for (const row of puzzle) {
     for (const letter of row) {
       const clueDiv = document.createElement("div");
       clueDiv.classList.add("cell-div");
 
+      // The createCell function handles setting the letter and 'block' class
       const newCell = createCell(letter);
 
+      // Clue number placement logic (unchanged)
       for (const clue of cluesArr) {
         if (clue.start == index) {
           const clueNumber = document.createElement("span");
@@ -149,32 +151,23 @@ window.onload = async function () {
     }
   }
 
-  // Set initial active cell to first blank cell of first clue
   const firstBlankCell = findFirstBlankCellInClue(state.activeClue);
-  if (firstBlankCell) {
-    setActiveCell(firstBlankCell);
-  }
+  if (firstBlankCell) setActiveCell(firstBlankCell);
 
-  // Custom keyboard event listeners
   const keys = document.querySelectorAll(".key:not(.backspace)");
   keys.forEach((key) => {
     key.addEventListener("click", (e) => {
       if (!state.activeCell) return;
-
       const letter = e.target.getAttribute("data-key");
       state.activeCell.textContent = letter;
       moveInClue("forward");
-
-      if (isPuzzleFilled()) {
-        checkPuzzle();
-      }
+      if (isPuzzleFilled()) checkPuzzle();
     });
   });
 
   const backspaceKey = document.getElementById("backspace-key");
   backspaceKey.addEventListener("click", () => {
     if (!state.activeCell) return;
-
     const currentText = state.activeCell.textContent.trim();
     if (currentText === "" || currentText === "_") {
       moveInClue("backward");
@@ -183,29 +176,20 @@ window.onload = async function () {
     }
   });
 
-  // button handlers
   const backButton = document.getElementById("back-button");
   backButton.addEventListener("click", () => {
     state.activeClue = getClue("prior");
     updateClue();
-
-    // Set active cell to first blank cell in the new clue
     const firstBlankCell = findFirstBlankCellInClue(state.activeClue);
-    if (firstBlankCell) {
-      setActiveCell(firstBlankCell);
-    }
+    if (firstBlankCell) setActiveCell(firstBlankCell);
   });
 
   const forwardButton = document.getElementById("forward-button");
   forwardButton.addEventListener("click", () => {
     state.activeClue = getClue("next");
     updateClue();
-
-    // Set active cell to first blank cell in the new clue
     const firstBlankCell = findFirstBlankCellInClue(state.activeClue);
-    if (firstBlankCell) {
-      setActiveCell(firstBlankCell);
-    }
+    if (firstBlankCell) setActiveCell(firstBlankCell);
   });
 
   const checkButton = document.getElementById("check-button");
@@ -219,18 +203,14 @@ window.onload = async function () {
   const clueDiv = document.getElementById("clue");
   clueDiv.addEventListener("click", () => {
     if (!state.activeCell) return;
-
     const cluesInCell = cluesArr.filter((clue) =>
       clueInCell(clue, state.activeCell)
     );
-
-    if (cluesInCell.length < 2) return; // No alternate clue to switch to
-
+    if (cluesInCell.length < 2) return;
     const currentDirection = state.activeClue.direction;
     const alternateClue = cluesInCell.find(
       (clue) => clue.direction !== currentDirection
     );
-
     if (alternateClue) {
       state.activeClue = alternateClue;
       state.activeClueIndex = cluesArr.indexOf(alternateClue);
@@ -250,61 +230,47 @@ function updateClue() {
   highlightClueCells();
 }
 
+// MODIFICATION: Uses the stored clue.indices instead of calculating cell position.
 function highlightClueCells() {
   document
-    .querySelectorAll("div")
+    .querySelectorAll(".cell-div") // Target the parent div to remove the secondary style
     .forEach((div) => div.classList.remove("active-secondary"));
 
-  let direction = state.activeClue.direction === "across" ? "across" : "down";
-  let clueLength = state.activeClue.length;
-  let clueStart = state.activeClue.start;
-
-  let step = puzzle[0].length;
-
-  for (let i = 0; i < clueLength; i++) {
-    if (direction == "across") {
-      highlightCell(clueStart + i);
-    } else {
-      highlightCell(clueStart + step * i);
-    }
-  }
+  // Iterate over the exact indices stored in the active clue
+  state.activeClue.indices.forEach((cellIndex) => {
+    highlightCell(cellIndex);
+  });
 }
 
 function highlightCell(cellIndex) {
-  let puzzleDiv = document.getElementById("puzzle").children;
-  let div = puzzleDiv[cellIndex];
-  div.classList.add("active-secondary");
+  const puzzleDiv = document.getElementById("puzzle").children;
+  const div = puzzleDiv[cellIndex];
+  if (div) {
+    div.classList.add("active-secondary");
+  }
 }
 
 function createCell(letter) {
   const newCell = document.createElement("p");
-  newCell.textContent = letter === "_" ? "_" : "";
+  // If letter is "_", it's a block cell based on your puzzle array creation.
+  // Otherwise, if it's a letter, show an empty cell for the user to fill.
+  newCell.textContent = letter === "_" ? "" : "";
   newCell.className = "cell";
-
-  if (letter === "_") {
-    newCell.classList.add("block");
-  }
-
+  if (letter === "_") newCell.classList.add("block");
   newCell.addEventListener("click", (event) => handleClick(event.target));
-
   return newCell;
 }
 
 function handleClick(newCell) {
   if (newCell.classList.contains("block")) return;
-
   const cluesInCell = cluesArr.filter((clue) => clueInCell(clue, newCell));
-
   if (cluesInCell.length === 0) return;
 
   const isSameCell = state.activeCell === newCell;
   const currentClue = state.activeClue;
-
-  // Determine if the clicked cell is part of the current clue
   const isInActiveClue = clueInCell(currentClue, newCell);
 
   if (isSameCell && cluesInCell.length > 1) {
-    // Toggle direction (only when clicking same cell again)
     const alternateClue = cluesInCell.find(
       (clue) => clue.direction !== currentClue.direction
     );
@@ -314,12 +280,10 @@ function handleClick(newCell) {
       updateClue();
     }
   } else if (!isInActiveClue) {
-    // Only switch clues if the new cell is not in the active clue
     const newClue =
       cluesInCell.find(
         (clue) => clue.direction === state.preferredClueDirection
       ) || cluesInCell[0];
-
     state.activeClue = newClue;
     state.activeClueIndex = cluesArr.indexOf(newClue);
     updateClue();
@@ -329,31 +293,16 @@ function handleClick(newCell) {
   highlightClueCells();
 }
 
+// MODIFICATION: Simply checks if the cell's index is present in the clue's stored indices array.
 function clueInCell(clue, cell) {
   const cellIndex = getIndexByCell(cell);
-  const gridWidth = puzzle[0].length;
-  const start = clue.start;
-  const length = clue.answer.length;
-  const direction = clue.direction;
-
-  if (direction == "across") {
-    return (
-      Math.floor(cellIndex / gridWidth) === Math.floor(start / gridWidth) &&
-      cellIndex >= start &&
-      cellIndex < start + length
-    );
-  } else if (direction == "down") {
-    return (
-      cellIndex >= start &&
-      (cellIndex - start) % gridWidth === 0 &&
-      (cellIndex - start) / gridWidth < length
-    );
-  }
-  return false;
+  return clue.indices.includes(cellIndex);
 }
 
 function getIndexByCell(cell) {
-  return Array.from(document.querySelectorAll(".cell")).indexOf(cell);
+  const puzzleDivs = document.getElementById("puzzle").children;
+  const parentDiv = cell.parentElement;
+  return Array.from(puzzleDivs).indexOf(parentDiv);
 }
 
 function removePrimaryStyle() {
@@ -362,27 +311,23 @@ function removePrimaryStyle() {
     .forEach((cell) => cell.classList.remove("active-primary"));
 }
 
+// MODIFICATION: Uses the stored clue.indices instead of calculating cell position.
 function moveInClue(direction = "forward") {
   const clue = state.activeClue;
-  const clueCells = [];
-
-  const step = clue.direction === "across" ? 1 : puzzle[0].length;
-
-  for (let i = 0; i < clue.length; i++) {
-    clueCells.push(clue.start + i * step);
-  }
+  const clueCells = clue.indices; // <-- USE STORED INDICES
 
   const currentCellIndex = getIndexByCell(state.activeCell);
   const currentIndexInClue = clueCells.indexOf(currentCellIndex);
-
   const puzzleDivs = document.getElementById("puzzle").children;
 
   if (direction === "forward") {
-    // Look for the next blank cell in the current clue
+    // Iterate over the indices *after* the current cell
     for (let i = currentIndexInClue + 1; i < clueCells.length; i++) {
       const nextIndex = clueCells[i];
       const nextDiv = puzzleDivs[nextIndex];
       const nextCell = nextDiv.querySelector(".cell");
+
+      // Found a blank cell: move to it and stop
       if (
         nextCell &&
         !nextCell.classList.contains("block") &&
@@ -394,37 +339,32 @@ function moveInClue(direction = "forward") {
       }
     }
 
-    // If no blank cell found, stay at the current one (or optionally switch to next clue)
-    // Optional: Automatically move to the first blank cell in the next clue
+    // If no more blank cells in the current clue, move to the next clue
     state.activeClue = getClue("next");
     state.activeClueIndex = cluesArr.indexOf(state.activeClue);
     updateClue();
-
     const firstBlankCell = findFirstBlankCellInClue(state.activeClue);
-    if (firstBlankCell) {
-      setActiveCell(firstBlankCell);
-    }
+    if (firstBlankCell) setActiveCell(firstBlankCell);
   } else if (direction === "backward") {
     if (currentIndexInClue > 0) {
+      // Move one step back within the current clue's indices array
       const prevIndex = clueCells[currentIndexInClue - 1];
       const prevDiv = puzzleDivs[prevIndex];
       const prevCell = prevDiv.querySelector(".cell");
-
       if (prevCell && !prevCell.classList.contains("block")) {
         setActiveCell(prevCell);
       }
     } else {
+      // If at the start, move to the last cell of the prior clue
       state.activeClue = getClue("prior");
       state.activeClueIndex = cluesArr.indexOf(state.activeClue);
       updateClue();
-
       const prevClue = state.activeClue;
-      const prevStep = prevClue.direction === "across" ? 1 : puzzle[0].length;
-      const lastCellIndex = prevClue.start + (prevClue.length - 1) * prevStep;
 
+      // Get the last cell index from the prior clue's indices array
+      const lastCellIndex = prevClue.indices[prevClue.indices.length - 1];
       const lastDiv = puzzleDivs[lastCellIndex];
       const lastCell = lastDiv.querySelector(".cell");
-
       if (lastCell && !lastCell.classList.contains("block")) {
         setActiveCell(lastCell);
       }
@@ -433,29 +373,29 @@ function moveInClue(direction = "forward") {
 }
 
 function checkPuzzle() {
-  if (puzzleCompleted) return true; // prevent duplicate alerts / logic
-
+  if (puzzleCompleted) return true;
   const flatPuzzle = puzzle.flat();
   const cells = Array.from(document.querySelectorAll(".cell"));
 
   for (let i = 0; i < cells.length; i++) {
+    // Only check non-block cells
+    if (cells[i].classList.contains("block")) continue;
+
+    // The flatPuzzle array may contain "_" for block cells,
+    // but the cells array contains the *p* elements.
     const userLetter = cells[i].textContent.trim().toUpperCase();
-    if (flatPuzzle[i] !== userLetter) {
+    const correctLetter = flatPuzzle[i] || ""; // The correct letter for this cell
+
+    if (userLetter !== correctLetter) {
       alert("Oops, you have a mistake!");
       return false;
     }
   }
 
-  // ✅ Success!
   puzzleCompleted = true;
-  clearInterval(timerInterval); // ⏱️ stop the timer
-
-  // Show success message (or redirect/share/etc)
+  clearInterval(timerInterval);
   alert("Congrats, you win!");
-
-  // ✅ Optional: trigger share prompt
   showShareLink();
-
   return true;
 }
 
@@ -473,31 +413,23 @@ function updateTimerDisplay() {
   const timerDisplay = document.getElementById("timer");
   const minutes = Math.floor(secondsElapsed / 60);
   const seconds = secondsElapsed % 60;
-
   timerDisplay.textContent = `${minutes}:${seconds
     .toString()
     .padStart(2, "0")}`;
 }
 
 function isPuzzleFilled() {
-  const cells = Array.from(document.querySelectorAll(".cell"));
-  return cells.every((cell) => {
-    return cell.textContent.trim() !== "";
-  });
+  const cells = Array.from(document.querySelectorAll(".cell:not(.block)"));
+  return cells.every((cell) => cell.textContent.trim() !== "");
 }
 
 function showShareLink() {
   const timerText = document.getElementById("timer").textContent.trim();
-  const link = window.location.href; // current page URL
-
+  const link = window.location.href;
   const message = `I finished today's puzzle in ${timerText}! Try it yourself: ${link}`;
-
-  // Encode for SMS
   const encodedMessage = encodeURIComponent(message);
-
-  // iOS SMS share link
   const smsUrl = `sms:&body=${encodedMessage}`;
-
-  // Open in new tab or prompt user
-  window.open(smsUrl, "_blank");
+  // You might want to use a more general share/copy to clipboard for web apps
+  // window.open(smsUrl, "_blank");
+  console.log(message); // log for testing
 }
