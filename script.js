@@ -313,34 +313,6 @@ function removePrimaryStyle() {
 
 // script.js
 
-// This function runs on page load to check for win data in the URL
-(function updateMetaTagsForPreview() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const timeInSeconds = urlParams.get("time");
-
-  if (timeInSeconds) {
-    const minutes = Math.floor(timeInSeconds / 60);
-    const seconds = timeInSeconds % 60;
-    const timeString = `${minutes}:${seconds.toString().padStart(2, "0")}`;
-
-    const title = `SF Divides Puzzle Solved in ${timeString}!`;
-    const description = `I finished the puzzle in ${timeString}. Can you beat my time?`;
-
-    // Update the page title
-    document.title = title;
-
-    // Update Open Graph (Facebook, iMessage, etc.) and Twitter meta tags
-    document
-      .querySelector('meta[property="og:title"]')
-      .setAttribute("content", title);
-    document
-      .querySelector('meta[property="og:description"]')
-      .setAttribute("content", description);
-    // You might also want a different image for solved puzzles
-    // document.querySelector('meta[property="og:image"]').setAttribute("content", "URL_TO_WIN_IMAGE");
-  }
-})();
-
 // MODIFICATION: Uses the stored clue.indices instead of calculating cell position.
 function moveInClue(direction = "forward") {
   const clue = state.activeClue;

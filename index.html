@@ -6,28 +6,56 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <title>san fran divides</title>
 
+    <title>san fran divides</title>
     <meta property="og:title" content="San Francisco Divides" />
     <meta
       property="og:description"
       content="A daily crossword puzzle for San Francisco."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://your-website-url.com" />
-    <meta property="og:image" content="https://your-website-url.com/s.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="icon" type="image/x-icon" href="s.png" />
-    <meta charset="UTF-8" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
+      property="og:url"
+      content="https://your-github-username.github.io/your-repo-name/"
     />
-    <title>san fran divides</title>
+    <meta
+      property="og:image"
+      content="https://your-github-username.github.io/your-repo-name/s.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script>
+      // This script runs instantly to update meta tags before the preview service gives up.
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const timeInSeconds = urlParams.get("time");
+
+        if (timeInSeconds && !isNaN(timeInSeconds)) {
+          const minutes = Math.floor(timeInSeconds / 60);
+          const seconds = parseInt(timeInSeconds % 60, 10);
+          const timeString = `${minutes}:${seconds
+            .toString()
+            .padStart(2, "0")}`;
+
+          const title = `SF Divides Puzzle Solved in ${timeString}!`;
+          const description = `I finished the puzzle in ${timeString}. Can you beat my time?`;
+
+          document.title = title;
+          document
+            .querySelector('meta[property="og:title"]')
+            .setAttribute("content", title);
+          document
+            .querySelector('meta[property="og:description"]')
+            .setAttribute("content", description);
+        }
+      } catch (e) {
+        // Fail silently if any errors occur
+        console.error("Error updating meta tags for preview:", e);
+      }
+    </script>
+
     <link rel="icon" type="image/x-icon" href="s.png" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,7 +63,6 @@
       rel="stylesheet"
     />
     <script src="script.js"></script>
-    <!-- yummy icons -->
     <script
       src="https://kit.fontawesome.com/984aa12d3f.js"
       crossorigin="anonymous"
