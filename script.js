@@ -437,7 +437,8 @@ function showShareLink() {
 
   // Build the shareable URL with the time in seconds
   const baseUrl = window.location.origin + window.location.pathname;
-  const shareUrl = `${baseUrl}?time=${secondsElapsed}`;
+  const vercelUrl = "https://crossd-preview.vercel.app/api/share";
+  const shareUrl = `${vercelUrl}?t=${secondsElapsed}`;
 
   // Show the modal
   modal.style.display = "flex";
