@@ -1,132 +1,98 @@
 {
   "cells": [
-    {},
-    {},
     {
       "answer": "B",
       "clues": [
         0,
-        8
+        5
       ],
       "label": "1",
-      "type": 1
-    },
-    {
-      "answer": "R",
-      "clues": [
-        0,
-        9
-      ],
-      "label": "2",
       "type": 1
     },
     {
       "answer": "O",
       "clues": [
         0,
-        10
+        6
       ],
-      "label": "3",
+      "label": "2",
       "type": 1
     },
     {
-      "answer": "A",
+      "answer": "L",
       "clues": [
         0,
-        11
+        7
       ],
-      "label": "4",
+      "label": "3",
       "type": 1
     },
     {
       "answer": "D",
       "clues": [
         0,
-        12
+        8
       ],
-      "label": "5",
+      "label": "4",
       "type": 1
     },
     {},
     {
-      "answer": "F",
+      "answer": "C",
       "clues": [
         1,
-        13
+        5
       ],
-      "label": "6",
+      "label": "5",
       "type": 1
     },
     {
       "answer": "R",
       "clues": [
         1,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        1,
         8
       ],
       "type": 1
     },
-    {
-      "answer": "A",
-      "clues": [
-        1,
-        9
-      ],
-      "type": 1
-    },
-    {
-      "answer": "N",
-      "clues": [
-        1,
-        10
-      ],
-      "type": 1
-    },
+    {},
     {
       "answer": "C",
       "clues": [
-        1,
-        11
-      ],
-      "type": 1
-    },
-    {
-      "answer": "E",
-      "clues": [
-        1,
-        12
-      ],
-      "type": 1
-    },
-    {
-      "answer": "P",
-      "clues": [
         2,
-        14
+        5
       ],
-      "label": "7",
-      "type": 1
-    },
-    {
-      "answer": "L",
-      "clues": [
-        2,
-        13
-      ],
+      "label": "6",
       "type": 1
     },
     {
       "answer": "A",
       "clues": [
         2,
-        8
+        6
       ],
       "type": 1
     },
     {
-      "answer": "N",
+      "answer": "F",
       "clues": [
         2,
-        9
+        7
       ],
       "type": 1
     },
@@ -134,15 +100,7 @@
       "answer": "E",
       "clues": [
         2,
-        10
-      ],
-      "type": 1
-    },
-    {
-      "answer": "T",
-      "clues": [
-        2,
-        11
+        8
       ],
       "type": 1
     },
@@ -150,82 +108,67 @@
       "answer": "S",
       "clues": [
         2,
-        12
+        9
       ],
+      "label": "7",
       "type": 1
     },
+    {},
     {
-      "answer": "R",
+      "answer": "L",
       "clues": [
         3,
-        14
+        6
       ],
       "label": "8",
       "type": 1
     },
     {
-      "answer": "A",
+      "answer": "O",
       "clues": [
         3,
-        13
+        7
       ],
       "type": 1
     },
     {
-      "answer": "V",
+      "answer": "L",
       "clues": [
         3,
         8
       ],
       "type": 1
     },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
     {},
     {
-      "answer": "W",
+      "answer": "B",
       "clues": [
         4,
-        10
+        6
       ],
       "label": "9",
       "type": 1
     },
     {
-      "answer": "O",
+      "answer": "U",
       "clues": [
         4,
-        11
+        7
       ],
       "type": 1
     },
     {
-      "answer": "K",
+      "answer": "T",
       "clues": [
         4,
-        12
-      ],
-      "type": 1
-    },
-    {
-      "answer": "A",
-      "clues": [
-        5,
-        14
-      ],
-      "label": "10",
-      "type": 1
-    },
-    {
-      "answer": "V",
-      "clues": [
-        5,
-        13
-      ],
-      "type": 1
-    },
-    {
-      "answer": "A",
-      "clues": [
-        5,
         8
       ],
       "type": 1
@@ -233,108 +176,11 @@
     {
       "answer": "T",
       "clues": [
-        5,
-        15
-      ],
-      "label": "11",
-      "type": 1
-    },
-    {
-      "answer": "A",
-      "clues": [
-        5,
-        10
+        4,
+        9
       ],
       "type": 1
-    },
-    {
-      "answer": "R",
-      "clues": [
-        5,
-        11
-      ],
-      "type": 1
-    },
-    {},
-    {
-      "answer": "T",
-      "clues": [
-        6,
-        14
-      ],
-      "label": "12",
-      "type": 1
-    },
-    {
-      "answer": "O",
-      "clues": [
-        6,
-        13
-      ],
-      "type": 1
-    },
-    {
-      "answer": "D",
-      "clues": [
-        6,
-        8
-      ],
-      "type": 1
-    },
-    {
-      "answer": "A",
-      "clues": [
-        6,
-        15
-      ],
-      "type": 1
-    },
-    {
-      "answer": "Y",
-      "clues": [
-        6,
-        10
-      ],
-      "type": 1
-    },
-    {},
-    {},
-    {
-      "answer": "T",
-      "clues": [
-        7,
-        14
-      ],
-      "label": "13",
-      "type": 1
-    },
-    {
-      "answer": "R",
-      "clues": [
-        7,
-        13
-      ],
-      "type": 1
-    },
-    {
-      "answer": "O",
-      "clues": [
-        7,
-        8
-      ],
-      "type": 1
-    },
-    {
-      "answer": "Y",
-      "clues": [
-        7,
-        15
-      ],
-      "type": 1
-    },
-    {},
-    {},
-    {}
+    }
   ],
   "clueLists": [
     {
@@ -343,23 +189,17 @@
         1,
         2,
         3,
-        4,
-        5,
-        6,
-        7
+        4
       ],
       "name": "Across"
     },
     {
       "clues": [
+        5,
+        6,
+        7,
         8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15
+        9
       ],
       "name": "Down"
     }
@@ -367,52 +207,68 @@
   "clues": [
     {
       "cells": [
+        0,
+        1,
         2,
-        3,
-        4,
-        5,
-        6
+        3
       ],
       "direction": "Across",
       "label": "1",
       "text": [
         {
-          "plain": "Wide-ranging"
+          "formatted": "<strong>What this clue is in</strong>",
+          "plain": "What this clue is in"
         }
       ]
     },
     {
       "cells": [
-        8,
-        9,
+        5,
+        6,
+        7,
+        8
+      ],
+      "direction": "Across",
+      "label": "5",
+      "text": [
+        {
+          "plain": "Rowing sport"
+        }
+      ]
+    },
+    {
+      "cells": [
         10,
         11,
         12,
-        13
+        13,
+        14
       ],
       "direction": "Across",
       "label": "6",
+      "relatives": [
+        0,
+        1
+      ],
       "text": [
         {
-          "plain": "Country that produces Comte and Camembert"
+          "plain": "Businesses where the tongue-twisted might order a 1-Across/5-Across?"
         }
       ]
     },
     {
       "cells": [
-        14,
-        15,
         16,
         17,
         18,
-        19,
-        20
+        19
       ],
       "direction": "Across",
-      "label": "7",
+      "label": "8",
       "text": [
         {
-          "plain": "Nonet that became an octet in 2006"
+          "formatted": "___ Bunny, &#34;Space Jam&#34; character",
+          "plain": "___ Bunny, \"Space Jam\" character"
         }
       ]
     },
@@ -420,219 +276,102 @@
       "cells": [
         21,
         22,
-        23
-      ],
-      "direction": "Across",
-      "label": "8",
-      "text": [
-        {
-          "formatted": "Toyota&#39;s ___4",
-          "plain": "Toyota's ___4"
-        }
-      ]
-    },
-    {
-      "cells": [
-        25,
-        26,
-        27
+        23,
+        24
       ],
       "direction": "Across",
       "label": "9",
       "text": [
         {
-          "plain": "Bowl-shaped pan"
+          "plain": "End of a cigarette"
         }
       ]
     },
     {
       "cells": [
-        28,
-        29,
-        30,
-        31,
-        32,
-        33
-      ],
-      "direction": "Across",
-      "label": "10",
-      "text": [
-        {
-          "plain": "Highest-grossing film of all time"
-        }
-      ]
-    },
-    {
-      "cells": [
-        35,
-        36,
-        37,
-        38,
-        39
-      ],
-      "direction": "Across",
-      "label": "12",
-      "text": [
-        {
-          "formatted": "First word of Oasis&#39;s &#34;Wonderwall&#34;",
-          "plain": "First word of Oasis's \"Wonderwall\""
-        }
-      ]
-    },
-    {
-      "cells": [
-        42,
-        43,
-        44,
-        45
-      ],
-      "direction": "Across",
-      "label": "13",
-      "text": [
-        {
-          "plain": "Helen of ___ (mythical beauty)"
-        }
-      ]
-    },
-    {
-      "cells": [
-        2,
-        9,
-        16,
-        23,
-        30,
-        37,
-        44
+        0,
+        5,
+        10
       ],
       "direction": "Down",
       "label": "1",
       "list": 1,
       "text": [
         {
-          "plain": "Swagger"
+          "plain": "Include secretly, as on an email"
         }
       ]
     },
     {
       "cells": [
-        3,
-        10,
-        17
+        1,
+        6,
+        11,
+        16,
+        21
       ],
       "direction": "Down",
       "label": "2",
       "list": 1,
       "text": [
         {
-          "plain": "Competed in a marathon"
+          "plain": "Toothbrush brand"
         }
       ]
     },
     {
       "cells": [
-        4,
-        11,
-        18,
-        25,
-        32,
-        39
+        2,
+        7,
+        12,
+        17,
+        22
       ],
       "direction": "Down",
       "label": "3",
       "list": 1,
       "text": [
         {
-          "plain": "Street sign with an arrow"
+          "formatted": "Gaston&#39;s sidekick in &#34;Beauty and the Beast&#34; (French for &#34;the fool&#34;)",
+          "plain": "Gaston's sidekick in \"Beauty and the Beast\" (French for \"the fool\")"
         }
       ]
     },
     {
       "cells": [
-        5,
-        12,
-        19,
-        26,
-        33
+        3,
+        8,
+        13,
+        18,
+        23
       ],
       "direction": "Down",
       "label": "4",
       "list": 1,
       "text": [
         {
-          "plain": "Jon Hamm or Kevin Bacon"
-        }
-      ]
-    },
-    {
-      "cells": [
-        6,
-        13,
-        20,
-        27
-      ],
-      "direction": "Down",
-      "label": "5",
-      "list": 1,
-      "text": [
-        {
-          "plain": "Office furniture"
-        }
-      ]
-    },
-    {
-      "cells": [
-        8,
-        15,
-        22,
-        29,
-        36,
-        43
-      ],
-      "direction": "Down",
-      "label": "6",
-      "list": 1,
-      "text": [
-        {
-          "plain": "Ice cream option"
+          "plain": "Resided (in)"
         }
       ]
     },
     {
       "cells": [
         14,
-        21,
-        28,
-        35,
-        42
+        19,
+        24
       ],
       "direction": "Down",
       "label": "7",
       "list": 1,
       "text": [
         {
-          "formatted": "Chris of &#34;Guardians of the Galaxy&#34;",
-          "plain": "Chris of \"Guardians of the Galaxy\""
-        }
-      ]
-    },
-    {
-      "cells": [
-        31,
-        38,
-        45
-      ],
-      "direction": "Down",
-      "label": "11",
-      "list": 1,
-      "text": [
-        {
-          "plain": "When doubled, nickname for pop star Swift"
+          "plain": "Took a chair"
         }
       ]
     }
   ],
   "dimensions": {
-    "height": 7,
-    "width": 7
+    "height": 5,
+    "width": 5
   }
 }

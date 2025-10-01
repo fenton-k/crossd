@@ -311,6 +311,36 @@ function removePrimaryStyle() {
     .forEach((cell) => cell.classList.remove("active-primary"));
 }
 
+// script.js
+
+// This function runs on page load to check for win data in the URL
+(function updateMetaTagsForPreview() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const timeInSeconds = urlParams.get("time");
+
+  if (timeInSeconds) {
+    const minutes = Math.floor(timeInSeconds / 60);
+    const seconds = timeInSeconds % 60;
+    const timeString = `${minutes}:${seconds.toString().padStart(2, "0")}`;
+
+    const title = `SF Divides Puzzle Solved in ${timeString}!`;
+    const description = `I finished the puzzle in ${timeString}. Can you beat my time?`;
+
+    // Update the page title
+    document.title = title;
+
+    // Update Open Graph (Facebook, iMessage, etc.) and Twitter meta tags
+    document
+      .querySelector('meta[property="og:title"]')
+      .setAttribute("content", title);
+    document
+      .querySelector('meta[property="og:description"]')
+      .setAttribute("content", description);
+    // You might also want a different image for solved puzzles
+    // document.querySelector('meta[property="og:image"]').setAttribute("content", "URL_TO_WIN_IMAGE");
+  }
+})();
+
 // MODIFICATION: Uses the stored clue.indices instead of calculating cell position.
 function moveInClue(direction = "forward") {
   const clue = state.activeClue;
@@ -378,13 +408,10 @@ function checkPuzzle() {
   const cells = Array.from(document.querySelectorAll(".cell"));
 
   for (let i = 0; i < cells.length; i++) {
-    // Only check non-block cells
     if (cells[i].classList.contains("block")) continue;
 
-    // The flatPuzzle array may contain "_" for block cells,
-    // but the cells array contains the *p* elements.
     const userLetter = cells[i].textContent.trim().toUpperCase();
-    const correctLetter = flatPuzzle[i] || ""; // The correct letter for this cell
+    const correctLetter = flatPuzzle[i] || "";
 
     if (userLetter !== correctLetter) {
       alert("Oops, you have a mistake!");
@@ -394,7 +421,7 @@ function checkPuzzle() {
 
   puzzleCompleted = true;
   clearInterval(timerInterval);
-  alert("Congrats, you win!");
+  // 🔽 MODIFIED: Call showShareLink instead of alert
   showShareLink();
   return true;
 }
@@ -423,13 +450,40 @@ function isPuzzleFilled() {
   return cells.every((cell) => cell.textContent.trim() !== "");
 }
 
+// 🔽 REPLACED a new, more powerful share function
 function showShareLink() {
-  const timerText = document.getElementById("timer").textContent.trim();
-  const link = window.location.href;
-  const message = `I finished today's puzzle in ${timerText}! Try it yourself: ${link}`;
-  const encodedMessage = encodeURIComponent(message);
-  const smsUrl = `sms:&body=${encodedMessage}`;
-  // You might want to use a more general share/copy to clipboard for web apps
-  // window.open(smsUrl, "_blank");
-  console.log(message); // log for testing
+  const modal = document.getElementById("share-modal");
+  const finalTimeDisplay = document.getElementById("final-time");
+  const copyButton = document.getElementById("copy-link-button");
+  const copyConfirmation = document.getElementById("copy-confirmation");
+
+  // Format time for display
+  const minutes = Math.floor(secondsElapsed / 60);
+  const seconds = secondsElapsed % 60;
+  const timeString = `${minutes}:${seconds.toString().padStart(2, "0")}`;
+  finalTimeDisplay.textContent = timeString;
+
+  // Build the shareable URL with the time in seconds
+  const baseUrl = window.location.origin + window.location.pathname;
+  const shareUrl = `${baseUrl}?time=${secondsElapsed}`;
+
+  // Show the modal
+  modal.style.display = "flex";
+
+  // Handle copy button click
+  copyButton.onclick = function () {
+    navigator.clipboard
+      .writeText(shareUrl)
+      .then(() => {
+        // Show confirmation message
+        copyConfirmation.style.display = "block";
+        // Hide it after 2 seconds
+        setTimeout(() => {
+          copyConfirmation.style.display = "none";
+        }, 2000);
+      })
+      .catch((err) => {
+        console.error("Failed to copy: ", err);
+      });
+  };
 }
