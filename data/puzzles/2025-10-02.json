@@ -1,0 +1,356 @@
+{
+  "cells": [
+    {
+      "answer": "N",
+      "clues": [
+        0,
+        5
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        0,
+        6
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        5
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        1,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        1,
+        8
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "M",
+      "clues": [
+        2,
+        5
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        2,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        2,
+        9
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "H",
+      "clues": [
+        3,
+        6
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "H",
+      "clues": [
+        4,
+        7
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        4,
+        9
+      ],
+      "type": 1
+    }
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "formatted": "Whoopi in &#34;Sister Act,&#34; either way you look at it",
+          "plain": "Whoopi in \"Sister Act,\" either way you look at it"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "direction": "Across",
+      "label": "4",
+      "text": [
+        {
+          "plain": "Resting on"
+        }
+      ]
+    },
+    {
+      "cells": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "direction": "Across",
+      "label": "6",
+      "text": [
+        {
+          "plain": "Nancy Pelosi's title from 2019 to ’23, either way you look at it"
+        }
+      ]
+    },
+    {
+      "cells": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Science fiction award won by N.K. Jemisin three years in a row"
+        }
+      ]
+    },
+    {
+      "cells": [
+        22,
+        23,
+        24
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Tailor's edge"
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        5,
+        10
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "Setting for the war novels &#34;The Sympathizer&#34; and &#34;The Women,&#34; informally",
+          "plain": "Setting for the war novels \"The Sympathizer\" and \"The Women,\" informally"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        6,
+        11,
+        16
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Six-sided state"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        7,
+        12,
+        17,
+        22
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "&#34;Obviously!&#34;",
+          "plain": "\"Obviously!\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        8,
+        13,
+        18,
+        23
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Website part"
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        19,
+        24
+      ],
+      "direction": "Down",
+      "label": "7",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "Lorelai Gilmore on &#34;Gilmore Girls,&#34; either way you look at it",
+          "plain": "Lorelai Gilmore on \"Gilmore Girls,\" either way you look at it"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 5,
+    "width": 5
+  }
+}
