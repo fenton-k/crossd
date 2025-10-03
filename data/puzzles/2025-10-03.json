@@ -1,0 +1,382 @@
+{
+  "cells": [
+    {},
+    {},
+    {
+      "answer": "G",
+      "clues": [
+        0,
+        5
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        0,
+        6
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        8
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "C",
+      "clues": [
+        1,
+        9
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        1,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "C",
+      "clues": [
+        2,
+        8
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        2,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        3,
+        8
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        3,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        3,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "B",
+      "clues": [
+        4,
+        9
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        6
+      ],
+      "type": 1
+    },
+    {}
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        2,
+        3,
+        4
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "The fitting missing letters in _OOGLE MA_ _"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "direction": "Across",
+      "label": "4",
+      "text": [
+        {
+          "plain": "Amtrak express train"
+        }
+      ]
+    },
+    {
+      "cells": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "direction": "Across",
+      "label": "6",
+      "relatives": [
+        6,
+        9
+      ],
+      "text": [
+        {
+          "plain": "With 2- and 5-Down, distinction for kids who finish their whole dinner"
+        }
+      ]
+    },
+    {
+      "cells": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "formatted": "Desires, with &#34;after&#34;",
+          "plain": "Desires, with \"after\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        22,
+        23
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Honey Nut Cheerios mascot"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        7,
+        12,
+        17,
+        22
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "&#34;Silly&#34; birds",
+          "plain": "\"Silly\" birds"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        8,
+        13,
+        18,
+        23
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "relatives": [
+        2
+      ],
+      "text": [
+        {
+          "plain": "See 6-Across"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        9,
+        14,
+        19
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Without"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        10,
+        15
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "Knee tissue that&#39;s prone to tearing, for short",
+          "plain": "Knee tissue that's prone to tearing, for short"
+        }
+      ]
+    },
+    {
+      "cells": [
+        6,
+        11,
+        16,
+        21
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "relatives": [
+        2
+      ],
+      "text": [
+        {
+          "plain": "See 6-Across"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 5,
+    "width": 5
+  }
+}
