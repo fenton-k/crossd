@@ -1,0 +1,433 @@
+{
+  "cells": [
+    {},
+    {
+      "answer": "C",
+      "clues": [
+        0,
+        5
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        0,
+        6
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "G",
+      "clues": [
+        1,
+        9
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        1,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        1,
+        10
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        9
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        2,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        2,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        2,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        3,
+        9
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        3,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "X",
+      "clues": [
+        3,
+        10
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "R",
+      "clues": [
+        4,
+        5
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        4,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        4,
+        8
+      ],
+      "type": 1
+    },
+    {}
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "___ of personality"
+        }
+      ]
+    },
+    {
+      "cells": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "direction": "Across",
+      "label": "5",
+      "text": [
+        {
+          "plain": "Spelling Bee rank achieved by getting 70% of total points"
+        }
+      ]
+    },
+    {
+      "cells": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "plain": "THC-infused gummy, e.g."
+        }
+      ]
+    },
+    {
+      "cells": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Grid with numbers"
+        }
+      ]
+    },
+    {
+      "cells": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Harvest"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        7,
+        13,
+        19,
+        25
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Moth-repellent wood"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        8,
+        14,
+        20,
+        26
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Join together"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        9,
+        15,
+        21,
+        27
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Zodiac sign before Scorpio"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        10,
+        16,
+        22,
+        28
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Flower that caused the world's first economic bubble in the 1630s"
+        }
+      ]
+    },
+    {
+      "cells": [
+        6,
+        12,
+        18
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Rock on a band"
+        }
+      ]
+    },
+    {
+      "cells": [
+        11,
+        17,
+        23
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "plain": "It sells, in an old maxim"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 5,
+    "width": 6
+  }
+}
