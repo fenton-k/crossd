@@ -1,0 +1,388 @@
+{
+  "cells": [
+    {
+      "answer": "C",
+      "clues": [
+        0,
+        6
+      ],
+      "label": "1",
+      "type": 2
+    },
+    {
+      "answer": "I",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        0,
+        9
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        6
+      ],
+      "label": "5",
+      "type": 2
+    },
+    {
+      "answer": "C",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 2
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        1,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        2,
+        6
+      ],
+      "label": "6",
+      "type": 2
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        7
+      ],
+      "type": 2
+    },
+    {
+      "answer": "C",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 2
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        3,
+        6
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 2
+    },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 2
+    },
+    {
+      "answer": "D",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        4,
+        6
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        4,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        4,
+        8
+      ],
+      "type": 2
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        9
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        5,
+        7
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        5,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        5,
+        9
+      ],
+      "type": 1
+    }
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "Smokes, informally"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "direction": "Across",
+      "label": "5",
+      "text": [
+        {
+          "formatted": "&#34;Don&#39;t have ___, man!&#34; (Bart Simpson catchphrase)",
+          "plain": "\"Don't have ___, man!\" (Bart Simpson catchphrase)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "direction": "Across",
+      "label": "6",
+      "text": [
+        {
+          "plain": "What the vehicle in \"lane one\" of this crossword is winning?"
+        }
+      ]
+    },
+    {
+      "cells": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "plain": "Pitt of Hollywood"
+        }
+      ]
+    },
+    {
+      "cells": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "formatted": "&#34;Yeah, whatever&#34;",
+          "plain": "\"Yeah, whatever\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        22,
+        23
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Rd. crossers"
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        4,
+        8,
+        12,
+        16
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Things to \"load\" before a marathon"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        5,
+        9,
+        13,
+        17,
+        21
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Mythical figure who inspired the idiom \"fly too close to the sun\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Zoomer around a small track"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        7,
+        11,
+        15,
+        19,
+        23
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Neighbors of Norwegians"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 6,
+    "width": 4
+  }
+}
