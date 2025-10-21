@@ -1,0 +1,369 @@
+{
+  "cells": [
+    {},
+    {},
+    {
+      "answer": "J",
+      "clues": [
+        0,
+        5
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        0,
+        6
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "J",
+      "clues": [
+        1,
+        8
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        1,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "J",
+      "clues": [
+        2,
+        9
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        2,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        2,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        3,
+        9
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        3,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        3,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        4,
+        9
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        4,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        4,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        4,
+        6
+      ],
+      "type": 1
+    },
+    {}
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        2,
+        3,
+        4
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "Bone that can be \"dropped\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "direction": "Across",
+      "label": "4",
+      "text": [
+        {
+          "plain": "Late scientist Goodall"
+        }
+      ]
+    },
+    {
+      "cells": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "direction": "Across",
+      "label": "5",
+      "text": [
+        {
+          "plain": "Make critical assumptions about"
+        }
+      ]
+    },
+    {
+      "cells": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "direction": "Across",
+      "label": "6",
+      "text": [
+        {
+          "plain": "Best by a little"
+        }
+      ]
+    },
+    {
+      "cells": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "plain": "Mercury, Jupiter, Saturn, etc."
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        7,
+        12,
+        17,
+        22
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Just kind of over it"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        8,
+        13,
+        18,
+        23
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Beef cattle breed"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        9,
+        14,
+        19
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Shed tears"
+        }
+      ]
+    },
+    {
+      "cells": [
+        6,
+        11,
+        16,
+        21
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "2007 comedy-drama starring Elliot Page and Michael Cera"
+        }
+      ]
+    },
+    {
+      "cells": [
+        10,
+        15,
+        20
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "Refresh, as one&#39;s memory",
+          "plain": "Refresh, as one's memory"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 5,
+    "width": 5
+  }
+}
