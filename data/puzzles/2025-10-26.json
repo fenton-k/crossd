@@ -1,0 +1,374 @@
+{
+  "cells": [
+    {
+      "answer": "B",
+      "clues": [
+        0,
+        5
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        0,
+        6
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        5
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        1,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "G",
+      "clues": [
+        2,
+        5
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        2,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        2,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        2,
+        9
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        6
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        4,
+        6
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        4,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        4,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        4,
+        9
+      ],
+      "type": 1
+    }
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "formatted": "Rubber ducky&#39;s &#34;habitat&#34;",
+          "plain": "Rubber ducky's \"habitat\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "direction": "Across",
+      "label": "5",
+      "text": [
+        {
+          "plain": "Coin in Cannes"
+        }
+      ]
+    },
+    {
+      "cells": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "direction": "Across",
+      "label": "6",
+      "text": [
+        {
+          "formatted": "Go &#34;Grrrr ...&#34;",
+          "plain": "Go \"Grrrr ...\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "formatted": "&#34;The other thing I wanted to say ...&#34;",
+          "plain": "\"The other thing I wanted to say ...\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Street sign in a school zone"
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        5,
+        10
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Plead"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        6,
+        11,
+        16,
+        21
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Vibes, in Gen Z speak"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        7,
+        12,
+        17,
+        22
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Social media menace"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        8,
+        13,
+        18,
+        23
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "&#34;Oh, yeah? Explain that to me&#34;",
+          "plain": "\"Oh, yeah? Explain that to me\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        19,
+        24
+      ],
+      "direction": "Down",
+      "label": "7",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Like a phone battery under 20%"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 5,
+    "width": 5
+  }
+}
