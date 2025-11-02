@@ -1,0 +1,370 @@
+{
+  "cells": [
+    {
+      "answer": "I",
+      "clues": [
+        0,
+        5
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        0,
+        6
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "Q",
+      "clues": [
+        1,
+        5
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        1,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "Z",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        2,
+        5
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        2,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        2,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        2,
+        9
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "J",
+      "clues": [
+        3,
+        6
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "K",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "A",
+      "clues": [
+        4,
+        6
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        4,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        4,
+        9
+      ],
+      "type": 1
+    }
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "State with more pigs than people"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "direction": "Across",
+      "label": "5",
+      "text": [
+        {
+          "plain": "Sporcle offering"
+        }
+      ]
+    },
+    {
+      "cells": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "direction": "Across",
+      "label": "6",
+      "text": [
+        {
+          "plain": "Facial cavity that can become congested"
+        }
+      ]
+    },
+    {
+      "cells": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Jamaican style of preparing chicken"
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "On the ocean"
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        5,
+        10
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Geniuses have high ones"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        6,
+        11,
+        16,
+        21
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Kind of board whose name is trademarked by Hasbro"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        7,
+        12,
+        17,
+        22
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Drinks kept in a cellar"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        8,
+        13,
+        18,
+        23
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Sky-blue"
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        19,
+        24
+      ],
+      "direction": "Down",
+      "label": "7",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Reggae relative"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 5,
+    "width": 5
+  }
+}
