@@ -1,0 +1,727 @@
+{
+  "cells": [
+    {
+      "answer": "I",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        0,
+        9
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "J",
+      "clues": [
+        0,
+        10
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        0,
+        11
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "C",
+      "clues": [
+        0,
+        12
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        0,
+        13
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        1,
+        7
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        1,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        1,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        1,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        2,
+        7
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "K",
+      "clues": [
+        2,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        2,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        2,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        13
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "T",
+      "clues": [
+        3,
+        9
+      ],
+      "label": "10",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        3,
+        11
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "F",
+      "clues": [
+        4,
+        14
+      ],
+      "label": "11",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        4,
+        15
+      ],
+      "label": "12",
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        4,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        4,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        4,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "C",
+      "clues": [
+        4,
+        16
+      ],
+      "label": "13",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        4,
+        17
+      ],
+      "label": "14",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        5,
+        14
+      ],
+      "label": "15",
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        5,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        5,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        5,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        5,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        5,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        5,
+        17
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        6,
+        14
+      ],
+      "label": "16",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        6,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "X",
+      "clues": [
+        6,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        6,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        6,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        6,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        6,
+        17
+      ],
+      "type": 1
+    }
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "formatted": "&#34;Stop, Your Honor!&#34;",
+          "plain": "\"Stop, Your Honor!\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "formatted": "Mont Blanc&#39;s mountain range",
+          "plain": "Mont Blanc's mountain range"
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "formatted": "&#34;Hips Don&#39;t Lie&#34; singer",
+          "plain": "\"Hips Don't Lie\" singer"
+        }
+      ]
+    },
+    {
+      "cells": [
+        23,
+        24,
+        25
+      ],
+      "direction": "Across",
+      "label": "10",
+      "text": [
+        {
+          "formatted": "Professor&#39;s helpers, for short",
+          "plain": "Professor's helpers, for short"
+        }
+      ]
+    },
+    {
+      "cells": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "direction": "Across",
+      "label": "11",
+      "text": [
+        {
+          "plain": "Cotton, linen and satin"
+        }
+      ]
+    },
+    {
+      "cells": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "direction": "Across",
+      "label": "15",
+      "text": [
+        {
+          "plain": "Words before sharing a funny joke"
+        }
+      ]
+    },
+    {
+      "cells": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "direction": "Across",
+      "label": "16",
+      "text": [
+        {
+          "plain": "Woman who's told \"You don't have to put on the red light,\" in a hit by the Police"
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        7,
+        14
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "The &#34;I&#34; of T.G.I.F.",
+          "plain": "The \"I\" of T.G.I.F."
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        8,
+        15
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "&#34;NOW I understand!&#34;",
+          "plain": "\"NOW I understand!\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37,
+        44
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "Make percussion noises with one&#39;s mouth",
+          "plain": "Make percussion noises with one's mouth"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        10,
+        17,
+        24,
+        31,
+        38,
+        45
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Capital of Indonesia"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        11,
+        18,
+        25,
+        32,
+        39,
+        46
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Shortening in speech, as from \"captain\" to \"cap'n\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        12,
+        19
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "E.M.T.&#39;s skill",
+          "plain": "E.M.T.'s skill"
+        }
+      ]
+    },
+    {
+      "cells": [
+        6,
+        13,
+        20
+      ],
+      "direction": "Down",
+      "label": "7",
+      "list": 1,
+      "text": [
+        {
+          "plain": "They might ask you to remove your shoes, for short"
+        }
+      ]
+    },
+    {
+      "cells": [
+        28,
+        35,
+        42
+      ],
+      "direction": "Down",
+      "label": "11",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Christmas tree variety"
+        }
+      ]
+    },
+    {
+      "cells": [
+        29,
+        36,
+        43
+      ],
+      "direction": "Down",
+      "label": "12",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Many moons ___"
+        }
+      ]
+    },
+    {
+      "cells": [
+        33,
+        40,
+        47
+      ],
+      "direction": "Down",
+      "label": "13",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Channel whose initials are hidden from left to right in the word CHANNEL"
+        }
+      ]
+    },
+    {
+      "cells": [
+        34,
+        41,
+        48
+      ],
+      "direction": "Down",
+      "label": "14",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Get a glimpse of"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 7,
+    "width": 7
+  }
+}
