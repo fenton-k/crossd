@@ -1,0 +1,382 @@
+{
+  "cells": [
+    {
+      "answer": "C",
+      "clues": [
+        0,
+        5
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        0,
+        6
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "F",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "B",
+      "clues": [
+        1,
+        5
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "X",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        1,
+        9
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        2,
+        5
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        2,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        2,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "R",
+      "clues": [
+        3,
+        6
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        4,
+        6
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        4,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        4,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        4,
+        9
+      ],
+      "type": 1
+    }
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "Apt profession for someone named Rosemary or Ginger"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "direction": "Across",
+      "label": "5",
+      "text": [
+        {
+          "plain": "Get to go, as leftovers"
+        }
+      ]
+    },
+    {
+      "cells": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "plain": "Word that can precede Bowl or Glue"
+        }
+      ]
+    },
+    {
+      "cells": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Intense anger"
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "formatted": "&#34;Cut that out!&#34;",
+          "plain": "\"Cut that out!\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        5,
+        10
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "Stephen Colbert&#39;s network",
+          "plain": "Stephen Colbert's network"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        6,
+        11,
+        16,
+        21
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Noted group of 24"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        7,
+        12,
+        17,
+        22
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "One living abroad, informally"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        8,
+        13,
+        18,
+        23
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "Spanish for &#34;fire&#34;",
+          "plain": "Spanish for \"fire\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        9,
+        14,
+        19,
+        24
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Do some kitchen work"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 5,
+    "width": 5
+  }
+}
