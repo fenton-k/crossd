@@ -1,12 +1,24 @@
 const fs = require("fs").promises;
 const https = require("https");
 
+const https = require("https");
+
 function fetchJson(url) {
   return new Promise((resolve, reject) => {
+    const options = {
+      headers: {
+        "x-games-auth-bypass": "true",
+      },
+    };
+
     https
-      .get(url, (res) => {
+      .get(url, options, (res) => {
         let data = "";
-        res.on("data", (chunk) => (data += chunk));
+
+        res.on("data", (chunk) => {
+          data += chunk;
+        });
+
         res.on("end", () => {
           try {
             resolve(JSON.parse(data));
