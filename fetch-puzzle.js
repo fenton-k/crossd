@@ -1,8 +1,6 @@
 const fs = require("fs").promises;
 const https = require("https");
 
-const https = require("https");
-
 function fetchJson(url) {
   return new Promise((resolve, reject) => {
     const options = {
