@@ -63,6 +63,7 @@ async function fetchPuzzle() {
     console.log(`Dimensions: ${dimensions.width} x ${dimensions.height}`);
   } catch (error) {
     console.error("Error fetching puzzle:", error.message);
+    process.exit(1);
   }
 }
 
