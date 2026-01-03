@@ -1,0 +1,791 @@
+{
+  "cells": [
+    {},
+    {},
+    {
+      "answer": "B",
+      "clues": [
+        0,
+        10
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        0,
+        11
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        0,
+        12
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        0,
+        13
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "answer": "V",
+      "clues": [
+        1,
+        14
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        1,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        1,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        1,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        1,
+        15
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "D",
+      "clues": [
+        2,
+        16
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        2,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        2,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        2,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        2,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        2,
+        17
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        3,
+        16
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "C",
+      "clues": [
+        3,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        3,
+        10
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        13
+      ],
+      "label": "10",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        4,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        4,
+        17
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        5,
+        16
+      ],
+      "label": "11",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        5,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        5,
+        10
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "R",
+      "clues": [
+        6,
+        13
+      ],
+      "label": "12",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        6,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        6,
+        17
+      ],
+      "type": 1
+    },
+    {
+      "answer": "C",
+      "clues": [
+        7,
+        16
+      ],
+      "label": "13",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        7,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        7,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        7,
+        18
+      ],
+      "label": "14",
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        7,
+        19
+      ],
+      "label": "15",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        7,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        7,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        7,
+        17
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        8,
+        14
+      ],
+      "label": "16",
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        8,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        8,
+        18
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        8,
+        19
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        8,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        8,
+        15
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "answer": "Y",
+      "clues": [
+        9,
+        10
+      ],
+      "label": "17",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        9,
+        18
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        9,
+        19
+      ],
+      "type": 1
+    },
+    {
+      "answer": "K",
+      "clues": [
+        9,
+        13
+      ],
+      "type": 1
+    },
+    {},
+    {}
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "Tapioca pearls"
+        }
+      ]
+    },
+    {
+      "cells": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "direction": "Across",
+      "label": "5",
+      "text": [
+        {
+          "plain": "Disappear into thin air"
+        }
+      ]
+    },
+    {
+      "cells": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "formatted": "&#34;C&#39;mon, we expect more from you&#34;",
+          "plain": "\"C'mon, we expect more from you\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        24,
+        25,
+        26
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Dangerous, as a winter sidewalk"
+        }
+      ]
+    },
+    {
+      "cells": [
+        29,
+        30,
+        31
+      ],
+      "direction": "Across",
+      "label": "10",
+      "text": [
+        {
+          "formatted": "Social media ___ (what we&#39;re in now)",
+          "plain": "Social media ___ (what we're in now)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        32,
+        33,
+        34
+      ],
+      "direction": "Across",
+      "label": "11",
+      "text": [
+        {
+          "plain": "Feeling down"
+        }
+      ]
+    },
+    {
+      "cells": [
+        37,
+        38,
+        39
+      ],
+      "direction": "Across",
+      "label": "12",
+      "text": [
+        {
+          "plain": "Director Howard"
+        }
+      ]
+    },
+    {
+      "cells": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "direction": "Across",
+      "label": "13",
+      "text": [
+        {
+          "plain": "Nightlife for which Miami is famous"
+        }
+      ]
+    },
+    {
+      "cells": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54
+      ],
+      "direction": "Across",
+      "label": "16",
+      "text": [
+        {
+          "plain": "Cause of early aging"
+        }
+      ]
+    },
+    {
+      "cells": [
+        58,
+        59,
+        60,
+        61
+      ],
+      "direction": "Across",
+      "label": "17",
+      "text": [
+        {
+          "formatted": "The sun in &#34;sunnyside up&#34;",
+          "plain": "The sun in \"sunnyside up\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        10,
+        18,
+        26,
+        34,
+        42,
+        50,
+        58
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "New parent's reason for canceling plans",
+          "plain": "New parent's reason for canceling plans"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        11,
+        19
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "4/4"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        12,
+        20
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Fraction of a byte"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        13,
+        21,
+        29,
+        37,
+        45,
+        53,
+        61
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Symbol next to a tainted record"
+        }
+      ]
+    },
+    {
+      "cells": [
+        9,
+        17,
+        25,
+        33,
+        41,
+        49
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "Singer&#39;s contribution to a song",
+          "plain": "Singer's contribution to a song"
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        22,
+        30,
+        38,
+        46,
+        54
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Long-necked birds"
+        }
+      ]
+    },
+    {
+      "cells": [
+        16,
+        24,
+        32,
+        40
+      ],
+      "direction": "Down",
+      "label": "7",
+      "list": 1,
+      "text": [
+        {
+          "plain": "___ golf"
+        }
+      ]
+    },
+    {
+      "cells": [
+        23,
+        31,
+        39,
+        47
+      ],
+      "direction": "Down",
+      "label": "8",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Sounded, as a doorbell"
+        }
+      ]
+    },
+    {
+      "cells": [
+        43,
+        51,
+        59
+      ],
+      "direction": "Down",
+      "label": "14",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "&#34;Dude!&#34;",
+          "plain": "\"Dude!\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        44,
+        52,
+        60
+      ],
+      "direction": "Down",
+      "label": "15",
+      "list": 1,
+      "text": [
+        {
+          "plain": "___ Air (neighborhood in L.A.)"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 8,
+    "width": 8
+  }
+}
