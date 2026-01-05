@@ -1,0 +1,375 @@
+{
+  "cells": [
+    {},
+    {
+      "answer": "A",
+      "clues": [
+        0,
+        5
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        0,
+        6
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "B",
+      "clues": [
+        1,
+        8
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        1,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "C",
+      "clues": [
+        1,
+        9
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        2,
+        8
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        2,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        2,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        2,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        3,
+        8
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        3,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        3,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "A",
+      "clues": [
+        4,
+        5
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        4,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        7
+      ],
+      "type": 1
+    },
+    {}
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        1,
+        2,
+        3
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "formatted": "&#34;Now I get it!&#34;",
+          "plain": "\"Now I get it!\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "direction": "Across",
+      "label": "4",
+      "text": [
+        {
+          "formatted": "Benoit ___, detective in the &#34;Knives Out&#34; films",
+          "plain": "Benoit ___, detective in the \"Knives Out\" films"
+        }
+      ]
+    },
+    {
+      "cells": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "direction": "Across",
+      "label": "6",
+      "text": [
+        {
+          "formatted": "Give one&#39;s two cents",
+          "plain": "Give one's two cents"
+        }
+      ]
+    },
+    {
+      "cells": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "plain": "Time difference between the East and West Coast, in hours"
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        22,
+        23
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "formatted": "Pirate&#39;s assent",
+          "plain": "Pirate's assent"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        6,
+        11,
+        16,
+        21
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Generation after Gen Z"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        7,
+        12,
+        17,
+        22
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "In need of a shave"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        8,
+        13,
+        18,
+        23
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "&#34;Bonne ___!&#34; (&#34;Happy New Year!,&#34; in French)",
+          "plain": "\"Bonne ___!\" (\"Happy New Year!,\" in French)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        10,
+        15
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Many a social media antagonist, sadly"
+        }
+      ]
+    },
+    {
+      "cells": [
+        9,
+        14,
+        19
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "formatted": "First in &#34;class&#34;?",
+          "plain": "First in \"class\"?"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 5,
+    "width": 5
+  }
+}
