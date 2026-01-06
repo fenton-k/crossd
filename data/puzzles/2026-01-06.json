@@ -1,0 +1,390 @@
+{
+  "cells": [
+    {
+      "answer": "N",
+      "clues": [
+        0,
+        5
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        0,
+        6
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "V",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        0,
+        9
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        5
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        1,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        1,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        2,
+        5
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        2,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        2,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "F",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "T",
+      "clues": [
+        3,
+        6
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        6
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        4,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        4,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        9
+      ],
+      "type": 1
+    }
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "When pigs fly"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "direction": "Across",
+      "label": "6",
+      "text": [
+        {
+          "formatted": "Courtroom excuse",
+          "plain": "Courtroom excuse"
+        }
+      ]
+    },
+    {
+      "cells": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "formatted": "&#34;That&#39;s a ___!&#34; (&#34;Seems unlikely!&#34;)",
+          "plain": "\"That's a ___!\" (\"Seems unlikely!\")"
+        }
+      ]
+    },
+    {
+      "cells": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Cash register compartment"
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "She, in French"
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        5,
+        10
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Catch, as a crook"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        6,
+        11,
+        16,
+        21
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Designation for prolific Yelp reviewers"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        7,
+        12,
+        17,
+        22
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Candlelight ___ (solemn observance)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        8,
+        13,
+        18,
+        23
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Online invoice"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        9,
+        14,
+        19,
+        24
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Piece of equipment in a Winter Olympics biathlon"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 5,
+    "width": 5
+  }
+}
