@@ -40,7 +40,7 @@ function getTodayInEST() {
 
 async function loadPuzzle() {
   const today = getTodayInEST();
-  const response = await fetch(`data/puzzles/${today}.json`);
+  const response = await fetch(`https://raw.githubusercontent.com/fenton-k/crossd/refs/heads/main/data/puzzles/${today}.json`);
   const data = await response.json();
 
   const { cells, dimensions, clues: clueArr } = data;
