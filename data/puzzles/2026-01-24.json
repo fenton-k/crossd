@@ -1,0 +1,616 @@
+{
+  "cells": [
+    {},
+    {},
+    {},
+    {
+      "answer": "P",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        0,
+        9
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        0,
+        10
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        1,
+        11
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        1,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        10
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "M",
+      "clues": [
+        2,
+        12
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        2,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        2,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        3,
+        13
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        3,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        3,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        3,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        4,
+        13
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        4,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        4,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        4,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        4,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        4,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        5,
+        13
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        5,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        5,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        5,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        5,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        5,
+        9
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "E",
+      "clues": [
+        6,
+        13
+      ],
+      "label": "10",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        6,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        6,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        6,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        6,
+        8
+      ],
+      "type": 1
+    },
+    {},
+    {}
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "Snow day vehicle"
+        }
+      ]
+    },
+    {
+      "cells": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "direction": "Across",
+      "label": "5",
+      "text": [
+        {
+          "plain": "Steam room alternative"
+        }
+      ]
+    },
+    {
+      "cells": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "direction": "Across",
+      "label": "6",
+      "text": [
+        {
+          "plain": "Show on which Jon Hamm had his breakout role"
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "plain": "Subject of negotiations with a 3-year-old"
+        }
+      ]
+    },
+    {
+      "cells": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Respected veteran, in slang"
+        }
+      ]
+    },
+    {
+      "cells": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Gain back, as trust"
+        }
+      ]
+    },
+    {
+      "cells": [
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "direction": "Across",
+      "label": "10",
+      "text": [
+        {
+          "plain": "Spooky"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        10,
+        17,
+        24,
+        31,
+        38,
+        45
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Noodle dish garnished with lime wedges and crushed peanuts"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        11,
+        18,
+        25,
+        32,
+        39,
+        46
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Singing candlestick in \"Beauty and the Beast\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        12,
+        19,
+        26,
+        33,
+        40
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "___ band"
+        }
+      ]
+    },
+    {
+      "cells": [
+        6,
+        13,
+        20,
+        27,
+        34
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Decreased in size, as the moon"
+        }
+      ]
+    },
+    {
+      "cells": [
+        9,
+        16,
+        23,
+        30,
+        37,
+        44
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "More blue"
+        }
+      ]
+    },
+    {
+      "cells": [
+        15,
+        22,
+        29,
+        36,
+        43
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Chaotic fight"
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        28,
+        35,
+        42
+      ],
+      "direction": "Down",
+      "label": "7",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Total snoozefest"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 7,
+    "width": 7
+  }
+}
