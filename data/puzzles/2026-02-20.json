@@ -1,0 +1,388 @@
+{
+  "cells": [
+    {
+      "answer": "W",
+      "clues": [
+        0,
+        5
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        0,
+        6
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        0,
+        9
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        1,
+        5
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        1,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        2,
+        5
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        2,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        2,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        3,
+        5
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        3,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        4,
+        6
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "K",
+      "clues": [
+        4,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        4,
+        8
+      ],
+      "type": 1
+    },
+    {}
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "Political party that competed with Democrats during the 1830s-’50s"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "direction": "Across",
+      "label": "6",
+      "text": [
+        {
+          "plain": "Four Seasons, e.g."
+        }
+      ]
+    },
+    {
+      "cells": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "plain": "Dinosaur in the Mario games"
+        }
+      ]
+    },
+    {
+      "cells": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Blizzard or hurricane"
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        22,
+        23
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "We all look up to it"
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "\"Oh yeah, ___ that?\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        6,
+        11,
+        16,
+        21
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Says \"who\"?"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        7,
+        12,
+        17,
+        22
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "\"No worries\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        8,
+        13,
+        18,
+        23
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Postmodern architect Frank"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        9,
+        14,
+        19
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Narrow"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 5,
+    "width": 5
+  }
+}
