@@ -1,0 +1,803 @@
+{
+  "cells": [
+    {
+      "answer": "D",
+      "clues": [
+        0,
+        14
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        0,
+        15
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "F",
+      "clues": [
+        0,
+        16
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        1,
+        17
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        18
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        1,
+        19
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        14
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        2,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        16
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "N",
+      "clues": [
+        3,
+        17
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "F",
+      "clues": [
+        3,
+        18
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        3,
+        19
+      ],
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        4,
+        14
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        4,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        4,
+        16
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "O",
+      "clues": [
+        5,
+        17
+      ],
+      "label": "10",
+      "type": 1
+    },
+    {
+      "answer": "F",
+      "clues": [
+        5,
+        18
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        5,
+        19
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "C",
+      "clues": [
+        6,
+        15
+      ],
+      "label": "11",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        6,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        6,
+        20
+      ],
+      "label": "12",
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        6,
+        17
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        6,
+        18
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        7,
+        15
+      ],
+      "label": "13",
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        7,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        7,
+        20
+      ],
+      "type": 1
+    },
+    {
+      "answer": "C",
+      "clues": [
+        7,
+        17
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        7,
+        18
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "G",
+      "clues": [
+        8,
+        21
+      ],
+      "label": "14",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        8,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        8,
+        16
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "A",
+      "clues": [
+        9,
+        17
+      ],
+      "label": "15",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        9,
+        18
+      ],
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        9,
+        22
+      ],
+      "label": "16",
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        10,
+        21
+      ],
+      "label": "17",
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        10,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        10,
+        16
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "P",
+      "clues": [
+        11,
+        17
+      ],
+      "label": "18",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        11,
+        18
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        11,
+        22
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        12,
+        21
+      ],
+      "label": "19",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        12,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        12,
+        16
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        13,
+        17
+      ],
+      "label": "20",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        13,
+        18
+      ],
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        13,
+        22
+      ],
+      "type": 1
+    }
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "Rock's ___ Leppard"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        5,
+        6
+      ],
+      "direction": "Across",
+      "label": "4",
+      "text": [
+        {
+          "plain": "Cry a river"
+        }
+      ]
+    },
+    {
+      "cells": [
+        7,
+        8,
+        9
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "plain": "Clean Air Act org."
+        }
+      ]
+    },
+    {
+      "cells": [
+        11,
+        12,
+        13
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Org. that pays the Bills?"
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        15,
+        16
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Nintendo console with motion sensors"
+        }
+      ]
+    },
+    {
+      "cells": [
+        18,
+        19,
+        20
+      ],
+      "direction": "Across",
+      "label": "10",
+      "text": [
+        {
+          "plain": "___-quoted (frequently said)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "direction": "Across",
+      "label": "11",
+      "relatives": [
+        7
+      ],
+      "text": [
+        {
+          "plain": "With 13-Across, narrow gap between the underside of a house and the ground"
+        }
+      ]
+    },
+    {
+      "cells": [
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "direction": "Across",
+      "label": "13",
+      "relatives": [
+        6
+      ],
+      "text": [
+        {
+          "plain": "See 11-Across"
+        }
+      ]
+    },
+    {
+      "cells": [
+        35,
+        36,
+        37
+      ],
+      "direction": "Across",
+      "label": "14",
+      "text": [
+        {
+          "plain": "Young lady"
+        }
+      ]
+    },
+    {
+      "cells": [
+        39,
+        40,
+        41
+      ],
+      "direction": "Across",
+      "label": "15",
+      "text": [
+        {
+          "plain": "Ooh and ___"
+        }
+      ]
+    },
+    {
+      "cells": [
+        42,
+        43,
+        44
+      ],
+      "direction": "Across",
+      "label": "17",
+      "text": [
+        {
+          "plain": "Sports org. for Scottie Scheffler"
+        }
+      ]
+    },
+    {
+      "cells": [
+        46,
+        47,
+        48
+      ],
+      "direction": "Across",
+      "label": "18",
+      "text": [
+        {
+          "plain": "\"Hey, just an F.Y.I. …,\" informally"
+        }
+      ]
+    },
+    {
+      "cells": [
+        49,
+        50,
+        51
+      ],
+      "direction": "Across",
+      "label": "19",
+      "text": [
+        {
+          "plain": "When doubled, nickname for singer Swift"
+        }
+      ]
+    },
+    {
+      "cells": [
+        53,
+        54,
+        55
+      ],
+      "direction": "Across",
+      "label": "20",
+      "text": [
+        {
+          "plain": "Socially timid"
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        7,
+        14
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Morning moisture"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        8,
+        15,
+        22,
+        29,
+        36,
+        43,
+        50
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "\"Game of Thrones\" or Homer's \"Odyssey\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37,
+        44,
+        51
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Good sportsmanship"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        11,
+        18,
+        25,
+        32,
+        39,
+        46,
+        53
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "White mountain toppers"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        12,
+        19,
+        26,
+        33,
+        40,
+        47,
+        54
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Unrestrained, as a dog at a park"
+        }
+      ]
+    },
+    {
+      "cells": [
+        6,
+        13,
+        20
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Sandwich that might be served \"triple-decker\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        24,
+        31
+      ],
+      "direction": "Down",
+      "label": "12",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Common battery type"
+        }
+      ]
+    },
+    {
+      "cells": [
+        35,
+        42,
+        49
+      ],
+      "direction": "Down",
+      "label": "14",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Chat___"
+        }
+      ]
+    },
+    {
+      "cells": [
+        41,
+        48,
+        55
+      ],
+      "direction": "Down",
+      "label": "16",
+      "list": 1,
+      "text": [
+        {
+          "plain": "It's for horses, in a classic joke punchline"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 8,
+    "width": 7
+  }
+}
