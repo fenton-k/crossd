@@ -1,0 +1,708 @@
+{
+  "cells": [
+    {},
+    {
+      "answer": "K",
+      "clues": [
+        0,
+        10
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        0,
+        11
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        0,
+        12
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        0,
+        13
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        10
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        1,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        1,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        1,
+        14
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "B",
+      "clues": [
+        2,
+        15
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        2,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        2,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        2,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        2,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        2,
+        16
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        15
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        3,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        3,
+        11
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "G",
+      "clues": [
+        4,
+        13
+      ],
+      "label": "10",
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        4,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        4,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        5,
+        15
+      ],
+      "label": "11",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        5,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        5,
+        11
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "R",
+      "clues": [
+        6,
+        13
+      ],
+      "label": "12",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        6,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        6,
+        16
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "D",
+      "clues": [
+        7,
+        10
+      ],
+      "label": "13",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        7,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        7,
+        17
+      ],
+      "label": "14",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        7,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        7,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        7,
+        16
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        8,
+        10
+      ],
+      "label": "15",
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        8,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        8,
+        17
+      ],
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        8,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        8,
+        14
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "answer": "T",
+      "clues": [
+        9,
+        11
+      ],
+      "label": "16",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        9,
+        17
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        9,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        9,
+        14
+      ],
+      "type": 1
+    },
+    {}
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "formatted": "<i>Spring Cleaning Box 1: I still love it!</i>",
+          "plain": "Spring Cleaning Box 1: I still love it!"
+        }
+      ]
+    },
+    {
+      "cells": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "direction": "Across",
+      "label": "5",
+      "text": [
+        {
+          "plain": "First name of poet Poe"
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "plain": "Let ___ be ___"
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        22,
+        23
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Gorilla or chimpanzee"
+        }
+      ]
+    },
+    {
+      "cells": [
+        25,
+        26,
+        27
+      ],
+      "direction": "Across",
+      "label": "10",
+      "text": [
+        {
+          "plain": "Clock setting in the U.K.: Abbr."
+        }
+      ]
+    },
+    {
+      "cells": [
+        28,
+        29,
+        30
+      ],
+      "direction": "Across",
+      "label": "11",
+      "text": [
+        {
+          "plain": "Eugene Levy, to Dan Levy"
+        }
+      ]
+    },
+    {
+      "cells": [
+        32,
+        33,
+        34
+      ],
+      "direction": "Across",
+      "label": "12",
+      "text": [
+        {
+          "plain": "___ G BIV (color mnemonic)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "direction": "Across",
+      "label": "13",
+      "text": [
+        {
+          "formatted": "<i>Spring Cleaning Box 2: Someone else will love it!</i>",
+          "plain": "Spring Cleaning Box 2: Someone else will love it!"
+        }
+      ]
+    },
+    {
+      "cells": [
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "direction": "Across",
+      "label": "15",
+      "text": [
+        {
+          "plain": "\"If you don't like it, that's your problem!\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        51,
+        52,
+        53,
+        54
+      ],
+      "direction": "Across",
+      "label": "16",
+      "text": [
+        {
+          "formatted": "<i>Spring Cleaning Box 3: It's worthless!</i>",
+          "plain": "Spring Cleaning Box 3: It's worthless!"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        8,
+        15,
+        22,
+        29,
+        36,
+        43
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Panels of buttons on which passcodes are entered"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37,
+        44,
+        51
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Just barely defeated"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        10,
+        17
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "A narcissist has a big one"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        11,
+        18,
+        25,
+        32,
+        39,
+        46,
+        53
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "High-scoring words in Spelling Bee"
+        }
+      ]
+    },
+    {
+      "cells": [
+        12,
+        19,
+        26,
+        33,
+        40,
+        47,
+        54
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Channel changers"
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        21,
+        28
+      ],
+      "direction": "Down",
+      "label": "7",
+      "list": 1,
+      "text": [
+        {
+          "plain": "___ Bunny, musician known as the \"King of Latin Trap\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        20,
+        27,
+        34,
+        41
+      ],
+      "direction": "Down",
+      "label": "8",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Painful eye malady"
+        }
+      ]
+    },
+    {
+      "cells": [
+        38,
+        45,
+        52
+      ],
+      "direction": "Down",
+      "label": "14",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Prefix for a modern genre"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 8,
+    "width": 7
+  }
+}
