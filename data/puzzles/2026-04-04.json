@@ -1,0 +1,722 @@
+{
+  "cells": [
+    {
+      "answer": "E",
+      "clues": [
+        0,
+        11
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        0,
+        12
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        0,
+        13
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "B",
+      "clues": [
+        1,
+        14
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        15
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        1,
+        16
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        2,
+        11
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        2,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        2,
+        13
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        14
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        3,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        3,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        4,
+        11
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        4,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        13
+      ],
+      "type": 2
+    },
+    {
+      "answer": "N",
+      "clues": [
+        4,
+        17
+      ],
+      "label": "10",
+      "type": 2
+    },
+    {
+      "answer": "D",
+      "clues": [
+        4,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        4,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        4,
+        16
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "D",
+      "clues": [
+        5,
+        12
+      ],
+      "label": "11",
+      "type": 2
+    },
+    {
+      "answer": "A",
+      "clues": [
+        5,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        5,
+        17
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        5,
+        14
+      ],
+      "type": 2
+    },
+    {
+      "answer": "L",
+      "clues": [
+        5,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        5,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        6,
+        18
+      ],
+      "label": "12",
+      "type": 2
+    },
+    {
+      "answer": "O",
+      "clues": [
+        6,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        6,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        6,
+        17
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        6,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        6,
+        15
+      ],
+      "type": 2
+    },
+    {
+      "answer": "R",
+      "clues": [
+        6,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        7,
+        18
+      ],
+      "label": "13",
+      "type": 2
+    },
+    {
+      "answer": "V",
+      "clues": [
+        7,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        7,
+        13
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "R",
+      "clues": [
+        8,
+        14
+      ],
+      "label": "14",
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        8,
+        15
+      ],
+      "type": 2
+    },
+    {
+      "answer": "E",
+      "clues": [
+        8,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        9,
+        18
+      ],
+      "label": "15",
+      "type": 2
+    },
+    {
+      "answer": "A",
+      "clues": [
+        9,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        9,
+        13
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        10,
+        14
+      ],
+      "label": "16",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        10,
+        15
+      ],
+      "type": 2
+    },
+    {
+      "answer": "E",
+      "clues": [
+        10,
+        16
+      ],
+      "type": 1
+    }
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "Like this lyric: \"My heart is yours to fill or burst / To break or bury or wear as jewelry\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        5,
+        6
+      ],
+      "direction": "Across",
+      "label": "4",
+      "text": [
+        {
+          "plain": "Scrooge's cry before \"humbug\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        7,
+        8,
+        9
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "plain": "\"___ appetit!\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        11,
+        12,
+        13
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "\"Te ___\" (\"I love you,\" in Spanish)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Use camouflage"
+        }
+      ]
+    },
+    {
+      "cells": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "direction": "Across",
+      "label": "11",
+      "text": [
+        {
+          "plain": "Big name in fluorescent paint"
+        }
+      ]
+    },
+    {
+      "cells": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "direction": "Across",
+      "label": "12",
+      "text": [
+        {
+          "plain": "Transmission setting for a steep hill, maybe"
+        }
+      ]
+    },
+    {
+      "cells": [
+        35,
+        36,
+        37
+      ],
+      "direction": "Across",
+      "label": "13",
+      "text": [
+        {
+          "plain": "Egg cells"
+        }
+      ]
+    },
+    {
+      "cells": [
+        39,
+        40,
+        41
+      ],
+      "direction": "Across",
+      "label": "14",
+      "text": [
+        {
+          "plain": "GPS suggestion: Abbr."
+        }
+      ]
+    },
+    {
+      "cells": [
+        42,
+        43,
+        44
+      ],
+      "direction": "Across",
+      "label": "15",
+      "text": [
+        {
+          "plain": "Like many Grindr users"
+        }
+      ]
+    },
+    {
+      "cells": [
+        46,
+        47,
+        48
+      ],
+      "direction": "Across",
+      "label": "16",
+      "text": [
+        {
+          "plain": "Go on dates with"
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        7,
+        14
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Recede, as the tide"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        8,
+        15,
+        22,
+        29,
+        36,
+        43
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Country between Ukraine and Romania"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37,
+        44
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Message in Connections when you almost get the category, but not quite"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        11,
+        18,
+        25,
+        32,
+        39,
+        46
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Mammals whose name is a synonym of \"pesters\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        12,
+        19,
+        26,
+        33,
+        40,
+        47
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "\"Sorry, has the meeting started already?\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        6,
+        13,
+        20,
+        27,
+        34,
+        41,
+        48
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Award recipient"
+        }
+      ]
+    },
+    {
+      "cells": [
+        17,
+        24,
+        31
+      ],
+      "direction": "Down",
+      "label": "10",
+      "list": 1,
+      "text": [
+        {
+          "plain": "The N.F.L.'s Giants, on scoreboards"
+        }
+      ]
+    },
+    {
+      "cells": [
+        28,
+        35,
+        42
+      ],
+      "direction": "Down",
+      "label": "12",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Makeshift seat at a campfire"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 7,
+    "width": 7
+  },
+  "overlays": {
+    "afterSolve": 1
+  }
+}
