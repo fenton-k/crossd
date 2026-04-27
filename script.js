@@ -39,6 +39,23 @@ function getTodayInEST() {
 }
 
 async function loadPuzzle() {
+  // Check for ?puzzle=MMDDYY param, otherwise use today
+  const params = new URLSearchParams(window.location.search);
+  const puzzleParam = params.get("puzzle");
+
+  let dateStr;
+  if (puzzleParam && puzzleParam.length === 6) {
+    const mm = puzzleParam.slice(0, 2);
+    const dd = puzzleParam.slice(2, 4);
+    const yy = puzzleParam.slice(4, 6);
+    dateStr = `20${yy}-${mm}-${dd}`; // e.g. "2026-03-01"
+  } else {
+    dateStr = getTodayInEST();
+  }
+  
+  const response = await fetch(
+    `https://raw.githubusercontent.com/fenton-k/crossd/refs/heads/main/data/puzzles/${dateStr}.json`
+  );
   const today = getTodayInEST();
   const response = await fetch(`https://raw.githubusercontent.com/fenton-k/crossd/refs/heads/main/data/puzzles/${today}.json`);
   const data = await response.json();
