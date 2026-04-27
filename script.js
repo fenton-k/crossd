@@ -53,7 +53,7 @@ async function loadPuzzle() {
     for (let c = 0; c < gridWidth; c++) {
       // Corrected logic: Use 'type' property to correctly identify block cells
       const cell = cells[r * gridWidth + c];
-      row.push(cell.type === 1 ? cell.answer || "" : "_");
+      row.push(cell.answer !== undefined ? cell.answer : "_");
     }
     puzzle.push(row);
   }
