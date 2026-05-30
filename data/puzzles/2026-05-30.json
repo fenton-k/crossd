@@ -1,0 +1,672 @@
+{
+  "cells": [
+    {},
+    {
+      "answer": "G",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        0,
+        9
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        0,
+        10
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        0,
+        11
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        0,
+        12
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        1,
+        13
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        1,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        1,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        1,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        14
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        2,
+        13
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        2,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        2,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        2,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        2,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        13
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "D",
+      "clues": [
+        4,
+        11
+      ],
+      "label": "10",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        4,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        4,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        5,
+        13
+      ],
+      "label": "11",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        5,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        5,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        5,
+        15
+      ],
+      "label": "12",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        5,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        5,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        5,
+        14
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "N",
+      "clues": [
+        6,
+        8
+      ],
+      "label": "13",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        6,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        6,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        6,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        6,
+        12
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "G",
+      "clues": [
+        7,
+        8
+      ],
+      "label": "14",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        7,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        7,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        7,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        7,
+        12
+      ],
+      "type": 1
+    },
+    {}
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "direction": "Across",
+      "label": "1",
+      "relatives": [
+        7
+      ],
+      "text": [
+        {
+          "plain": "It's always greener on the other side of the grid"
+        }
+      ]
+    },
+    {
+      "cells": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "direction": "Across",
+      "label": "6",
+      "text": [
+        {
+          "plain": "7-Eleven frozen drink"
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Getting a D or better"
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        22,
+        23
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Sculpture or painting"
+        }
+      ]
+    },
+    {
+      "cells": [
+        25,
+        26,
+        27
+      ],
+      "direction": "Across",
+      "label": "10",
+      "text": [
+        {
+          "plain": "Poker-playing animal in a classic painting"
+        }
+      ]
+    },
+    {
+      "cells": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "direction": "Across",
+      "label": "11",
+      "text": [
+        {
+          "plain": "High Life beers, e.g."
+        }
+      ]
+    },
+    {
+      "cells": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "direction": "Across",
+      "label": "13",
+      "text": [
+        {
+          "plain": "Democratic political figure ___ Tanden"
+        }
+      ]
+    },
+    {
+      "cells": [
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "direction": "Across",
+      "label": "14",
+      "relatives": [
+        0
+      ],
+      "text": [
+        {
+          "plain": "See 1-Across"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        8,
+        15,
+        22,
+        29,
+        36,
+        43
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Blindingly obvious"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37,
+        44
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Cattle ___ (Wild West thief)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        10,
+        17
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Letters between \"cues\" and \"esses\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        11,
+        18,
+        25,
+        32,
+        39,
+        46
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "They spend a lot of time on the web"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        12,
+        19,
+        26,
+        33,
+        40,
+        47
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Married women, in Madrid"
+        }
+      ]
+    },
+    {
+      "cells": [
+        7,
+        14,
+        21,
+        28
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Text that gets the reply \"STOP,\" say"
+        }
+      ]
+    },
+    {
+      "cells": [
+        13,
+        20,
+        27,
+        34
+      ],
+      "direction": "Down",
+      "label": "7",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Staple grocery purchase"
+        }
+      ]
+    },
+    {
+      "cells": [
+        31,
+        38,
+        45
+      ],
+      "direction": "Down",
+      "label": "12",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Broadway star ___ Michele"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 7,
+    "width": 7
+  },
+  "overlays": {
+    "afterSolve": 1
+  }
+}
