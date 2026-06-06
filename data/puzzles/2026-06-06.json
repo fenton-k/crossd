@@ -1,0 +1,719 @@
+{
+  "cells": [
+    {
+      "answer": "N",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        0,
+        9
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        0,
+        10
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        0,
+        11
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        0,
+        12
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        0,
+        13
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        7
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        1,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        1,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        1,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        2,
+        7
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        2,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        2,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        2,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        13
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "P",
+      "clues": [
+        3,
+        9
+      ],
+      "label": "10",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        3,
+        11
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        4,
+        14
+      ],
+      "label": "11",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        4,
+        15
+      ],
+      "label": "12",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        4,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        4,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        4,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        16
+      ],
+      "label": "13",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        4,
+        17
+      ],
+      "label": "14",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        5,
+        14
+      ],
+      "label": "15",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        5,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        5,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "C",
+      "clues": [
+        5,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        5,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        5,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        5,
+        17
+      ],
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        6,
+        14
+      ],
+      "label": "16",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        6,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        6,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        6,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        6,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        6,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        6,
+        17
+      ],
+      "type": 1
+    }
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "\"Easy peasy!\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Great Lake whose name can be translated in Iroquoian as \"great lake\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Use a ruler"
+        }
+      ]
+    },
+    {
+      "cells": [
+        23,
+        24,
+        25
+      ],
+      "direction": "Across",
+      "label": "10",
+      "text": [
+        {
+          "plain": "Word after \"brake,\" \"Brillo\" or \"bachelor\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "direction": "Across",
+      "label": "11",
+      "text": [
+        {
+          "plain": "Having more sodium"
+        }
+      ]
+    },
+    {
+      "cells": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "direction": "Across",
+      "label": "15",
+      "text": [
+        {
+          "plain": "Spider-Man foe who gained his powers from a lightning strike"
+        }
+      ]
+    },
+    {
+      "cells": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "direction": "Across",
+      "label": "16",
+      "text": [
+        {
+          "plain": "George Washington or George Patton"
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        7,
+        14
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "___ de plume"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        8,
+        15
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "First digit of pi after the decimal"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37,
+        44
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Paper pusher?"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        10,
+        17,
+        24,
+        31,
+        38,
+        45
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Major mountain range in Utah"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        11,
+        18,
+        25,
+        32,
+        39,
+        46
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Well-read"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        12,
+        19
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "plain": "It's mostly nitrogen and oxygen"
+        }
+      ]
+    },
+    {
+      "cells": [
+        6,
+        13,
+        20
+      ],
+      "direction": "Down",
+      "label": "7",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Wiggler in a sock"
+        }
+      ]
+    },
+    {
+      "cells": [
+        28,
+        35,
+        42
+      ],
+      "direction": "Down",
+      "label": "11",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Stitch up"
+        }
+      ]
+    },
+    {
+      "cells": [
+        29,
+        36,
+        43
+      ],
+      "direction": "Down",
+      "label": "12",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Chicken ___ king"
+        }
+      ]
+    },
+    {
+      "cells": [
+        33,
+        40,
+        47
+      ],
+      "direction": "Down",
+      "label": "13",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Make a mistake"
+        }
+      ]
+    },
+    {
+      "cells": [
+        34,
+        41,
+        48
+      ],
+      "direction": "Down",
+      "label": "14",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Aussie animal, for short"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 7,
+    "width": 7
+  }
+}
