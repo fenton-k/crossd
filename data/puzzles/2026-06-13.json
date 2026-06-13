@@ -1,0 +1,758 @@
+{
+  "cells": [
+    {},
+    {},
+    {
+      "answer": "H",
+      "clues": [
+        0,
+        10
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        0,
+        11
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        0,
+        12
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        0,
+        13
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        10
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        1,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        13
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "I",
+      "clues": [
+        2,
+        14
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        2,
+        15
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        2,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        2,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        2,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        2,
+        16
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        2,
+        17
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        3,
+        14
+      ],
+      "label": "10",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        3,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        3,
+        10
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "M",
+      "clues": [
+        4,
+        13
+      ],
+      "label": "11",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        4,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        17
+      ],
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        5,
+        14
+      ],
+      "label": "12",
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        5,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        5,
+        10
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "G",
+      "clues": [
+        6,
+        13
+      ],
+      "label": "13",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        6,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        6,
+        17
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        7,
+        14
+      ],
+      "label": "14",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        7,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        7,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        7,
+        18
+      ],
+      "label": "15",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        7,
+        19
+      ],
+      "label": "16",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        7,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        7,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        7,
+        17
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        8,
+        10
+      ],
+      "label": "17",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        8,
+        18
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        8,
+        19
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        8,
+        13
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "answer": "S",
+      "clues": [
+        9,
+        10
+      ],
+      "label": "18",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        9,
+        18
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        9,
+        19
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        9,
+        13
+      ],
+      "type": 1
+    },
+    {},
+    {}
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "Sentry's \"Stop!\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "direction": "Across",
+      "label": "5",
+      "text": [
+        {
+          "plain": "___ vera (succulent)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "direction": "Across",
+      "label": "6",
+      "text": [
+        {
+          "plain": "\"That feeling should fade\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        24,
+        25,
+        26
+      ],
+      "direction": "Across",
+      "label": "10",
+      "text": [
+        {
+          "plain": "$1,000,000, informally"
+        }
+      ]
+    },
+    {
+      "cells": [
+        29,
+        30,
+        31
+      ],
+      "direction": "Across",
+      "label": "11",
+      "text": [
+        {
+          "plain": "One of the Three Stooges"
+        }
+      ]
+    },
+    {
+      "cells": [
+        32,
+        33,
+        34
+      ],
+      "direction": "Across",
+      "label": "12",
+      "text": [
+        {
+          "plain": "Caller of balls and strikes"
+        }
+      ]
+    },
+    {
+      "cells": [
+        37,
+        38,
+        39
+      ],
+      "direction": "Across",
+      "label": "13",
+      "text": [
+        {
+          "plain": "___-1 (class of drugs that includes Ozempic and Wegovy)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "direction": "Across",
+      "label": "14",
+      "text": [
+        {
+          "plain": "Crunchy tendril used in Asian cuisine"
+        }
+      ]
+    },
+    {
+      "cells": [
+        50,
+        51,
+        52,
+        53
+      ],
+      "direction": "Across",
+      "label": "17",
+      "text": [
+        {
+          "plain": "___ Stadium, former home of the Mets"
+        }
+      ]
+    },
+    {
+      "cells": [
+        58,
+        59,
+        60,
+        61
+      ],
+      "direction": "Across",
+      "label": "18",
+      "text": [
+        {
+          "plain": "Silverstein who wrote \"The Giving Tree\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        10,
+        18,
+        26,
+        34,
+        42,
+        50,
+        58
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Student's slip"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        11,
+        19
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "The \"A\" of GOAT"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        12,
+        20
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Chop (off)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        13,
+        21,
+        29,
+        37,
+        45,
+        53,
+        61
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "relatives": [
+        10,
+        2,
+        7
+      ],
+      "text": [
+        {
+          "plain": "Collective objective ... or what the ends of 1-Down, 6-Across and 14-Across lead to"
+        }
+      ]
+    },
+    {
+      "cells": [
+        16,
+        24,
+        32,
+        40
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "plain": "\"Okay, it's my turn\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        17,
+        25,
+        33,
+        41
+      ],
+      "direction": "Down",
+      "label": "7",
+      "list": 1,
+      "text": [
+        {
+          "plain": "The \"T\" of GOAT"
+        }
+      ]
+    },
+    {
+      "cells": [
+        22,
+        30,
+        38,
+        46
+      ],
+      "direction": "Down",
+      "label": "8",
+      "list": 1,
+      "text": [
+        {
+          "plain": "All by oneself"
+        }
+      ]
+    },
+    {
+      "cells": [
+        23,
+        31,
+        39,
+        47
+      ],
+      "direction": "Down",
+      "label": "9",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Month #9: Abbr."
+        }
+      ]
+    },
+    {
+      "cells": [
+        43,
+        51,
+        59
+      ],
+      "direction": "Down",
+      "label": "15",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Librarian's warning"
+        }
+      ]
+    },
+    {
+      "cells": [
+        44,
+        52,
+        60
+      ],
+      "direction": "Down",
+      "label": "16",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Tee-___ (giggle)"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 8,
+    "width": 8
+  },
+  "overlays": {
+    "beforeStart": 1
+  }
+}
