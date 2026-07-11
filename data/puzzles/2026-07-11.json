@@ -1,0 +1,705 @@
+{
+  "cells": [
+    {
+      "answer": "R",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "V",
+      "clues": [
+        0,
+        9
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        0,
+        10
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        0,
+        11
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        0,
+        12
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "P",
+      "clues": [
+        1,
+        7
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "V",
+      "clues": [
+        1,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        1,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        1,
+        13
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        2,
+        7
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        2,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        2,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        13
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "answer": "R",
+      "clues": [
+        3,
+        10
+      ],
+      "label": "10",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        3,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        3,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        3,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "F",
+      "clues": [
+        4,
+        14
+      ],
+      "label": "11",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        4,
+        15
+      ],
+      "label": "12",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        16
+      ],
+      "label": "13",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        4,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        4,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        4,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        4,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "C",
+      "clues": [
+        5,
+        14
+      ],
+      "label": "14",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        5,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        5,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        5,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        5,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        5,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        5,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "C",
+      "clues": [
+        6,
+        14
+      ],
+      "label": "15",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        6,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        6,
+        16
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        6,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        6,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        6,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        6,
+        13
+      ],
+      "type": 1
+    }
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "Completely overhaul"
+        }
+      ]
+    },
+    {
+      "cells": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "plain": "Sneak peek"
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Purplish-red shade"
+        }
+      ]
+    },
+    {
+      "cells": [
+        24,
+        25,
+        26,
+        27
+      ],
+      "direction": "Across",
+      "label": "10",
+      "text": [
+        {
+          "plain": "Item purchased before proposing"
+        }
+      ]
+    },
+    {
+      "cells": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "direction": "Across",
+      "label": "11",
+      "text": [
+        {
+          "plain": "2010s Emmy-winning comedy starring Phoebe Waller-Bridge"
+        }
+      ]
+    },
+    {
+      "cells": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "direction": "Across",
+      "label": "14",
+      "text": [
+        {
+          "plain": "Fraudulent scheme"
+        }
+      ]
+    },
+    {
+      "cells": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "direction": "Across",
+      "label": "15",
+      "text": [
+        {
+          "plain": "🚨 State of emergency 🚨"
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        7,
+        14
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Measure of engine speed, in brief"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        8,
+        15
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Section of history"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        9,
+        16
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Kick one's feet up, with \"out\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        10,
+        17,
+        24,
+        31,
+        38,
+        45
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "So-so"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        11,
+        18,
+        25,
+        32,
+        39,
+        46
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Spot for little drinks that can lead to a big bill"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        12,
+        19,
+        26,
+        33,
+        40,
+        47
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Cutesy moniker for a romantic partner"
+        }
+      ]
+    },
+    {
+      "cells": [
+        13,
+        20,
+        27,
+        34,
+        41,
+        48
+      ],
+      "direction": "Down",
+      "label": "8",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Moved like an excited dog's tail"
+        }
+      ]
+    },
+    {
+      "cells": [
+        28,
+        35,
+        42
+      ],
+      "direction": "Down",
+      "label": "11",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Grp. monitoring TV decency standards"
+        }
+      ]
+    },
+    {
+      "cells": [
+        29,
+        36,
+        43
+      ],
+      "direction": "Down",
+      "label": "12",
+      "list": 1,
+      "text": [
+        {
+          "plain": "British bathroom"
+        }
+      ]
+    },
+    {
+      "cells": [
+        30,
+        37,
+        44
+      ],
+      "direction": "Down",
+      "label": "13",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Appropriate last answer in this puzzle"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 7,
+    "width": 7
+  }
+}
