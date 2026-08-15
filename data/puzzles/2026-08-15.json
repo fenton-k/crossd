@@ -1,0 +1,592 @@
+{
+  "cells": [
+    {
+      "answer": "C",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        0,
+        9
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        0,
+        10
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        0,
+        11
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        7
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        1,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        1,
+        11
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "R",
+      "clues": [
+        2,
+        7
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        2,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        11
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "D",
+      "clues": [
+        3,
+        7
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        3,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        3,
+        12
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        3,
+        13
+      ],
+      "label": "10",
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "O",
+      "clues": [
+        4,
+        9
+      ],
+      "label": "11",
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        4,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        4,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        4,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        4,
+        13
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "A",
+      "clues": [
+        5,
+        9
+      ],
+      "label": "12",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        5,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        5,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        5,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        5,
+        13
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {
+      "answer": "L",
+      "clues": [
+        6,
+        9
+      ],
+      "label": "13",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        6,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        6,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        6,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        6,
+        13
+      ],
+      "type": 1
+    }
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "Stores owned and run by their workers"
+        }
+      ]
+    },
+    {
+      "cells": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "direction": "Across",
+      "label": "6",
+      "text": [
+        {
+          "plain": "\"Huh, wasn't expecting that!\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "plain": "Run under a faucet"
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Metal identifiers in the military"
+        }
+      ]
+    },
+    {
+      "cells": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "direction": "Across",
+      "label": "11",
+      "text": [
+        {
+          "plain": "Bit of music that plays as a podcast ends"
+        }
+      ]
+    },
+    {
+      "cells": [
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "direction": "Across",
+      "label": "12",
+      "text": [
+        {
+          "plain": "Font similar to Helvetica"
+        }
+      ]
+    },
+    {
+      "cells": [
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "direction": "Across",
+      "label": "13",
+      "text": [
+        {
+          "plain": "Leave alone"
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        7,
+        14,
+        21
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Cut the ___ (cancel cable)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        8,
+        15,
+        22
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Dayton's state"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37,
+        44
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Game-changing mistake for a World Cup defender"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        10,
+        17,
+        24,
+        31,
+        38,
+        45
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Slouching is a bad form of this"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        11,
+        18,
+        25,
+        32,
+        39,
+        46
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Worry about the small stuff"
+        }
+      ]
+    },
+    {
+      "cells": [
+        26,
+        33,
+        40,
+        47
+      ],
+      "direction": "Down",
+      "label": "9",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Snatch"
+        }
+      ]
+    },
+    {
+      "cells": [
+        27,
+        34,
+        41,
+        48
+      ],
+      "direction": "Down",
+      "label": "10",
+      "list": 1,
+      "text": [
+        {
+          "plain": "___ Survivor, title for each winner of \"Survivor\""
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 7,
+    "width": 7
+  }
+}
