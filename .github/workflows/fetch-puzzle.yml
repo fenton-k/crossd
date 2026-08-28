@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18" # You can pick your preferred version
+          node-version: "24" # You can pick your preferred version
 
       - name: Fetch puzzle and save file
         run: |
