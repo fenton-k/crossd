@@ -1,0 +1,387 @@
+{
+  "cells": [
+    {},
+    {
+      "answer": "F",
+      "clues": [
+        0,
+        5
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        0,
+        6
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "V",
+      "clues": [
+        1,
+        9
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        1,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        1,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        2,
+        9
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "F",
+      "clues": [
+        2,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "B",
+      "clues": [
+        3,
+        9
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        3,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        4,
+        9
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        4,
+        5
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        4,
+        6
+      ],
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        4,
+        7
+      ],
+      "type": 1
+    },
+    {}
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "\"The Odyssey\" (2026) or \"The Odd Couple\" (1968)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "direction": "Across",
+      "label": "5",
+      "text": [
+        {
+          "plain": "YouTube posting"
+        }
+      ]
+    },
+    {
+      "cells": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "direction": "Across",
+      "label": "6",
+      "text": [
+        {
+          "plain": "Endangered marine ecosystems"
+        }
+      ]
+    },
+    {
+      "cells": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "plain": "Spoiled kids"
+        }
+      ]
+    },
+    {
+      "cells": [
+        20,
+        21,
+        22,
+        23
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Greasy"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        6,
+        11,
+        16,
+        21
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Guy of the Food Network"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        7,
+        12,
+        17,
+        22
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "10/10"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        8,
+        13,
+        18,
+        23
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Someone who doesn't handle things right?"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        9,
+        14,
+        19
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Spanish ___, plant that hangs from cypress trees"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Airbnb alternative"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 5,
+    "width": 5
+  }
+}
