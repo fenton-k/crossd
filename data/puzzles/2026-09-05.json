@@ -1,0 +1,638 @@
+{
+  "cells": [
+    {
+      "answer": "A",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        0,
+        9
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        0,
+        10
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "K",
+      "clues": [
+        0,
+        11
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        0,
+        12
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "C",
+      "clues": [
+        1,
+        7
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        1,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        1,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        1,
+        12
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "L",
+      "clues": [
+        2,
+        7
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        2,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        2,
+        12
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "answer": "E",
+      "clues": [
+        3,
+        9
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        3,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "K",
+      "clues": [
+        3,
+        11
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "answer": "I",
+      "clues": [
+        4,
+        13
+      ],
+      "label": "10",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        4,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        4,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        4,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        4,
+        14
+      ],
+      "label": "11",
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        4,
+        15
+      ],
+      "label": "12",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "D",
+      "clues": [
+        5,
+        13
+      ],
+      "label": "13",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        5,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        5,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        5,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        5,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        5,
+        15
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "K",
+      "clues": [
+        6,
+        13
+      ],
+      "label": "14",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        6,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        6,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        6,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        6,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        6,
+        15
+      ],
+      "type": 1
+    }
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "Its state quarter features a grizzly bear catching a salmon"
+        }
+      ]
+    },
+    {
+      "cells": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "direction": "Across",
+      "label": "7",
+      "text": [
+        {
+          "plain": "Run-of-the-mill"
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Needing a friend"
+        }
+      ]
+    },
+    {
+      "cells": [
+        23,
+        24,
+        25
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Grazing animal in the Rockies"
+        }
+      ]
+    },
+    {
+      "cells": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "direction": "Across",
+      "label": "10",
+      "text": [
+        {
+          "plain": "Freestanding counter at the center of a kitchen"
+        }
+      ]
+    },
+    {
+      "cells": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "direction": "Across",
+      "label": "13",
+      "text": [
+        {
+          "plain": "Eating plan participant"
+        }
+      ]
+    },
+    {
+      "cells": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "direction": "Across",
+      "label": "14",
+      "text": [
+        {
+          "formatted": "Class with colored belts",
+          "plain": "Class with colored belts"
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        7,
+        14
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Knee injury site, for short"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        8,
+        15
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Brit's bathroom"
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37,
+        44
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Memory loss issue"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        10,
+        17,
+        24,
+        31,
+        38,
+        45
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Nose, by function"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        11,
+        18,
+        25,
+        32,
+        39,
+        46
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Major Indian city that's the capital of West Bengal"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        12,
+        19
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "plain": "\"___ given Sunday!\" (football fan's maxim)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        29,
+        36,
+        43
+      ],
+      "direction": "Down",
+      "label": "10",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Texting equivalent of a shrug"
+        }
+      ]
+    },
+    {
+      "cells": [
+        33,
+        40,
+        47
+      ],
+      "direction": "Down",
+      "label": "11",
+      "list": 1,
+      "text": [
+        {
+          "plain": "After taxes"
+        }
+      ]
+    },
+    {
+      "cells": [
+        34,
+        41,
+        48
+      ],
+      "direction": "Down",
+      "label": "12",
+      "list": 1,
+      "text": [
+        {
+          "plain": "\"Dr.\" who co-founded Death Row Records"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 7,
+    "width": 7
+  }
+}
