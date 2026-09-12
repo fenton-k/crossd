@@ -1,0 +1,688 @@
+{
+  "cells": [
+    {
+      "answer": "O",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        0,
+        9
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        0,
+        10
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        0,
+        11
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        0,
+        12
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        0,
+        13
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "C",
+      "clues": [
+        1,
+        7
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        1,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        1,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        1,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        1,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        1,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        2,
+        7
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "U",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        2,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "K",
+      "clues": [
+        2,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        2,
+        12
+      ],
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        2,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        7
+      ],
+      "label": "10",
+      "type": 1
+    },
+    {
+      "answer": "W",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "Y",
+      "clues": [
+        3,
+        10
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "answer": "V",
+      "clues": [
+        4,
+        7
+      ],
+      "label": "11",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        4,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        4,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        4,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        4,
+        14
+      ],
+      "label": "12",
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        4,
+        15
+      ],
+      "label": "13",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        16
+      ],
+      "label": "14",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        5,
+        7
+      ],
+      "label": "15",
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        5,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "G",
+      "clues": [
+        5,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        5,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        5,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        5,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        5,
+        16
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "answer": "M",
+      "clues": [
+        6,
+        10
+      ],
+      "label": "16",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        6,
+        14
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        6,
+        15
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        6,
+        16
+      ],
+      "type": 1
+    }
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "If you order \"ostriche\" on an Italian menu, you actually get these"
+        }
+      ]
+    },
+    {
+      "cells": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "Microsoft's A.I. assistant"
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Move-in-ready, as a house for sale"
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        22,
+        23,
+        24
+      ],
+      "direction": "Across",
+      "label": "10",
+      "text": [
+        {
+          "plain": "Home's opposite, on scoreboards"
+        }
+      ]
+    },
+    {
+      "cells": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "direction": "Across",
+      "label": "11",
+      "text": [
+        {
+          "plain": "Old and classic, as a car"
+        }
+      ]
+    },
+    {
+      "cells": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "direction": "Across",
+      "label": "15",
+      "text": [
+        {
+          "plain": "They're revved with a \"Vroom!\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        45,
+        46,
+        47,
+        48
+      ],
+      "direction": "Across",
+      "label": "16",
+      "text": [
+        {
+          "plain": "M, on a form"
+        }
+      ]
+    },
+    {
+      "cells": [
+        0,
+        7,
+        14,
+        21,
+        28,
+        35
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Span from C to C, in music"
+        }
+      ]
+    },
+    {
+      "cells": [
+        1,
+        8,
+        15,
+        22,
+        29,
+        36
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "\"Fine, I give up\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Pounced"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        10,
+        17,
+        24,
+        31,
+        38,
+        45
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Young boy saved by Scrooge's change of heart"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        11,
+        18
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Antlered animal of the Rockies"
+        }
+      ]
+    },
+    {
+      "cells": [
+        5,
+        12,
+        19
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Fish eggs"
+        }
+      ]
+    },
+    {
+      "cells": [
+        6,
+        13,
+        20
+      ],
+      "direction": "Down",
+      "label": "7",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Home with a trough of slop"
+        }
+      ]
+    },
+    {
+      "cells": [
+        32,
+        39,
+        46
+      ],
+      "direction": "Down",
+      "label": "12",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Actress de Armas"
+        }
+      ]
+    },
+    {
+      "cells": [
+        33,
+        40,
+        47
+      ],
+      "direction": "Down",
+      "label": "13",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Stylist's goo"
+        }
+      ]
+    },
+    {
+      "cells": [
+        34,
+        41,
+        48
+      ],
+      "direction": "Down",
+      "label": "14",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Suffix with Vietnam and Senegal"
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 7,
+    "width": 7
+  }
+}
