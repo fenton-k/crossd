@@ -1,0 +1,590 @@
+{
+  "cells": [
+    {},
+    {},
+    {
+      "answer": "M",
+      "clues": [
+        0,
+        7
+      ],
+      "label": "1",
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        0,
+        8
+      ],
+      "label": "2",
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        0,
+        9
+      ],
+      "label": "3",
+      "type": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "answer": "H",
+      "clues": [
+        1,
+        10
+      ],
+      "label": "4",
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        1,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        1,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        1,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        1,
+        11
+      ],
+      "label": "5",
+      "type": 1
+    },
+    {},
+    {
+      "answer": "B",
+      "clues": [
+        2,
+        12
+      ],
+      "label": "6",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        2,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        2,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        2,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        2,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "P",
+      "clues": [
+        2,
+        13
+      ],
+      "label": "7",
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        3,
+        12
+      ],
+      "label": "8",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        3,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "M",
+      "clues": [
+        3,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "H",
+      "clues": [
+        3,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "O",
+      "clues": [
+        3,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "L",
+      "clues": [
+        3,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        3,
+        13
+      ],
+      "type": 1
+    },
+    {
+      "answer": "T",
+      "clues": [
+        4,
+        12
+      ],
+      "label": "9",
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        4,
+        10
+      ],
+      "type": 1
+    },
+    {
+      "answer": "A",
+      "clues": [
+        4,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        4,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "N",
+      "clues": [
+        4,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        4,
+        11
+      ],
+      "type": 1
+    },
+    {
+      "answer": "R",
+      "clues": [
+        4,
+        13
+      ],
+      "type": 1
+    },
+    {},
+    {
+      "answer": "Y",
+      "clues": [
+        5,
+        10
+      ],
+      "label": "10",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        5,
+        7
+      ],
+      "type": 1
+    },
+    {
+      "answer": "K",
+      "clues": [
+        5,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "E",
+      "clues": [
+        5,
+        9
+      ],
+      "type": 1
+    },
+    {
+      "answer": "S",
+      "clues": [
+        5,
+        11
+      ],
+      "type": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "answer": "D",
+      "clues": [
+        6,
+        7
+      ],
+      "label": "11",
+      "type": 1
+    },
+    {
+      "answer": "I",
+      "clues": [
+        6,
+        8
+      ],
+      "type": 1
+    },
+    {
+      "answer": "D",
+      "clues": [
+        6,
+        9
+      ],
+      "type": 1
+    },
+    {},
+    {}
+  ],
+  "clueLists": [
+    {
+      "clues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "name": "Across"
+    },
+    {
+      "clues": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "name": "Down"
+    }
+  ],
+  "clues": [
+    {
+      "cells": [
+        2,
+        3,
+        4
+      ],
+      "direction": "Across",
+      "label": "1",
+      "text": [
+        {
+          "plain": "R.N.'s co-workers"
+        }
+      ]
+    },
+    {
+      "cells": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "direction": "Across",
+      "label": "4",
+      "text": [
+        {
+          "plain": "Piles upon piles"
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "direction": "Across",
+      "label": "6",
+      "text": [
+        {
+          "plain": "Alternative to body wash"
+        }
+      ]
+    },
+    {
+      "cells": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "direction": "Across",
+      "label": "8",
+      "text": [
+        {
+          "plain": "O in a tee?"
+        }
+      ]
+    },
+    {
+      "cells": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "direction": "Across",
+      "label": "9",
+      "text": [
+        {
+          "plain": "Exercise expert"
+        }
+      ]
+    },
+    {
+      "cells": [
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "direction": "Across",
+      "label": "10",
+      "text": [
+        {
+          "plain": "\"Oof ... that's not good\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        44,
+        45,
+        46
+      ],
+      "direction": "Across",
+      "label": "11",
+      "text": [
+        {
+          "plain": "\"I see what you ___ there\""
+        }
+      ]
+    },
+    {
+      "cells": [
+        2,
+        9,
+        16,
+        23,
+        30,
+        37,
+        44
+      ],
+      "direction": "Down",
+      "label": "1",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Half woman, half fish"
+        }
+      ]
+    },
+    {
+      "cells": [
+        3,
+        10,
+        17,
+        24,
+        31,
+        38,
+        45
+      ],
+      "direction": "Down",
+      "label": "2",
+      "list": 1,
+      "text": [
+        {
+          "plain": "West African shirt"
+        }
+      ]
+    },
+    {
+      "cells": [
+        4,
+        11,
+        18,
+        25,
+        32,
+        39,
+        46
+      ],
+      "direction": "Down",
+      "label": "3",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Cuddled closely"
+        }
+      ]
+    },
+    {
+      "cells": [
+        8,
+        15,
+        22,
+        29,
+        36
+      ],
+      "direction": "Down",
+      "label": "4",
+      "list": 1,
+      "text": [
+        {
+          "plain": "William's brother in the British monarchy"
+        }
+      ]
+    },
+    {
+      "cells": [
+        12,
+        19,
+        26,
+        33,
+        40
+      ],
+      "direction": "Down",
+      "label": "5",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Register ring-ups"
+        }
+      ]
+    },
+    {
+      "cells": [
+        14,
+        21,
+        28
+      ],
+      "direction": "Down",
+      "label": "6",
+      "list": 1,
+      "text": [
+        {
+          "plain": "Crack of the ___ (ballpark sound)"
+        }
+      ]
+    },
+    {
+      "cells": [
+        20,
+        27,
+        34
+      ],
+      "direction": "Down",
+      "label": "7",
+      "list": 1,
+      "text": [
+        {
+          "plain": "The \"p\" of m.p.h."
+        }
+      ]
+    }
+  ],
+  "dimensions": {
+    "height": 7,
+    "width": 7
+  }
+}
